@@ -1,0 +1,4 @@
+Sending this string as a file to console.
+The file is then requested back from console.
+The sent file is compared to the received file to confirm correct file transfer via UART using console.
+Generating the file in the firmware creates an uniform file transfer between pc-emul, simulation and fpga without adding extra targets for file generation.
