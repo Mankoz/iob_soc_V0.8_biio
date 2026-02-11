@@ -171,8 +171,24 @@ VL_ATTR_COLD void Viob_soc_sim_iob_soc_axi_full_xbar_split__pi2___ctor_var_reset
     vlSelf->__PVT__data_burst_complete_write_reg_o = VL_RAND_RESET_I(1);
     vlSelf->__PVT__write_sel = VL_RAND_RESET_I(2);
     vlSelf->__PVT__write_sel_reg = VL_RAND_RESET_I(2);
+    vlSelf->__PVT__demux_axi_awvalid_i = VL_RAND_RESET_I(1);
     vlSelf->__PVT__mux_axi_awready_o = VL_RAND_RESET_I(1);
+    vlSelf->__PVT__demux_axi_wvalid_i = VL_RAND_RESET_I(1);
+    vlSelf->__PVT__mux_axi_wready_o = VL_RAND_RESET_I(1);
+    vlSelf->__PVT__mux_axi_bid = VL_RAND_RESET_I(12);
+    vlSelf->__PVT__demux_axi_arvalid_i = VL_RAND_RESET_I(1);
+    vlSelf->__PVT__mux_axi_arready_o = VL_RAND_RESET_I(1);
+    VL_RAND_RESET_W(96, vlSelf->__PVT__mux_axi_rdata);
+    vlSelf->__PVT__mux_axi_rid = VL_RAND_RESET_I(12);
     vlSelf->__PVT__active_transaction_read_reg_re__DOT__reg0__DOT__data_next = VL_RAND_RESET_I(1);
     vlSelf->__PVT__active_transaction_write_reg_re__DOT__reg0__DOT__data_next = VL_RAND_RESET_I(1);
     vlSelf->__PVT__data_burst_complete_write_reg_re__DOT__reg0__DOT__data_next = VL_RAND_RESET_I(1);
+    vlSelf->__PVT__iob_mux_axi_awready__DOT__input_sel = VL_RAND_RESET_I(32);
+    vlSelf->__PVT__iob_mux_axi_wready__DOT__input_sel = VL_RAND_RESET_I(32);
+    vlSelf->__PVT__iob_mux_axi_bresp__DOT__input_sel = VL_RAND_RESET_I(32);
+    vlSelf->__PVT__iob_mux_axi_bvalid__DOT__input_sel = VL_RAND_RESET_I(32);
+    vlSelf->__PVT__iob_mux_axi_arready__DOT__input_sel = VL_RAND_RESET_I(32);
+    vlSelf->__PVT__iob_mux_axi_rresp__DOT__input_sel = VL_RAND_RESET_I(32);
+    vlSelf->__PVT__iob_mux_axi_rvalid__DOT__input_sel = VL_RAND_RESET_I(32);
+    vlSelf->__PVT__iob_mux_axi_rlast__DOT__input_sel = VL_RAND_RESET_I(32);
 }

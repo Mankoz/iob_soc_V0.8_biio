@@ -1,12 +1,11 @@
-verilated.o: \
- /nix/store/1rsrjv6q6hgqayb8ic3syy96rv8ffynr-verilator-5.018/share/verilator/include/verilated.cpp \
- /nix/store/1rsrjv6q6hgqayb8ic3syy96rv8ffynr-verilator-5.018/share/verilator/include/verilated_config.h \
- /nix/store/1rsrjv6q6hgqayb8ic3syy96rv8ffynr-verilator-5.018/share/verilator/include/verilatedos.h \
- /nix/store/1rsrjv6q6hgqayb8ic3syy96rv8ffynr-verilator-5.018/share/verilator/include/verilated_imp.h \
- /nix/store/1rsrjv6q6hgqayb8ic3syy96rv8ffynr-verilator-5.018/share/verilator/include/verilated.h \
- /nix/store/1rsrjv6q6hgqayb8ic3syy96rv8ffynr-verilator-5.018/share/verilator/include/verilated_types.h \
- /nix/store/1rsrjv6q6hgqayb8ic3syy96rv8ffynr-verilator-5.018/share/verilator/include/verilated_funcs.h \
- /nix/store/1rsrjv6q6hgqayb8ic3syy96rv8ffynr-verilator-5.018/share/verilator/include/verilated_syms.h \
- /nix/store/1rsrjv6q6hgqayb8ic3syy96rv8ffynr-verilator-5.018/share/verilator/include/verilated_sym_props.h \
- /nix/store/1rsrjv6q6hgqayb8ic3syy96rv8ffynr-verilator-5.018/share/verilator/include/verilated_threads.h \
- /nix/store/1rsrjv6q6hgqayb8ic3syy96rv8ffynr-verilator-5.018/share/verilator/include/verilated_trace.h
+verilated.o: /usr/share/verilator/include/verilated.cpp \
+ /usr/share/verilator/include/verilated_config.h \
+ /usr/share/verilator/include/verilatedos.h \
+ /usr/share/verilator/include/verilated_imp.h \
+ /usr/share/verilator/include/verilated.h \
+ /usr/share/verilator/include/verilated_types.h \
+ /usr/share/verilator/include/verilated_funcs.h \
+ /usr/share/verilator/include/verilated_syms.h \
+ /usr/share/verilator/include/verilated_sym_props.h \
+ /usr/share/verilator/include/verilated_threads.h \
+ /usr/share/verilator/include/verilated_trace.h

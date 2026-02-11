@@ -165,10 +165,17 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_iob_soc_axi_full_xbar_split__pi2
         CData/*0:0*/ __PVT__data_burst_complete_write_reg_o;
         CData/*1:0*/ __PVT__write_sel;
         CData/*1:0*/ __PVT__write_sel_reg;
+        CData/*0:0*/ __PVT__demux_axi_awvalid_i;
         CData/*0:0*/ __PVT__mux_axi_awready_o;
+        CData/*0:0*/ __PVT__demux_axi_wvalid_i;
+        CData/*0:0*/ __PVT__mux_axi_wready_o;
+        CData/*0:0*/ __PVT__demux_axi_arvalid_i;
+        CData/*0:0*/ __PVT__mux_axi_arready_o;
         CData/*0:0*/ __PVT__active_transaction_read_reg_re__DOT__reg0__DOT__data_next;
         CData/*0:0*/ __PVT__active_transaction_write_reg_re__DOT__reg0__DOT__data_next;
         CData/*0:0*/ __PVT__data_burst_complete_write_reg_re__DOT__reg0__DOT__data_next;
+        SData/*11:0*/ __PVT__mux_axi_bid;
+        SData/*11:0*/ __PVT__mux_axi_rid;
         VL_IN(s_axi_araddr_i,29,0);
         VL_OUT(s_axi_rdata_o,31,0);
         VL_IN(s_axi_awaddr_i,29,0);
@@ -185,6 +192,15 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_iob_soc_axi_full_xbar_split__pi2
         VL_IN(m2_axi_rdata_i,31,0);
         VL_OUT(m2_axi_awaddr_o,27,0);
         VL_OUT(m2_axi_wdata_o,31,0);
+        VlWide<3>/*95:0*/ __PVT__mux_axi_rdata;
+        IData/*31:0*/ __PVT__iob_mux_axi_awready__DOT__input_sel;
+        IData/*31:0*/ __PVT__iob_mux_axi_wready__DOT__input_sel;
+        IData/*31:0*/ __PVT__iob_mux_axi_bresp__DOT__input_sel;
+        IData/*31:0*/ __PVT__iob_mux_axi_bvalid__DOT__input_sel;
+        IData/*31:0*/ __PVT__iob_mux_axi_arready__DOT__input_sel;
+        IData/*31:0*/ __PVT__iob_mux_axi_rresp__DOT__input_sel;
+        IData/*31:0*/ __PVT__iob_mux_axi_rvalid__DOT__input_sel;
+        IData/*31:0*/ __PVT__iob_mux_axi_rlast__DOT__input_sel;
     };
 
     // INTERNAL VARIABLES

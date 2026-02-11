@@ -5,10 +5,10 @@
 #include "Viob_soc_sim__pch.h"
 #include "Viob_soc_sim_ibex_core__pi4.h"
 
-VL_INLINE_OPT void Viob_soc_sim_ibex_core__pi4___nba_sequent__TOP__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__cpu__DOT__u_top__DOT__u_ibex_core__0(Viob_soc_sim_ibex_core__pi4* vlSelf) {
+VL_INLINE_OPT void Viob_soc_sim_ibex_core__pi4___nba_sequent__TOP__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__cpu__DOT__u_top__DOT__u_ibex_core__1(Viob_soc_sim_ibex_core__pi4* vlSelf) {
     if (false && vlSelf) {}  // Prevent unused
     Viob_soc_sim__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
-    VL_DEBUG_IF(VL_DBG_MSGF("+                  Viob_soc_sim_ibex_core__pi4___nba_sequent__TOP__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__cpu__DOT__u_top__DOT__u_ibex_core__0\n"); );
+    VL_DEBUG_IF(VL_DBG_MSGF("+                  Viob_soc_sim_ibex_core__pi4___nba_sequent__TOP__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__cpu__DOT__u_top__DOT__u_ibex_core__1\n"); );
     // Body
     if (VL_UNLIKELY(((((5U == (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs)) 
                        & (IData)(vlSelf->__PVT__if_stage_i__DOT__instr_valid_id_q)) 
@@ -20,4462 +20,79 @@ VL_INLINE_OPT void Viob_soc_sim_ibex_core__pi4___nba_sequent__TOP__iob_soc_sim__
     }
 }
 
-extern const VlUnpacked<CData/*0:0*/, 64> Viob_soc_sim__ConstPool__TABLE_h315b00d7_0;
-extern const VlUnpacked<CData/*0:0*/, 64> Viob_soc_sim__ConstPool__TABLE_h406e2012_0;
-extern const VlUnpacked<CData/*0:0*/, 64> Viob_soc_sim__ConstPool__TABLE_hb3ebb333_0;
-extern const VlUnpacked<CData/*0:0*/, 64> Viob_soc_sim__ConstPool__TABLE_h6af4b5e9_0;
-extern const VlUnpacked<CData/*0:0*/, 64> Viob_soc_sim__ConstPool__TABLE_he9d7b8ed_0;
-extern const VlUnpacked<CData/*0:0*/, 64> Viob_soc_sim__ConstPool__TABLE_he05fe522_0;
-
-VL_INLINE_OPT void Viob_soc_sim_ibex_core__pi4___nba_sequent__TOP__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__cpu__DOT__u_top__DOT__u_ibex_core__2(Viob_soc_sim_ibex_core__pi4* vlSelf) {
+VL_INLINE_OPT void Viob_soc_sim_ibex_core__pi4___nba_comb__TOP__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__cpu__DOT__u_top__DOT__u_ibex_core__4(Viob_soc_sim_ibex_core__pi4* vlSelf) {
     if (false && vlSelf) {}  // Prevent unused
     Viob_soc_sim__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
-    VL_DEBUG_IF(VL_DBG_MSGF("+                  Viob_soc_sim_ibex_core__pi4___nba_sequent__TOP__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__cpu__DOT__u_top__DOT__u_ibex_core__2\n"); );
-    // Init
-    CData/*4:0*/ __PVT__if_stage_i__DOT__irq_vec;
-    __PVT__if_stage_i__DOT__irq_vec = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__16__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__16__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__16__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__16__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__16__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__16__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__16__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__16__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__16__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__16__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__16__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__16__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__19__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__19__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__19__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__19__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__19__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__19__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__19__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__19__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__19__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__19__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__19__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__19__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__22__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__22__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__22__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__22__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__22__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__22__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__22__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__22__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__22__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__22__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__22__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__22__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__25__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__25__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__25__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__25__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__25__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__25__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__25__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__25__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__25__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__25__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__25__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__25__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__28__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__28__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__28__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__28__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__28__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__28__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__28__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__28__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__28__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__28__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__28__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__28__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__31__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__31__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__31__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__31__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__31__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__31__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__31__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__31__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__31__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__31__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__31__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__31__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__34__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__34__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__34__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__34__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__34__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__34__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__34__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__34__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__34__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__34__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__34__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__34__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__37__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__37__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__37__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__37__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__37__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__37__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__37__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__37__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__37__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__37__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__37__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__37__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__40__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__40__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__40__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__40__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__40__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__40__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__40__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__40__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__40__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__40__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__43__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__43__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__43__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__43__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__43__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__43__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__43__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__43__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__43__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__43__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__43__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__43__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__46__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__46__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__46__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__46__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__46__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__46__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__46__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__46__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__46__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__46__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__46__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__46__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__49__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__49__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__49__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__49__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__49__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__49__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__49__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__49__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__49__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__49__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__49__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__49__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__52__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__52__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__52__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__52__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__52__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__52__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__52__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__52__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__52__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__52__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__52__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__52__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__55__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__55__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__55__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__55__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__55__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__55__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__55__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__55__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__55__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__55__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__55__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__55__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__58__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__58__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__58__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__58__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__58__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__58__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__58__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__58__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__58__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__58__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__58__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__58__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__61__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__61__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__61__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__61__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__61__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__61__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__61__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__61__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__61__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__61__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__61__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__61__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__65__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__65__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__65__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__65__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__65__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__65__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__65__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__65__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__65__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__65__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__65__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__65__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__68__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__68__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__68__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__68__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__68__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__68__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__68__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__68__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__68__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__68__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__68__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__68__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__71__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__71__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__71__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__71__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__71__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__71__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__71__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__71__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__71__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__71__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__71__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__71__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__74__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__74__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__74__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__74__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__74__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__74__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__74__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__74__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__74__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__74__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__74__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__74__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__77__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__77__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__77__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__77__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__77__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__77__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__77__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__77__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__77__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__77__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__77__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__77__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__80__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__80__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__80__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__80__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__80__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__80__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__80__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__80__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__80__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__80__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__80__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__80__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__83__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__83__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__83__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__83__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__83__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__83__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__83__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__83__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__83__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__83__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__83__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__83__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__86__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__86__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__86__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__86__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__86__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__86__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__86__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__86__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__86__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__86__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__86__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__86__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__89__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__89__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__89__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__89__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__89__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__89__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__89__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__89__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__89__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__89__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__89__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__89__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__92__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__92__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__92__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__92__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__92__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__92__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__92__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__92__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__92__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__92__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__92__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__92__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__95__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__95__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__95__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__95__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__95__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__95__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__95__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__95__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__95__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__95__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__95__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__95__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__98__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__98__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__98__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__98__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__98__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__98__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__98__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__98__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__98__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__98__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__98__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__98__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__101__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__101__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__101__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__101__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__101__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__101__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__101__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__101__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__101__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__101__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__101__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__101__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__104__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__104__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__104__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__104__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__104__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__104__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__104__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__104__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__104__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__104__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__104__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__104__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__107__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__107__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__107__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__107__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__107__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__107__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__107__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__107__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__107__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__107__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__107__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__107__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__110__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__110__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__110__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__110__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__110__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__110__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__110__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__110__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__110__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__110__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__110__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__110__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__114__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__114__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__114__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__114__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__114__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__114__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__114__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__114__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__114__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__114__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__114__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__114__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__117__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__117__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__117__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__117__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__117__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__117__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__117__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__117__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__117__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__117__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__117__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__117__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__120__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__120__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__120__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__120__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__120__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__120__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__120__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__120__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__120__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__120__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__120__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__120__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__123__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__123__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__123__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__123__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__123__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__123__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__123__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__123__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__123__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__123__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__123__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__123__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__126__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__126__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__126__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__126__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__126__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__126__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__126__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__126__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__126__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__126__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__126__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__126__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__129__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__129__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__129__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__129__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__129__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__129__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__129__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__129__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__129__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__129__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__129__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__129__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__132__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__132__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__132__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__132__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__132__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__132__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__132__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__132__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__132__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__132__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__132__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__132__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__135__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__135__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__135__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__135__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__135__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__135__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__135__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__135__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__135__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__135__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__135__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__135__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__138__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__138__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__138__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__138__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__138__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__138__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__138__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__138__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__138__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__138__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__138__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__138__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__141__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__141__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__141__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__141__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__141__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__141__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__141__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__141__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__141__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__141__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__141__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__141__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__144__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__144__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__144__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__144__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__144__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__144__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__144__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__144__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__144__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__144__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__144__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__144__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__147__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__147__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__147__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__147__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__147__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__147__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__147__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__147__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__147__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__147__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__147__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__147__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__150__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__150__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__150__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__150__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__150__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__150__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__150__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__150__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__150__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__150__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__150__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__150__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__153__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__153__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__153__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__153__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__153__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__153__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__153__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__153__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__153__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__153__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__153__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__153__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__156__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__156__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__156__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__156__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__156__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__156__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__156__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__156__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__156__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__156__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__156__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__156__permission_check = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__159__Vfuncout;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__159__Vfuncout = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__159__csr_pmp_mseccfg_mml;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__159__csr_pmp_mseccfg_mml = 0;
-    CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__159__region_csr_pmp_cfg;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__159__region_csr_pmp_cfg = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__159__pmp_req_type;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__159__pmp_req_type = 0;
-    CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__159__priv_mode;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__159__priv_mode = 0;
-    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__159__permission_check;
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__159__permission_check = 0;
-    CData/*5:0*/ __Vtableidx1;
-    __Vtableidx1 = 0;
+    VL_DEBUG_IF(VL_DBG_MSGF("+                  Viob_soc_sim_ibex_core__pi4___nba_comb__TOP__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__cpu__DOT__u_top__DOT__u_ibex_core__4\n"); );
     // Body
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask[0xfU] 
-        = ((0xfffffffbU & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-            [0xfU]) | (4U & (((3U != (3U & (vlSelf->__PVT__csr_pmp_cfg
-                                            [0xfU] 
-                                            >> 3U))) 
-                              | (~ (IData)((3U == (3U 
-                                                   & (IData)(
-                                                             (vlSelf->__PVT__csr_pmp_addr
-                                                              [0xfU] 
-                                                              >> 2U))))))) 
-                             << 2U)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask[0xfU] 
-        = ((0xfffffff7U & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-            [0xfU]) | (8U & (((3U != (3U & (vlSelf->__PVT__csr_pmp_cfg
-                                            [0xfU] 
-                                            >> 3U))) 
-                              | (~ (IData)((7U == (7U 
-                                                   & (IData)(
-                                                             (vlSelf->__PVT__csr_pmp_addr
-                                                              [0xfU] 
-                                                              >> 2U))))))) 
-                             << 3U)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask[0xfU] 
-        = ((0xffffffefU & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-            [0xfU]) | (0x10U & (((3U != (3U & (vlSelf->__PVT__csr_pmp_cfg
-                                               [0xfU] 
-                                               >> 3U))) 
-                                 | (~ (IData)((0xfU 
-                                               == (0xfU 
-                                                   & (IData)(
-                                                             (vlSelf->__PVT__csr_pmp_addr
-                                                              [0xfU] 
-                                                              >> 2U))))))) 
-                                << 4U)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask[0xfU] 
-        = ((0xffffffdfU & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-            [0xfU]) | (0x20U & (((3U != (3U & (vlSelf->__PVT__csr_pmp_cfg
-                                               [0xfU] 
-                                               >> 3U))) 
-                                 | (~ (IData)((0x1fU 
-                                               == (0x1fU 
-                                                   & (IData)(
-                                                             (vlSelf->__PVT__csr_pmp_addr
-                                                              [0xfU] 
-                                                              >> 2U))))))) 
-                                << 5U)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask[0xfU] 
-        = ((0xffffffbfU & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-            [0xfU]) | (0x40U & (((3U != (3U & (vlSelf->__PVT__csr_pmp_cfg
-                                               [0xfU] 
-                                               >> 3U))) 
-                                 | (~ (IData)((0x3fU 
-                                               == (0x3fU 
-                                                   & (IData)(
-                                                             (vlSelf->__PVT__csr_pmp_addr
-                                                              [0xfU] 
-                                                              >> 2U))))))) 
-                                << 6U)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask[0xfU] 
-        = ((0xffffff7fU & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-            [0xfU]) | (0x80U & (((3U != (3U & (vlSelf->__PVT__csr_pmp_cfg
-                                               [0xfU] 
-                                               >> 3U))) 
-                                 | (~ (IData)((0x7fU 
-                                               == (0x7fU 
-                                                   & (IData)(
-                                                             (vlSelf->__PVT__csr_pmp_addr
-                                                              [0xfU] 
-                                                              >> 2U))))))) 
-                                << 7U)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask[0xfU] 
-        = ((0xfffffeffU & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-            [0xfU]) | (0x100U & (((3U != (3U & (vlSelf->__PVT__csr_pmp_cfg
-                                                [0xfU] 
-                                                >> 3U))) 
-                                  | (~ (IData)((0xffU 
-                                                == 
-                                                (0xffU 
-                                                 & (IData)(
-                                                           (vlSelf->__PVT__csr_pmp_addr
-                                                            [0xfU] 
-                                                            >> 2U))))))) 
-                                 << 8U)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask[0xfU] 
-        = ((0xfffffdffU & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-            [0xfU]) | (0x200U & (((3U != (3U & (vlSelf->__PVT__csr_pmp_cfg
-                                                [0xfU] 
-                                                >> 3U))) 
-                                  | (~ (IData)((0x1ffU 
-                                                == 
-                                                (0x1ffU 
-                                                 & (IData)(
-                                                           (vlSelf->__PVT__csr_pmp_addr
-                                                            [0xfU] 
-                                                            >> 2U))))))) 
-                                 << 9U)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask[0xfU] 
-        = ((0xfffffbffU & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-            [0xfU]) | (0x400U & (((3U != (3U & (vlSelf->__PVT__csr_pmp_cfg
-                                                [0xfU] 
-                                                >> 3U))) 
-                                  | (~ (IData)((0x3ffU 
-                                                == 
-                                                (0x3ffU 
-                                                 & (IData)(
-                                                           (vlSelf->__PVT__csr_pmp_addr
-                                                            [0xfU] 
-                                                            >> 2U))))))) 
-                                 << 0xaU)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask[0xfU] 
-        = ((0xfffff7ffU & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-            [0xfU]) | (0x800U & (((3U != (3U & (vlSelf->__PVT__csr_pmp_cfg
-                                                [0xfU] 
-                                                >> 3U))) 
-                                  | (~ (IData)((0x7ffU 
-                                                == 
-                                                (0x7ffU 
-                                                 & (IData)(
-                                                           (vlSelf->__PVT__csr_pmp_addr
-                                                            [0xfU] 
-                                                            >> 2U))))))) 
-                                 << 0xbU)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask[0xfU] 
-        = ((0xffffefffU & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-            [0xfU]) | (0x1000U & (((3U != (3U & (vlSelf->__PVT__csr_pmp_cfg
-                                                 [0xfU] 
-                                                 >> 3U))) 
-                                   | (~ (IData)((0xfffU 
-                                                 == 
-                                                 (0xfffU 
-                                                  & (IData)(
-                                                            (vlSelf->__PVT__csr_pmp_addr
-                                                             [0xfU] 
-                                                             >> 2U))))))) 
-                                  << 0xcU)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask[0xfU] 
-        = ((0xffffdfffU & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-            [0xfU]) | (0x2000U & (((3U != (3U & (vlSelf->__PVT__csr_pmp_cfg
-                                                 [0xfU] 
-                                                 >> 3U))) 
-                                   | (~ (IData)((0x1fffU 
-                                                 == 
-                                                 (0x1fffU 
-                                                  & (IData)(
-                                                            (vlSelf->__PVT__csr_pmp_addr
-                                                             [0xfU] 
-                                                             >> 2U))))))) 
-                                  << 0xdU)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask[0xfU] 
-        = ((0xffffbfffU & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-            [0xfU]) | (0x4000U & (((3U != (3U & (vlSelf->__PVT__csr_pmp_cfg
-                                                 [0xfU] 
-                                                 >> 3U))) 
-                                   | (~ (IData)((0x3fffU 
-                                                 == 
-                                                 (0x3fffU 
-                                                  & (IData)(
-                                                            (vlSelf->__PVT__csr_pmp_addr
-                                                             [0xfU] 
-                                                             >> 2U))))))) 
-                                  << 0xeU)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask[0xfU] 
-        = ((0xffff7fffU & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-            [0xfU]) | (0x8000U & (((3U != (3U & (vlSelf->__PVT__csr_pmp_cfg
-                                                 [0xfU] 
-                                                 >> 3U))) 
-                                   | (~ (IData)((0x7fffU 
-                                                 == 
-                                                 (0x7fffU 
-                                                  & (IData)(
-                                                            (vlSelf->__PVT__csr_pmp_addr
-                                                             [0xfU] 
-                                                             >> 2U))))))) 
-                                  << 0xfU)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask[0xfU] 
-        = ((0xfffeffffU & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-            [0xfU]) | (0x10000U & (((3U != (3U & (vlSelf->__PVT__csr_pmp_cfg
-                                                  [0xfU] 
-                                                  >> 3U))) 
-                                    | (~ (IData)((0xffffU 
-                                                  == 
-                                                  (0xffffU 
-                                                   & (IData)(
-                                                             (vlSelf->__PVT__csr_pmp_addr
-                                                              [0xfU] 
-                                                              >> 2U))))))) 
-                                   << 0x10U)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask[0xfU] 
-        = ((0xfffdffffU & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-            [0xfU]) | (0x20000U & (((3U != (3U & (vlSelf->__PVT__csr_pmp_cfg
-                                                  [0xfU] 
-                                                  >> 3U))) 
-                                    | (~ (IData)((0x1ffffU 
-                                                  == 
-                                                  (0x1ffffU 
-                                                   & (IData)(
-                                                             (vlSelf->__PVT__csr_pmp_addr
-                                                              [0xfU] 
-                                                              >> 2U))))))) 
-                                   << 0x11U)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask[0xfU] 
-        = ((0xfffbffffU & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-            [0xfU]) | (0x40000U & (((3U != (3U & (vlSelf->__PVT__csr_pmp_cfg
-                                                  [0xfU] 
-                                                  >> 3U))) 
-                                    | (~ (IData)((0x3ffffU 
-                                                  == 
-                                                  (0x3ffffU 
-                                                   & (IData)(
-                                                             (vlSelf->__PVT__csr_pmp_addr
-                                                              [0xfU] 
-                                                              >> 2U))))))) 
-                                   << 0x12U)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask[0xfU] 
-        = ((0xfff7ffffU & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-            [0xfU]) | (0x80000U & (((3U != (3U & (vlSelf->__PVT__csr_pmp_cfg
-                                                  [0xfU] 
-                                                  >> 3U))) 
-                                    | (~ (IData)((0x7ffffU 
-                                                  == 
-                                                  (0x7ffffU 
-                                                   & (IData)(
-                                                             (vlSelf->__PVT__csr_pmp_addr
-                                                              [0xfU] 
-                                                              >> 2U))))))) 
-                                   << 0x13U)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask[0xfU] 
-        = ((0xffefffffU & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-            [0xfU]) | (0x100000U & (((3U != (3U & (
-                                                   vlSelf->__PVT__csr_pmp_cfg
-                                                   [0xfU] 
-                                                   >> 3U))) 
-                                     | (~ (IData)((0xfffffU 
-                                                   == 
-                                                   (0xfffffU 
-                                                    & (IData)(
-                                                              (vlSelf->__PVT__csr_pmp_addr
-                                                               [0xfU] 
-                                                               >> 2U))))))) 
-                                    << 0x14U)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask[0xfU] 
-        = ((0xffdfffffU & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-            [0xfU]) | (0x200000U & (((3U != (3U & (
-                                                   vlSelf->__PVT__csr_pmp_cfg
-                                                   [0xfU] 
-                                                   >> 3U))) 
-                                     | (~ (IData)((0x1fffffU 
-                                                   == 
-                                                   (0x1fffffU 
-                                                    & (IData)(
-                                                              (vlSelf->__PVT__csr_pmp_addr
-                                                               [0xfU] 
-                                                               >> 2U))))))) 
-                                    << 0x15U)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask[0xfU] 
-        = ((0xffbfffffU & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-            [0xfU]) | (0x400000U & (((3U != (3U & (
-                                                   vlSelf->__PVT__csr_pmp_cfg
-                                                   [0xfU] 
-                                                   >> 3U))) 
-                                     | (~ (IData)((0x3fffffU 
-                                                   == 
-                                                   (0x3fffffU 
-                                                    & (IData)(
-                                                              (vlSelf->__PVT__csr_pmp_addr
-                                                               [0xfU] 
-                                                               >> 2U))))))) 
-                                    << 0x16U)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask[0xfU] 
-        = ((0xff7fffffU & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-            [0xfU]) | (0x800000U & (((3U != (3U & (
-                                                   vlSelf->__PVT__csr_pmp_cfg
-                                                   [0xfU] 
-                                                   >> 3U))) 
-                                     | (~ (IData)((0x7fffffU 
-                                                   == 
-                                                   (0x7fffffU 
-                                                    & (IData)(
-                                                              (vlSelf->__PVT__csr_pmp_addr
-                                                               [0xfU] 
-                                                               >> 2U))))))) 
-                                    << 0x17U)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask[0xfU] 
-        = ((0xfeffffffU & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-            [0xfU]) | (0x1000000U & (((3U != (3U & 
-                                              (vlSelf->__PVT__csr_pmp_cfg
-                                               [0xfU] 
-                                               >> 3U))) 
-                                      | (~ (IData)(
-                                                   (0xffffffU 
-                                                    == 
-                                                    (0xffffffU 
-                                                     & (IData)(
-                                                               (vlSelf->__PVT__csr_pmp_addr
-                                                                [0xfU] 
-                                                                >> 2U))))))) 
-                                     << 0x18U)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask[0xfU] 
-        = ((0xfdffffffU & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-            [0xfU]) | (0x2000000U & (((3U != (3U & 
-                                              (vlSelf->__PVT__csr_pmp_cfg
-                                               [0xfU] 
-                                               >> 3U))) 
-                                      | (~ (IData)(
-                                                   (0x1ffffffU 
-                                                    == 
-                                                    (0x1ffffffU 
-                                                     & (IData)(
-                                                               (vlSelf->__PVT__csr_pmp_addr
-                                                                [0xfU] 
-                                                                >> 2U))))))) 
-                                     << 0x19U)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask[0xfU] 
-        = ((0xfbffffffU & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-            [0xfU]) | (0x4000000U & (((3U != (3U & 
-                                              (vlSelf->__PVT__csr_pmp_cfg
-                                               [0xfU] 
-                                               >> 3U))) 
-                                      | (~ (IData)(
-                                                   (0x3ffffffU 
-                                                    == 
-                                                    (0x3ffffffU 
-                                                     & (IData)(
-                                                               (vlSelf->__PVT__csr_pmp_addr
-                                                                [0xfU] 
-                                                                >> 2U))))))) 
-                                     << 0x1aU)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask[0xfU] 
-        = ((0xf7ffffffU & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-            [0xfU]) | (0x8000000U & (((3U != (3U & 
-                                              (vlSelf->__PVT__csr_pmp_cfg
-                                               [0xfU] 
-                                               >> 3U))) 
-                                      | (~ (IData)(
-                                                   (0x7ffffffU 
-                                                    == 
-                                                    (0x7ffffffU 
-                                                     & (IData)(
-                                                               (vlSelf->__PVT__csr_pmp_addr
-                                                                [0xfU] 
-                                                                >> 2U))))))) 
-                                     << 0x1bU)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask[0xfU] 
-        = ((0xefffffffU & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-            [0xfU]) | (0x10000000U & (((3U != (3U & 
-                                               (vlSelf->__PVT__csr_pmp_cfg
-                                                [0xfU] 
-                                                >> 3U))) 
-                                       | (~ (IData)(
-                                                    (0xfffffffU 
-                                                     == 
-                                                     (0xfffffffU 
-                                                      & (IData)(
-                                                                (vlSelf->__PVT__csr_pmp_addr
-                                                                 [0xfU] 
-                                                                 >> 2U))))))) 
-                                      << 0x1cU)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask[0xfU] 
-        = ((0xdfffffffU & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-            [0xfU]) | (0x20000000U & (((3U != (3U & 
-                                               (vlSelf->__PVT__csr_pmp_cfg
-                                                [0xfU] 
-                                                >> 3U))) 
-                                       | (~ (IData)(
-                                                    (0x1fffffffU 
-                                                     == 
-                                                     (0x1fffffffU 
-                                                      & (IData)(
-                                                                (vlSelf->__PVT__csr_pmp_addr
-                                                                 [0xfU] 
-                                                                 >> 2U))))))) 
-                                      << 0x1dU)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask[0xfU] 
-        = ((0xbfffffffU & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-            [0xfU]) | (0x40000000U & (((3U != (3U & 
-                                               (vlSelf->__PVT__csr_pmp_cfg
-                                                [0xfU] 
-                                                >> 3U))) 
-                                       | (~ (IData)(
-                                                    (0x3fffffffU 
-                                                     == 
-                                                     (0x3fffffffU 
-                                                      & (IData)(
-                                                                (vlSelf->__PVT__csr_pmp_addr
-                                                                 [0xfU] 
-                                                                 >> 2U))))))) 
-                                      << 0x1eU)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask[0xfU] 
-        = ((0x7fffffffU & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-            [0xfU]) | (((3U != (3U & (vlSelf->__PVT__csr_pmp_cfg
-                                      [0xfU] >> 3U))) 
-                        | (~ (IData)((0x7fffffffU == 
-                                      (0x7fffffffU 
-                                       & (IData)((vlSelf->__PVT__csr_pmp_addr
-                                                  [0xfU] 
-                                                  >> 2U))))))) 
-                       << 0x1fU));
-    vlSelf->__PVT__trigger_match = ((IData)(vlSelf->__PVT__cs_registers_i__DOT__gen_trigger_regs__DOT__g_dbg_tmatch_reg__BRA__0__KET____DOT__u_tmatch_control_csr__DOT__rdata_q) 
-                                    & (vlSelf->__PVT__cs_registers_i__DOT__gen_trigger_regs__DOT__g_dbg_tmatch_reg__BRA__0__KET____DOT__u_tmatch_value_csr__DOT__rdata_q 
-                                       == (vlSelf->__PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT__instr_addr_q 
-                                           << 1U)));
-    __Vtableidx1 = (((IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ebrk_insn) 
-                     << 5U) | (((IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ecall_insn) 
-                                << 4U) | (((IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__illegal_insn_q) 
-                                           << 3U) | 
-                                          (((IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__instr_fetch_err) 
-                                            << 2U) 
-                                           | (((IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__load_err_q) 
-                                               << 1U) 
-                                              | (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__store_err_q))))));
-    vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__instr_fetch_err_prio 
-        = Viob_soc_sim__ConstPool__TABLE_h315b00d7_0
-        [__Vtableidx1];
-    vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__illegal_insn_prio 
-        = Viob_soc_sim__ConstPool__TABLE_h406e2012_0
-        [__Vtableidx1];
-    vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ecall_insn_prio 
-        = Viob_soc_sim__ConstPool__TABLE_hb3ebb333_0
-        [__Vtableidx1];
-    vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ebrk_insn_prio 
-        = Viob_soc_sim__ConstPool__TABLE_h6af4b5e9_0
-        [__Vtableidx1];
-    vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__store_err_prio 
-        = Viob_soc_sim__ConstPool__TABLE_he9d7b8ed_0
-        [__Vtableidx1];
-    vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__load_err_prio 
-        = Viob_soc_sim__ConstPool__TABLE_he05fe522_0
-        [__Vtableidx1];
-    vlSelf->__PVT__cs_registers_i__DOT__csr_wr = ((1U 
-                                                   == (IData)(vlSelf->__PVT__csr_op)) 
-                                                  | ((2U 
-                                                      == (IData)(vlSelf->__PVT__csr_op)) 
-                                                     | (3U 
-                                                        == (IData)(vlSelf->__PVT__csr_op))));
-    vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__nmi_mode_d 
-        = vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__nmi_mode_q;
-    vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__debug_mode_d 
-        = vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__debug_mode_q;
-    vlSelf->__PVT__csr_restore_mret_id = 0U;
-    vlSelf->__PVT__csr_restore_dret_id = 0U;
-    vlSelf->__PVT__pc_mux_id = 0U;
-    vlSelf->__PVT__id_stage_i__DOT__multdiv_en_dec 
-        = ((IData)(vlSelf->__PVT__id_stage_i__DOT__div_en_dec) 
-           | (IData)(vlSelf->__PVT__id_stage_i__DOT__mult_en_dec));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__16__permission_check 
-        = (1U & (IData)(vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__16__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[0U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__16__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[0U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__16__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[0U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__16__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    if ((8U & (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs))) {
-        if ((1U & (~ ((IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs) 
-                      >> 2U)))) {
-            if ((1U & (~ ((IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs) 
-                          >> 1U)))) {
-                vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__debug_mode_d = 1U;
-                vlSelf->__PVT__pc_mux_id = 2U;
-            }
-        }
-    } else if ((4U & (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs))) {
-        if ((2U & (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs))) {
-            if ((1U & (~ (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs)))) {
-                if ((1U & (~ (((IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__exc_req_q) 
-                               | (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__store_err_q)) 
-                              | (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__load_err_q))))) {
-                    if ((1U & (~ (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__mret_insn)))) {
-                        if (vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__dret_insn) {
-                            vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__debug_mode_d = 0U;
-                        }
-                    }
-                }
-            }
-            if ((1U & (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs))) {
-                vlSelf->__PVT__pc_mux_id = 2U;
-            } else if ((((IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__exc_req_q) 
-                         | (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__store_err_q)) 
-                        | (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__load_err_q))) {
-                vlSelf->__PVT__pc_mux_id = 2U;
-            } else if (vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__mret_insn) {
-                vlSelf->__PVT__pc_mux_id = 3U;
-            } else if (vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__dret_insn) {
-                vlSelf->__PVT__pc_mux_id = 4U;
-            }
-        } else if ((1U & (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs))) {
-            vlSelf->__PVT__pc_mux_id = 1U;
-        }
-    } else if ((1U & (~ ((IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs) 
-                         >> 1U)))) {
-        vlSelf->__PVT__pc_mux_id = 0U;
-    }
-    if ((1U & (~ ((IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs) 
-                  >> 3U)))) {
-        if ((4U & (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs))) {
-            if ((2U & (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs))) {
-                if ((1U & (~ (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs)))) {
-                    if ((1U & (~ (((IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__exc_req_q) 
-                                   | (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__store_err_q)) 
-                                  | (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__load_err_q))))) {
-                        if (vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__mret_insn) {
-                            if (vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__nmi_mode_q) {
-                                vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__nmi_mode_d = 0U;
-                            }
-                            vlSelf->__PVT__csr_restore_mret_id = 1U;
-                        }
-                        if ((1U & (~ (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__mret_insn)))) {
-                            if (vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__dret_insn) {
-                                vlSelf->__PVT__csr_restore_dret_id = 1U;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__16__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__16__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__17__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__16__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__17__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__16__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__17__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__16__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__17__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__16__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__17__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__17__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__17__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__17__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__17__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__17__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__17__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__17__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__17__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__17__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__17__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__17__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__17__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__17__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__17__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__17__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__17__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__17__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__17__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__17__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__17__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__17__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__17__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__18__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__16__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__18__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__16__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__18__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__16__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__18__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__18__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__18__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__18__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__18__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__18__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xfffffffffffeULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | (IData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__16__Vfuncout)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__19__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 1U)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__19__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[0U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__19__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[0U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__19__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[1U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__19__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__19__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__19__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__20__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__19__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__20__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__19__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__20__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__19__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__20__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__19__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__20__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__20__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__20__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__20__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__20__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__20__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__20__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__20__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__20__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__20__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__20__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__20__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__20__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__20__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__20__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__20__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__20__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__20__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__20__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__20__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__20__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__20__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__20__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__21__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__19__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__21__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__19__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__21__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__19__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__21__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__21__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__21__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__21__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__21__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__21__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xfffffffffffdULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__19__Vfuncout)) 
-              << 1U));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__22__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 2U)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__22__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[0U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__22__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[0U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__22__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[2U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__22__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__22__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__22__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__23__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__22__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__23__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__22__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__23__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__22__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__23__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__22__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__23__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__23__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__23__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__23__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__23__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__23__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__23__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__23__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__23__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__23__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__23__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__23__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__23__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__23__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__23__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__23__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__23__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__23__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__23__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__23__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__23__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__23__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__23__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__24__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__22__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__24__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__22__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__24__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__22__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__24__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__24__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__24__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__24__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__24__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__24__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xfffffffffffbULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__22__Vfuncout)) 
-              << 2U));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__25__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 3U)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__25__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[0U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__25__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[0U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__25__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[3U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__25__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__25__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__25__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__26__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__25__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__26__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__25__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__26__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__25__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__26__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__25__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__26__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__26__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__26__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__26__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__26__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__26__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__26__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__26__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__26__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__26__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__26__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__26__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__26__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__26__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__26__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__26__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__26__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__26__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__26__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__26__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__26__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__26__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__26__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__27__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__25__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__27__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__25__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__27__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__25__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__27__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__27__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__27__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__27__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__27__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__27__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xfffffffffff7ULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__25__Vfuncout)) 
-              << 3U));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__28__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 4U)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__28__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[0U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__28__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[0U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__28__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[4U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__28__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__28__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__28__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__29__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__28__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__29__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__28__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__29__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__28__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__29__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__28__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__29__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__29__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__29__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__29__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__29__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__29__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__29__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__29__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__29__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__29__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__29__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__29__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__29__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__29__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__29__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__29__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__29__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__29__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__29__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__29__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__29__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__29__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__29__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__30__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__28__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__30__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__28__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__30__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__28__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__30__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__30__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__30__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__30__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__30__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__30__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xffffffffffefULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__28__Vfuncout)) 
-              << 4U));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__31__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 5U)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__31__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[0U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__31__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[0U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__31__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[5U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__31__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__31__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__31__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__32__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__31__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__32__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__31__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__32__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__31__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__32__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__31__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__32__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__32__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__32__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__32__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__32__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__32__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__32__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__32__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__32__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__32__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__32__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__32__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__32__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__32__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__32__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__32__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__32__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__32__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__32__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__32__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__32__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__32__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__32__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__33__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__31__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__33__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__31__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__33__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__31__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__33__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__33__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__33__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__33__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__33__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__33__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xffffffffffdfULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__31__Vfuncout)) 
-              << 5U));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__34__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 6U)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__34__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[0U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__34__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[0U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__34__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[6U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__34__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__34__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__34__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__35__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__34__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__35__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__34__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__35__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__34__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__35__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__34__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__35__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__35__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__35__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__35__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__35__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__35__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__35__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__35__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__35__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__35__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__35__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__35__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__35__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__35__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__35__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__35__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__35__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__35__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__35__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__35__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__35__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__35__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__35__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__36__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__34__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__36__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__34__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__36__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__34__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__36__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__36__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__36__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__36__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__36__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__36__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xffffffffffbfULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__34__Vfuncout)) 
-              << 6U));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__37__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 7U)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__37__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[0U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__37__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[0U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__37__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[7U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__37__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__37__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__37__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__38__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__37__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__38__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__37__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__38__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__37__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__38__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__37__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__38__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__38__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__38__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__38__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__38__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__38__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__38__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__38__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__38__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__38__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__38__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__38__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__38__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__38__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__38__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__38__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__38__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__38__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__38__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__38__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__38__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__38__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__38__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__39__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__37__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__39__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__37__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__39__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__37__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__39__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__39__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__39__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__39__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__39__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__39__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xffffffffff7fULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__37__Vfuncout)) 
-              << 7U));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__40__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 8U)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__40__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[0U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__40__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[0U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__40__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[8U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__40__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__40__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__40__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__41__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__40__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__41__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__40__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__41__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__40__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__41__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__40__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__41__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__41__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__41__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__41__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__41__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__41__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__41__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__41__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__41__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__41__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__41__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__41__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__41__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__41__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__41__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__41__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__41__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__41__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__41__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__41__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__41__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__41__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__41__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__42__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__40__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__42__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__40__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__42__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__40__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__42__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__42__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__42__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__42__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__42__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__42__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xfffffffffeffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__40__Vfuncout)) 
-              << 8U));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__43__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 9U)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__43__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[0U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__43__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[0U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__43__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[9U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__43__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__43__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__43__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__44__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__43__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__44__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__43__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__44__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__43__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__44__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__43__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__44__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__44__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__44__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__44__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__44__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__44__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__44__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__44__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__44__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__44__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__44__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__44__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__44__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__44__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__44__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__44__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__44__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__44__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__44__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__44__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__44__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__44__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__44__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__45__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__43__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__45__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__43__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__45__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__43__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__45__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__45__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__45__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__45__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__45__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__45__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xfffffffffdffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__43__Vfuncout)) 
-              << 9U));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__46__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0xaU)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__46__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[0U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__46__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[0U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__46__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[0xaU];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__46__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__46__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__46__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__47__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__46__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__47__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__46__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__47__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__46__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__47__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__46__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__47__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__47__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__47__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__47__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__47__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__47__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__47__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__47__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__47__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__47__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__47__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__47__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__47__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__47__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__47__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__47__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__47__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__47__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__47__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__47__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__47__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__47__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__47__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__48__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__46__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__48__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__46__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__48__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__46__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__48__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__48__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__48__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__48__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__48__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__48__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xfffffffffbffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__46__Vfuncout)) 
-              << 0xaU));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__49__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0xbU)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__49__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[0U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__49__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[0U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__49__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[0xbU];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__49__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__49__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__49__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__50__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__49__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__50__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__49__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__50__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__49__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__50__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__49__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__50__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__50__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__50__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__50__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__50__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__50__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__50__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__50__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__50__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__50__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__50__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__50__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__50__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__50__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__50__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__50__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__50__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__50__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__50__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__50__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__50__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__50__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__50__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__51__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__49__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__51__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__49__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__51__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__49__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__51__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__51__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__51__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__51__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__51__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__51__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xfffffffff7ffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__49__Vfuncout)) 
-              << 0xbU));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__52__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0xcU)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__52__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[0U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__52__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[0U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__52__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[0xcU];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__52__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__52__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__52__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__53__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__52__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__53__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__52__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__53__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__52__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__53__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__52__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__53__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__53__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__53__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__53__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__53__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__53__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__53__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__53__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__53__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__53__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__53__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__53__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__53__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__53__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__53__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__53__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__53__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__53__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__53__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__53__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__53__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__53__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__53__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__54__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__52__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__54__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__52__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__54__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__52__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__54__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__54__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__54__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__54__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__54__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__54__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xffffffffefffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__52__Vfuncout)) 
-              << 0xcU));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__55__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0xdU)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__55__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[0U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__55__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[0U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__55__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[0xdU];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__55__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__55__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__55__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__56__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__55__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__56__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__55__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__56__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__55__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__56__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__55__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__56__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__56__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__56__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__56__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__56__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__56__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__56__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__56__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__56__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__56__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__56__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__56__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__56__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__56__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__56__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__56__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__56__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__56__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__56__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__56__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__56__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__56__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__56__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__57__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__55__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__57__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__55__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__57__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__55__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__57__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__57__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__57__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__57__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__57__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__57__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xffffffffdfffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__55__Vfuncout)) 
-              << 0xdU));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__58__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0xeU)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__58__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[0U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__58__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[0U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__58__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[0xeU];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__58__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__58__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__58__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__59__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__58__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__59__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__58__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__59__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__58__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__59__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__58__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__59__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__59__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__59__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__59__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__59__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__59__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__59__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__59__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__59__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__59__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__59__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__59__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__59__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__59__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__59__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__59__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__59__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__59__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__59__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__59__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__59__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__59__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__59__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__60__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__58__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__60__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__58__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__60__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__58__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__60__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__60__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__60__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__60__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__60__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__60__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xffffffffbfffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__58__Vfuncout)) 
-              << 0xeU));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__61__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0xfU)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__61__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[0U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__61__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[0U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__61__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[0xfU];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__61__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__61__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__61__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__62__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__61__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__62__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__61__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__62__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__61__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__62__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__61__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__62__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__62__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__62__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__62__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__62__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__62__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__62__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__62__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__62__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__62__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__62__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__62__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__62__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__62__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__62__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__62__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__62__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__62__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__62__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__62__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__62__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__62__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__62__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__63__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__61__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__63__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__61__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__63__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__61__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__63__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__63__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__63__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__63__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__63__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__63__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xffffffff7fffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__61__Vfuncout)) 
-              << 0xfU));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__65__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0x10U)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__65__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[1U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__65__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[1U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__65__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[0U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__65__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__65__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__65__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__66__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__65__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__66__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__65__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__66__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__65__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__66__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__65__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__66__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__66__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__66__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__66__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__66__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__66__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__66__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__66__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__66__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__66__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__66__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__66__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__66__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__66__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__66__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__66__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__66__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__66__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__66__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__66__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__66__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__66__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__66__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__67__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__65__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__67__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__65__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__67__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__65__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__67__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__67__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__67__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__67__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__67__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__67__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xfffffffeffffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__65__Vfuncout)) 
-              << 0x10U));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__68__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0x11U)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__68__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[1U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__68__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[1U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__68__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[1U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__68__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__68__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__68__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__69__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__68__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__69__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__68__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__69__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__68__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__69__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__68__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__69__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__69__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__69__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__69__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__69__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__69__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__69__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__69__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__69__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__69__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__69__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__69__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__69__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__69__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__69__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__69__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__69__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__69__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__69__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__69__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__69__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__69__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__69__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__70__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__68__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__70__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__68__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__70__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__68__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__70__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__70__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__70__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__70__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__70__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__70__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xfffffffdffffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__68__Vfuncout)) 
-              << 0x11U));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__71__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0x12U)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__71__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[1U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__71__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[1U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__71__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[2U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__71__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__71__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__71__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__72__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__71__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__72__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__71__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__72__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__71__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__72__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__71__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__72__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__72__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__72__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__72__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__72__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__72__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__72__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__72__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__72__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__72__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__72__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__72__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__72__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__72__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__72__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__72__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__72__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__72__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__72__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__72__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__72__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__72__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__72__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__73__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__71__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__73__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__71__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__73__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__71__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__73__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__73__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__73__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__73__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__73__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__73__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xfffffffbffffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__71__Vfuncout)) 
-              << 0x12U));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__74__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0x13U)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__74__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[1U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__74__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[1U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__74__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[3U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__74__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__74__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__74__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__75__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__74__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__75__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__74__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__75__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__74__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__75__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__74__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__75__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__75__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__75__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__75__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__75__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__75__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__75__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__75__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__75__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__75__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__75__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__75__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__75__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__75__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__75__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__75__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__75__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__75__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__75__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__75__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__75__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__75__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__75__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__76__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__74__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__76__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__74__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__76__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__74__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__76__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__76__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__76__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__76__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__76__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__76__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xfffffff7ffffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__74__Vfuncout)) 
-              << 0x13U));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__77__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0x14U)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__77__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[1U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__77__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[1U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__77__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[4U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__77__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__77__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__77__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__78__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__77__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__78__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__77__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__78__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__77__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__78__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__77__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__78__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__78__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__78__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__78__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__78__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__78__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__78__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__78__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__78__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__78__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__78__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__78__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__78__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__78__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__78__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__78__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__78__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__78__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__78__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__78__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__78__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__78__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__78__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__79__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__77__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__79__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__77__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__79__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__77__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__79__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__79__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__79__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__79__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__79__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__79__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xffffffefffffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__77__Vfuncout)) 
-              << 0x14U));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__80__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0x15U)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__80__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[1U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__80__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[1U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__80__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[5U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__80__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__80__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__80__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__81__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__80__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__81__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__80__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__81__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__80__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__81__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__80__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__81__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__81__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__81__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__81__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__81__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__81__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__81__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__81__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__81__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__81__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__81__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__81__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__81__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__81__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__81__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__81__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__81__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__81__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__81__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__81__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__81__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__81__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__81__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__82__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__80__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__82__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__80__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__82__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__80__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__82__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__82__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__82__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__82__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__82__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__82__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xffffffdfffffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__80__Vfuncout)) 
-              << 0x15U));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__83__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0x16U)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__83__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[1U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__83__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[1U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__83__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[6U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__83__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__83__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__83__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__84__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__83__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__84__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__83__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__84__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__83__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__84__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__83__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__84__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__84__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__84__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__84__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__84__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__84__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__84__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__84__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__84__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__84__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__84__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__84__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__84__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__84__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__84__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__84__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__84__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__84__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__84__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__84__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__84__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__84__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__84__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__85__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__83__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__85__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__83__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__85__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__83__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__85__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__85__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__85__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__85__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__85__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__85__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xffffffbfffffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__83__Vfuncout)) 
-              << 0x16U));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__86__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0x17U)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__86__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[1U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__86__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[1U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__86__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[7U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__86__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__86__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__86__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__87__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__86__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__87__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__86__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__87__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__86__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__87__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__86__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__87__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__87__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__87__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__87__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__87__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__87__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__87__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__87__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__87__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__87__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__87__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__87__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__87__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__87__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__87__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__87__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__87__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__87__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__87__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__87__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__87__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__87__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__87__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__88__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__86__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__88__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__86__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__88__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__86__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__88__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__88__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__88__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__88__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__88__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__88__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xffffff7fffffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__86__Vfuncout)) 
-              << 0x17U));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__89__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0x18U)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__89__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[1U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__89__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[1U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__89__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[8U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__89__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__89__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__89__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__90__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__89__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__90__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__89__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__90__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__89__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__90__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__89__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__90__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__90__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__90__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__90__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__90__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__90__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__90__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__90__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__90__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__90__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__90__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__90__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__90__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__90__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__90__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__90__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__90__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__90__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__90__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__90__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__90__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__90__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__90__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__91__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__89__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__91__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__89__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__91__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__89__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__91__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__91__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__91__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__91__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__91__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__91__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xfffffeffffffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__89__Vfuncout)) 
-              << 0x18U));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__92__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0x19U)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__92__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[1U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__92__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[1U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__92__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[9U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__92__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__92__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__92__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__93__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__92__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__93__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__92__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__93__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__92__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__93__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__92__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__93__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__93__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__93__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__93__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__93__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__93__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__93__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__93__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__93__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__93__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__93__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__93__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__93__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__93__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__93__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__93__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__93__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__93__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__93__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__93__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__93__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__93__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__93__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__94__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__92__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__94__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__92__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__94__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__92__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__94__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__94__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__94__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__94__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__94__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__94__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xfffffdffffffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__92__Vfuncout)) 
-              << 0x19U));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__95__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0x1aU)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__95__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[1U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__95__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[1U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__95__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[0xaU];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__95__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__95__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__95__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__96__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__95__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__96__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__95__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__96__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__95__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__96__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__95__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__96__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__96__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__96__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__96__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__96__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__96__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__96__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__96__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__96__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__96__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__96__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__96__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__96__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__96__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__96__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__96__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__96__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__96__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__96__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__96__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__96__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__96__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__96__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__97__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__95__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__97__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__95__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__97__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__95__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__97__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__97__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__97__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__97__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__97__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__97__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xfffffbffffffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__95__Vfuncout)) 
-              << 0x1aU));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__98__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0x1bU)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__98__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[1U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__98__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[1U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__98__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[0xbU];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__98__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__98__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__98__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__99__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__98__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__99__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__98__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__99__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__98__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__99__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__98__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__99__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__99__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__99__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__99__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__99__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__99__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__99__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__99__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__99__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__99__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__99__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__99__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__99__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__99__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__99__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__99__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__99__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__99__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__99__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__99__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__99__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__99__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__99__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__100__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__98__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__100__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__98__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__100__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__98__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__100__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__100__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__100__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__100__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__100__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__100__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xfffff7ffffffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__98__Vfuncout)) 
-              << 0x1bU));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__101__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0x1cU)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__101__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[1U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__101__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[1U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__101__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[0xcU];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__101__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__101__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__101__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__102__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__101__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__102__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__101__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__102__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__101__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__102__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__101__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__102__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__102__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__102__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__102__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__102__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__102__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__102__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__102__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__102__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__102__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__102__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__102__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__102__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__102__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__102__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__102__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__102__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__102__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__102__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__102__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__102__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__102__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__102__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__103__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__101__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__103__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__101__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__103__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__101__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__103__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__103__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__103__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__103__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__103__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__103__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xffffefffffffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__101__Vfuncout)) 
-              << 0x1cU));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__104__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0x1dU)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__104__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[1U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__104__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[1U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__104__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[0xdU];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__104__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__104__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__104__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__105__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__104__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__105__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__104__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__105__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__104__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__105__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__104__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__105__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__105__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__105__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__105__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__105__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__105__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__105__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__105__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__105__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__105__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__105__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__105__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__105__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__105__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__105__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__105__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__105__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__105__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__105__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__105__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__105__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__105__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__105__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__106__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__104__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__106__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__104__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__106__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__104__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__106__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__106__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__106__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__106__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__106__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__106__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xffffdfffffffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__104__Vfuncout)) 
-              << 0x1dU));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__107__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0x1eU)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__107__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[1U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__107__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[1U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__107__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[0xeU];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__107__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__107__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__107__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__108__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__107__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__108__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__107__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__108__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__107__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__108__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__107__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__108__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__108__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__108__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__108__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__108__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__108__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__108__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__108__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__108__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__108__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__108__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__108__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__108__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__108__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__108__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__108__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__108__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__108__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__108__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__108__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__108__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__108__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__108__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__109__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__107__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__109__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__107__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__109__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__107__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__109__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__109__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__109__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__109__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__109__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__109__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xffffbfffffffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__107__Vfuncout)) 
-              << 0x1eU));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__110__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0x1fU)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__110__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[1U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__110__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[1U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__110__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[0xfU];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__110__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__110__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__110__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__111__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__110__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__111__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__110__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__111__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__110__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__111__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__110__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__111__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__111__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__111__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__111__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__111__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__111__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__111__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__111__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__111__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__111__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__111__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__111__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__111__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__111__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__111__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__111__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__111__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__111__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__111__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__111__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__111__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__111__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__111__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__112__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__110__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__112__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__110__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__112__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__110__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__112__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__112__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__112__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__112__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__112__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__112__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xffff7fffffffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__110__Vfuncout)) 
-              << 0x1fU));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__114__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0x20U)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__114__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[2U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__114__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[2U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__114__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[0U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__114__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__114__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__114__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__115__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__114__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__115__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__114__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__115__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__114__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__115__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__114__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__115__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__115__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__115__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__115__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__115__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__115__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__115__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__115__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__115__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__115__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__115__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__115__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__115__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__115__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__115__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__115__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__115__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__115__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__115__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__115__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__115__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__115__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__115__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__116__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__114__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__116__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__114__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__116__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__114__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__116__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__116__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__116__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__116__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__116__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__116__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xfffeffffffffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__114__Vfuncout)) 
-              << 0x20U));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__117__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0x21U)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__117__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[2U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__117__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[2U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__117__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[1U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__117__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__117__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__117__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__118__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__117__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__118__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__117__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__118__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__117__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__118__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__117__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__118__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__118__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__118__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__118__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__118__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__118__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__118__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__118__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__118__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__118__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__118__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__118__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__118__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__118__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__118__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__118__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__118__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__118__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__118__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__118__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__118__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__118__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__118__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__119__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__117__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__119__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__117__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__119__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__117__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__119__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__119__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__119__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__119__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__119__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__119__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xfffdffffffffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__117__Vfuncout)) 
-              << 0x21U));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__120__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0x22U)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__120__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[2U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__120__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[2U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__120__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[2U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__120__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__120__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__120__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__121__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__120__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__121__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__120__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__121__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__120__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__121__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__120__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__121__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__121__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__121__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__121__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__121__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__121__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__121__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__121__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__121__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__121__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__121__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__121__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__121__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__121__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__121__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__121__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__121__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__121__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__121__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__121__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__121__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__121__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__121__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__122__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__120__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__122__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__120__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__122__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__120__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__122__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__122__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__122__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__122__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__122__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__122__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xfffbffffffffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__120__Vfuncout)) 
-              << 0x22U));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__123__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0x23U)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__123__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[2U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__123__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[2U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__123__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[3U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__123__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__123__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__123__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__124__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__123__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__124__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__123__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__124__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__123__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__124__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__123__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__124__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__124__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__124__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__124__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__124__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__124__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__124__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__124__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__124__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__124__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__124__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__124__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__124__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__124__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__124__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__124__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__124__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__124__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__124__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__124__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__124__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__124__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__124__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__125__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__123__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__125__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__123__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__125__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__123__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__125__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__125__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__125__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__125__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__125__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__125__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xfff7ffffffffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__123__Vfuncout)) 
-              << 0x23U));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__126__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0x24U)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__126__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[2U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__126__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[2U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__126__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[4U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__126__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__126__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__126__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__127__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__126__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__127__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__126__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__127__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__126__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__127__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__126__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__127__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__127__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__127__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__127__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__127__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__127__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__127__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__127__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__127__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__127__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__127__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__127__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__127__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__127__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__127__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__127__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__127__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__127__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__127__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__127__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__127__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__127__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__127__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__128__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__126__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__128__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__126__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__128__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__126__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__128__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__128__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__128__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__128__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__128__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__128__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xffefffffffffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__126__Vfuncout)) 
-              << 0x24U));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__129__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0x25U)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__129__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[2U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__129__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[2U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__129__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[5U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__129__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__129__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__129__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__130__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__129__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__130__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__129__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__130__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__129__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__130__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__129__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__130__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__130__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__130__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__130__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__130__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__130__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__130__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__130__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__130__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__130__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__130__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__130__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__130__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__130__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__130__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__130__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__130__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__130__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__130__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__130__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__130__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__130__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__130__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__131__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__129__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__131__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__129__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__131__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__129__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__131__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__131__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__131__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__131__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__131__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__131__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xffdfffffffffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__129__Vfuncout)) 
-              << 0x25U));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__132__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0x26U)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__132__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[2U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__132__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[2U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__132__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[6U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__132__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__132__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__132__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__133__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__132__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__133__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__132__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__133__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__132__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__133__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__132__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__133__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__133__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__133__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__133__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__133__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__133__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__133__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__133__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__133__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__133__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__133__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__133__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__133__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__133__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__133__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__133__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__133__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__133__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__133__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__133__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__133__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__133__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__133__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__134__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__132__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__134__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__132__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__134__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__132__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__134__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__134__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__134__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__134__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__134__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__134__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xffbfffffffffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__132__Vfuncout)) 
-              << 0x26U));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__135__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0x27U)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__135__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[2U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__135__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[2U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__135__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[7U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__135__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__135__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__135__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__136__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__135__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__136__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__135__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__136__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__135__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__136__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__135__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__136__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__136__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__136__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__136__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__136__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__136__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__136__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__136__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__136__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__136__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__136__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__136__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__136__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__136__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__136__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__136__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__136__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__136__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__136__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__136__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__136__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__136__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__136__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__137__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__135__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__137__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__135__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__137__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__135__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__137__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__137__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__137__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__137__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__137__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__137__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xff7fffffffffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__135__Vfuncout)) 
-              << 0x27U));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__138__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0x28U)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__138__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[2U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__138__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[2U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__138__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[8U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__138__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__138__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__138__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__139__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__138__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__139__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__138__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__139__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__138__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__139__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__138__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__139__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__139__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__139__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__139__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__139__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__139__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__139__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__139__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__139__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__139__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__139__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__139__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__139__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__139__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__139__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__139__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__139__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__139__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__139__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__139__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__139__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__139__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__139__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__140__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__138__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__140__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__138__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__140__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__138__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__140__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__140__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__140__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__140__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__140__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__140__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xfeffffffffffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__138__Vfuncout)) 
-              << 0x28U));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__141__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0x29U)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__141__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[2U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__141__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[2U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__141__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[9U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__141__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__141__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__141__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__142__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__141__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__142__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__141__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__142__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__141__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__142__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__141__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__142__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__142__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__142__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__142__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__142__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__142__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__142__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__142__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__142__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__142__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__142__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__142__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__142__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__142__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__142__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__142__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__142__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__142__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__142__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__142__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__142__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__142__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__142__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__143__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__141__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__143__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__141__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__143__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__141__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__143__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__143__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__143__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__143__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__143__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__143__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xfdffffffffffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__141__Vfuncout)) 
-              << 0x29U));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__144__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0x2aU)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__144__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[2U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__144__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[2U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__144__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[0xaU];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__144__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__144__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__144__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__145__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__144__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__145__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__144__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__145__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__144__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__145__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__144__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__145__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__145__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__145__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__145__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__145__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__145__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__145__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__145__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__145__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__145__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__145__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__145__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__145__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__145__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__145__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__145__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__145__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__145__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__145__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__145__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__145__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__145__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__145__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__146__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__144__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__146__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__144__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__146__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__144__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__146__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__146__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__146__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__146__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__146__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__146__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xfbffffffffffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__144__Vfuncout)) 
-              << 0x2aU));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__147__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0x2bU)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__147__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[2U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__147__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[2U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__147__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[0xbU];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__147__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__147__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__147__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__148__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__147__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__148__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__147__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__148__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__147__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__148__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__147__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__148__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__148__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__148__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__148__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__148__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__148__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__148__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__148__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__148__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__148__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__148__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__148__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__148__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__148__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__148__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__148__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__148__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__148__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__148__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__148__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__148__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__148__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__148__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__149__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__147__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__149__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__147__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__149__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__147__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__149__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__149__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__149__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__149__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__149__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__149__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xf7ffffffffffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__147__Vfuncout)) 
-              << 0x2bU));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__150__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0x2cU)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__150__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[2U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__150__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[2U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__150__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[0xcU];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__150__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__150__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__150__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__151__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__150__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__151__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__150__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__151__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__150__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__151__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__150__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__151__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__151__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__151__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__151__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__151__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__151__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__151__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__151__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__151__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__151__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__151__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__151__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__151__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__151__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__151__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__151__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__151__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__151__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__151__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__151__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__151__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__151__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__151__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__152__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__150__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__152__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__150__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__152__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__150__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__152__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__152__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__152__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__152__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__152__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__152__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xefffffffffffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__150__Vfuncout)) 
-              << 0x2cU));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__153__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0x2dU)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__153__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[2U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__153__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[2U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__153__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[0xdU];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__153__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__153__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__153__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__154__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__153__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__154__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__153__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__154__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__153__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__154__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__153__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__154__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__154__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__154__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__154__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__154__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__154__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__154__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__154__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__154__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__154__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__154__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__154__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__154__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__154__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__154__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__154__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__154__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__154__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__154__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__154__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__154__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__154__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__154__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__155__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__153__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__155__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__153__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__155__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__153__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__155__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__155__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__155__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__155__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__155__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__155__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xdfffffffffffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__153__Vfuncout)) 
-              << 0x2dU));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__156__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0x2eU)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__156__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[2U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__156__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[2U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__156__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[0xeU];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__156__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__156__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__156__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__157__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__156__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__157__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__156__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__157__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__156__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__157__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__156__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__157__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__157__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__157__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__157__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__157__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__157__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__157__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__157__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__157__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__157__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__157__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__157__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__157__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__157__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__157__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__157__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__157__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__157__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__157__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__157__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__157__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__157__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__157__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__158__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__156__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__158__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__156__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__158__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__156__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__158__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__158__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__158__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__158__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__158__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__158__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0xbfffffffffffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__156__Vfuncout)) 
-              << 0x2eU));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__159__permission_check 
-        = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
-                         >> 0x2fU)));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__159__priv_mode 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_priv_lvl[2U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__159__pmp_req_type 
-        = vlSelf->__PVT__g_pmp__DOT__pmp_req_type[2U];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__159__region_csr_pmp_cfg 
-        = vlSelf->__PVT__csr_pmp_cfg[0xfU];
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__159__csr_pmp_mseccfg_mml 
-        = (1U & (IData)(vlSelf->__PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q));
-    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__159__Vfuncout 
-        = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__159__csr_pmp_mseccfg_mml)
-            ? ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__160__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__159__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__160__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__159__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__160__pmp_req_type 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__159__pmp_req_type;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__160__region_csr_pmp_cfg 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__159__region_csr_pmp_cfg;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__160__result 
-                    = ((IData)((2U == (3U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__160__region_csr_pmp_cfg))))
-                        ? ((0x20U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__160__region_csr_pmp_cfg))
-                            ? ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__160__region_csr_pmp_cfg))
-                                ? ((0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__160__pmp_req_type)) 
-                                   | ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__160__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__160__priv_mode))))
-                                : (0U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__160__pmp_req_type)))
-                            : ((4U & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__160__region_csr_pmp_cfg))
-                                ? ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__160__pmp_req_type)) 
-                                   | (1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__160__pmp_req_type)))
-                                : ((2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__160__pmp_req_type)) 
-                                   | ((1U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__160__pmp_req_type)) 
-                                      & (3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__160__priv_mode))))))
-                        : ((IData)((0x27U == (0x27U 
-                                              & (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__160__region_csr_pmp_cfg))))
-                            ? (2U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__160__pmp_req_type))
-                            : ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__160__permission_check) 
-                               & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__160__priv_mode))
-                                   ? ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__160__region_csr_pmp_cfg) 
-                                      >> 5U) : (~ ((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__160__region_csr_pmp_cfg) 
-                                                   >> 5U))))));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__160__Vfuncout 
-                    = vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__160__result;
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__160__Vfuncout))
-            : ([&]() {
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__161__permission_check 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__159__permission_check;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__161__priv_mode 
-                    = __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__159__priv_mode;
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__161__pmp_cfg_lock 
-                    = (1U & ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__159__region_csr_pmp_cfg) 
-                             >> 5U));
-                vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__161__Vfuncout 
-                    = (1U & ((3U == (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__161__priv_mode))
-                              ? ((~ (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__161__pmp_cfg_lock)) 
-                                 | (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__161__permission_check))
-                              : (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__161__permission_check)));
-            }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__161__Vfuncout)));
-    vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
-        = ((0x7fffffffffffULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | ((QData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__159__Vfuncout)) 
-              << 0x2fU));
-    vlSelf->g_pmp__DOT__pmp_i__DOT____VdfgTmp_hb283f6c2__0 
-        = ((IData)((vlSelf->g_pmp__DOT__pmp_i__DOT____VdfgTmp_h5eb30288__0 
-                    >> 2U)) & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-           [0xfU]);
-    vlSelf->g_pmp__DOT__pmp_i__DOT____VdfgTmp_h1ddea43f__0 
-        = ((IData)((vlSelf->g_pmp__DOT__pmp_i__DOT____VdfgTmp_h5bf54dbe__0 
-                    >> 2U)) & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-           [0xeU]);
-    vlSelf->g_pmp__DOT__pmp_i__DOT____VdfgTmp_h9c61acf2__0 
-        = ((IData)((vlSelf->g_pmp__DOT__pmp_i__DOT____VdfgTmp_h288f9b34__0 
-                    >> 2U)) & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-           [0xdU]);
-    vlSelf->g_pmp__DOT__pmp_i__DOT____VdfgTmp_h84863110__0 
-        = ((IData)((vlSelf->g_pmp__DOT__pmp_i__DOT____VdfgTmp_h45e24426__0 
-                    >> 2U)) & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-           [0xcU]);
-    vlSelf->g_pmp__DOT__pmp_i__DOT____VdfgTmp_h1f044106__0 
-        = ((IData)((vlSelf->g_pmp__DOT__pmp_i__DOT____VdfgTmp_h5b20fa71__0 
-                    >> 2U)) & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-           [0xbU]);
-    vlSelf->g_pmp__DOT__pmp_i__DOT____VdfgTmp_h7529c650__0 
-        = ((IData)((vlSelf->g_pmp__DOT__pmp_i__DOT____VdfgTmp_h68022a1e__0 
-                    >> 2U)) & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-           [0xaU]);
-    vlSelf->g_pmp__DOT__pmp_i__DOT____VdfgTmp_h8d5ec0a6__0 
-        = ((IData)((vlSelf->g_pmp__DOT__pmp_i__DOT____VdfgTmp_h5e5d0fca__0 
-                    >> 2U)) & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-           [9U]);
-    vlSelf->g_pmp__DOT__pmp_i__DOT____VdfgTmp_hf00baaed__0 
-        = ((IData)((vlSelf->g_pmp__DOT__pmp_i__DOT____VdfgTmp_h2daa4ff7__0 
-                    >> 2U)) & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-           [8U]);
-    vlSelf->g_pmp__DOT__pmp_i__DOT____VdfgTmp_h619caa88__0 
-        = ((IData)((vlSelf->g_pmp__DOT__pmp_i__DOT____VdfgTmp_hf935869f__0 
-                    >> 2U)) & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-           [7U]);
-    vlSelf->g_pmp__DOT__pmp_i__DOT____VdfgTmp_h177541dd__0 
-        = ((IData)((vlSelf->g_pmp__DOT__pmp_i__DOT____VdfgTmp_hf9f402b9__0 
-                    >> 2U)) & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-           [6U]);
-    vlSelf->g_pmp__DOT__pmp_i__DOT____VdfgTmp_h6f195ae7__0 
-        = ((IData)((vlSelf->g_pmp__DOT__pmp_i__DOT____VdfgTmp_h8e58994f__0 
-                    >> 2U)) & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-           [5U]);
-    vlSelf->g_pmp__DOT__pmp_i__DOT____VdfgTmp_he147ab0c__0 
-        = ((IData)((vlSelf->g_pmp__DOT__pmp_i__DOT____VdfgTmp_h8f8a9bb1__0 
-                    >> 2U)) & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-           [4U]);
-    vlSelf->g_pmp__DOT__pmp_i__DOT____VdfgTmp_h13d4f1d7__0 
-        = ((IData)((vlSelf->g_pmp__DOT__pmp_i__DOT____VdfgTmp_hf4999181__0 
-                    >> 2U)) & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-           [3U]);
-    vlSelf->g_pmp__DOT__pmp_i__DOT____VdfgTmp_hed97bc98__0 
-        = ((IData)((vlSelf->g_pmp__DOT__pmp_i__DOT____VdfgTmp_h310dd124__0 
-                    >> 2U)) & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-           [2U]);
-    vlSelf->g_pmp__DOT__pmp_i__DOT____VdfgTmp_h9e1c4d53__0 
-        = ((IData)((vlSelf->g_pmp__DOT__pmp_i__DOT____VdfgTmp_h4537cfc8__0 
-                    >> 2U)) & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-           [1U]);
-    vlSelf->g_pmp__DOT__pmp_i__DOT____VdfgTmp_hf506530a__0 
-        = (vlSelf->g_pmp__DOT__pmp_i__DOT____VdfgTmp_h0587c3f4__0 
-           & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask
-           [0U]);
-    vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__enter_debug_mode 
-        = ((IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__enter_debug_mode_prio_d) 
-           | ((~ (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__debug_mode_q)) 
-              & (IData)(vlSelf->__PVT__trigger_match)));
-    vlSelf->__PVT__csr_mtval = 0U;
-    vlSelf->__PVT__csr_save_id = 0U;
-    vlSelf->__PVT__csr_save_cause = 0U;
-    vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__flush_id = 0U;
-    if ((8U & (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs))) {
-        if ((1U & (~ ((IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs) 
-                      >> 2U)))) {
-            if ((1U & (~ ((IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs) 
-                          >> 1U)))) {
-                if ((1U & (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs))) {
-                    if (((IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ebreak_into_debug) 
-                         & (~ (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__debug_mode_q)))) {
-                        vlSelf->__PVT__csr_save_id = 1U;
-                        vlSelf->__PVT__csr_save_cause = 1U;
-                    }
-                } else {
-                    vlSelf->__PVT__csr_save_cause = 1U;
-                }
-                vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__flush_id = 1U;
-            }
-        }
-    } else if ((4U & (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs))) {
-        if ((2U & (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs))) {
-            if ((1U & (~ (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs)))) {
-                vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__flush_id = 1U;
-                if ((((IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__exc_req_q) 
-                      | (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__store_err_q)) 
-                     | (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__load_err_q))) {
-                    vlSelf->__PVT__csr_save_id = (1U 
-                                                  & (~ 
-                                                     ((IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__store_err_q) 
-                                                      | (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__load_err_q))));
-                    vlSelf->__PVT__csr_save_cause = 1U;
-                    if ((1U & (~ (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__instr_fetch_err_prio)))) {
-                        if ((1U & (~ (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__illegal_insn_prio)))) {
-                            if ((1U & (~ (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ecall_insn_prio)))) {
-                                if (vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ebrk_insn_prio) {
-                                    if (((IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__debug_mode_q) 
-                                         | (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ebreak_into_debug))) {
-                                        vlSelf->__PVT__csr_save_id = 0U;
-                                        vlSelf->__PVT__csr_save_cause = 0U;
-                                        vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__flush_id = 0U;
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    } else if ((2U & (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs))) {
-        vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__flush_id = 1U;
-    }
-    vlSelf->__PVT__exc_cause = 0U;
-    if ((1U & (~ ((IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs) 
-                  >> 3U)))) {
-        if ((4U & (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs))) {
-            if ((2U & (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs))) {
-                if ((1U & (~ (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs)))) {
-                    if ((((IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__exc_req_q) 
-                          | (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__store_err_q)) 
-                         | (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__load_err_q))) {
-                        if (vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__instr_fetch_err_prio) {
-                            vlSelf->__PVT__csr_mtval 
-                                = ((IData)(vlSelf->__PVT__instr_fetch_err_plus2)
-                                    ? ((IData)(2U) 
-                                       + vlSelf->__PVT__pc_id)
-                                    : vlSelf->__PVT__pc_id);
-                            vlSelf->__PVT__exc_cause = 1U;
-                        } else if (vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__illegal_insn_prio) {
-                            vlSelf->__PVT__csr_mtval 
-                                = ((IData)(vlSelf->__PVT__instr_is_compressed_id)
-                                    ? (IData)(vlSelf->__PVT__instr_rdata_c_id)
-                                    : vlSelf->__PVT__instr_rdata_id);
-                            vlSelf->__PVT__exc_cause = 2U;
-                        } else {
-                            if ((1U & (~ (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ecall_insn_prio)))) {
-                                if ((1U & (~ (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ebrk_insn_prio)))) {
-                                    if (vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__store_err_prio) {
-                                        vlSelf->__PVT__csr_mtval 
-                                            = vlSelf->__PVT__load_store_unit_i__DOT__addr_last_q;
-                                    } else if (vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__load_err_prio) {
-                                        vlSelf->__PVT__csr_mtval 
-                                            = vlSelf->__PVT__load_store_unit_i__DOT__addr_last_q;
-                                    }
-                                }
-                            }
-                            if (vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ecall_insn_prio) {
-                                vlSelf->__PVT__exc_cause 
-                                    = ((3U == (IData)(vlSelf->__PVT__cs_registers_i__DOT__priv_lvl_q))
-                                        ? 0xbU : 8U);
-                            } else if (vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ebrk_insn_prio) {
-                                if ((1U & (~ ((IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__debug_mode_q) 
-                                              | (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ebreak_into_debug))))) {
-                                    vlSelf->__PVT__exc_cause = 3U;
-                                }
-                            } else if (vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__store_err_prio) {
-                                vlSelf->__PVT__exc_cause = 7U;
-                            } else if (vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__load_err_prio) {
-                                vlSelf->__PVT__exc_cause = 5U;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-    vlSelf->__PVT__cs_registers_i__DOT__mstack_en = 0U;
-    vlSelf->__PVT__cs_registers_i__DOT__priv_lvl_d 
-        = vlSelf->__PVT__cs_registers_i__DOT__priv_lvl_q;
-    if (vlSelf->__PVT__csr_save_cause) {
-        if ((1U & (~ (IData)(vlSelf->__PVT__debug_csr_save)))) {
-            if ((1U & (~ (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__debug_mode_q)))) {
-                vlSelf->__PVT__cs_registers_i__DOT__mstack_en = 1U;
-            }
-        }
-        vlSelf->__PVT__cs_registers_i__DOT__priv_lvl_d = 3U;
-    } else if (vlSelf->__PVT__csr_restore_dret_id) {
-        vlSelf->__PVT__cs_registers_i__DOT__priv_lvl_d 
-            = (3U & vlSelf->__PVT__cs_registers_i__DOT__u_dcsr_csr__DOT__rdata_q);
-    } else if (vlSelf->__PVT__csr_restore_mret_id) {
-        vlSelf->__PVT__cs_registers_i__DOT__priv_lvl_d 
-            = (3U & ((IData)(vlSelf->__PVT__cs_registers_i__DOT__u_mstatus_csr__DOT__rdata_q) 
-                     >> 2U));
-    }
-    __PVT__if_stage_i__DOT__irq_vec = (0x1fU & (IData)(vlSelf->__PVT__exc_cause));
-    if ((0x40U & (IData)(vlSelf->__PVT__exc_cause))) {
-        __PVT__if_stage_i__DOT__irq_vec = 0x1fU;
-    }
-    vlSelf->__PVT__if_stage_i__DOT__exc_pc = ((2U & (IData)(vlSelf->__PVT__exc_pc_mux_id))
-                                               ? 0U
-                                               : ((1U 
-                                                   & (IData)(vlSelf->__PVT__exc_pc_mux_id))
-                                                   ? 
-                                                  ((0xffffff00U 
-                                                    & vlSelf->__PVT__cs_registers_i__DOT__u_mtvec_csr__DOT__rdata_q) 
-                                                   | ((IData)(__PVT__if_stage_i__DOT__irq_vec) 
-                                                      << 2U))
-                                                   : 
-                                                  (0xffffff00U 
-                                                   & vlSelf->__PVT__cs_registers_i__DOT__u_mtvec_csr__DOT__rdata_q)));
+    vlSelf->__PVT__if_stage_i__DOT__if_id_pipe_reg_we 
+        = ((IData)(vlSelf->__PVT__if_stage_i__DOT__fetch_valid_raw) 
+           & (IData)(vlSelf->__PVT__id_in_ready));
+    vlSelf->if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT____VdfgTmp_hd659e18c__0 
+        = (((~ (IData)(vlSelf->__PVT__if_stage_i__DOT__gen_dummy_instr__DOT__insert_dummy_instr)) 
+            & (IData)(vlSelf->__PVT__id_in_ready)) 
+           & (IData)(vlSelf->__PVT__if_stage_i__DOT__fetch_valid_raw));
+    vlSelf->__PVT__if_stage_i__DOT__instr_valid_id_d 
+        = (((~ (IData)(vlSelf->__PVT__pc_set)) & (IData)(vlSelf->__PVT__if_stage_i__DOT__if_id_pipe_reg_we)) 
+           | ((~ (IData)(vlSelf->__PVT__instr_valid_clear)) 
+              & (IData)(vlSelf->__PVT__if_stage_i__DOT__instr_valid_id_q)));
+    vlSelf->__PVT__if_stage_i__DOT__g_secure_pc__DOT__prev_instr_seq_d 
+        = (((IData)(vlSelf->__PVT__if_stage_i__DOT__g_secure_pc__DOT__prev_instr_seq_q) 
+            | (IData)(vlSelf->__PVT__if_stage_i__DOT__if_id_pipe_reg_we)) 
+           & ((~ (IData)(vlSelf->__PVT__pc_set)) & 
+              ((~ (IData)(vlSelf->__PVT__if_stage_i__DOT__if_instr_err)) 
+               & (~ (IData)(vlSelf->__PVT__if_stage_i__DOT__gen_dummy_instr__DOT__insert_dummy_instr)))));
+    vlSelf->__PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT__pop_fifo 
+        = ((IData)(vlSelf->if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT____VdfgTmp_hd659e18c__0) 
+           & ((~ (IData)(vlSelf->__PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT__aligned_is_compressed)) 
+              | vlSelf->__PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT__instr_addr_q));
+    vlSelf->__PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT__entry_en 
+        = (((IData)(vlSelf->if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT____VdfgTmp_h8784150c__0) 
+            << 2U) | (((((IData)(vlSelf->if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT____VdfgTmp_h46fac9ec__0) 
+                         & (IData)(vlSelf->__PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT__pop_fifo)) 
+                        | ((~ (IData)(vlSelf->__PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT__pop_fifo)) 
+                           & (IData)(vlSelf->if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT____VdfgTmp_h18c9f4a7__0))) 
+                       << 1U) | (((IData)(vlSelf->if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT____VdfgTmp_haf22c316__0) 
+                                  & (IData)(vlSelf->__PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT__pop_fifo)) 
+                                 | ((~ (IData)(vlSelf->__PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT__pop_fifo)) 
+                                    & (IData)(vlSelf->if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT____VdfgTmp_h0d767ff5__0)))));
 }
 
-extern const VlUnpacked<CData/*0:0*/, 256> Viob_soc_sim__ConstPool__TABLE_h56aa66f2_0;
-extern const VlUnpacked<CData/*0:0*/, 128> Viob_soc_sim__ConstPool__TABLE_he017713b_0;
-extern const VlUnpacked<CData/*0:0*/, 128> Viob_soc_sim__ConstPool__TABLE_he6611871_0;
-extern const VlUnpacked<CData/*0:0*/, 128> Viob_soc_sim__ConstPool__TABLE_hde970e00_0;
-extern const VlUnpacked<CData/*0:0*/, 128> Viob_soc_sim__ConstPool__TABLE_h14eb773e_0;
-extern const VlUnpacked<CData/*0:0*/, 128> Viob_soc_sim__ConstPool__TABLE_hf12c31da_0;
-
-VL_INLINE_OPT void Viob_soc_sim_ibex_core__pi4___nba_sequent__TOP__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__cpu__DOT__u_top__DOT__gen_lockstep__DOT__u_ibex_lockstep__DOT__u_shadow_core__2(Viob_soc_sim_ibex_core__pi4* vlSelf) {
+VL_INLINE_OPT void Viob_soc_sim_ibex_core__pi4___nba_sequent__TOP__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__cpu__DOT__u_top__DOT__gen_lockstep__DOT__u_ibex_lockstep__DOT__u_shadow_core__0(Viob_soc_sim_ibex_core__pi4* vlSelf) {
     if (false && vlSelf) {}  // Prevent unused
     Viob_soc_sim__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
-    VL_DEBUG_IF(VL_DBG_MSGF("+                  Viob_soc_sim_ibex_core__pi4___nba_sequent__TOP__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__cpu__DOT__u_top__DOT__gen_lockstep__DOT__u_ibex_lockstep__DOT__u_shadow_core__2\n"); );
+    VL_DEBUG_IF(VL_DBG_MSGF("+                  Viob_soc_sim_ibex_core__pi4___nba_sequent__TOP__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__cpu__DOT__u_top__DOT__gen_lockstep__DOT__u_ibex_lockstep__DOT__u_shadow_core__0\n"); );
+    // Body
+    vlSelf->__PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__unused_data_ram_input[0U] 
+        = vlSelf->ic_data_rdata_i[0U];
+    vlSelf->__PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__unused_data_ram_input[1U] 
+        = vlSelf->ic_data_rdata_i[1U];
+    vlSelf->__PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__unused_tag_ram_input[0U] 
+        = vlSelf->ic_tag_rdata_i[0U];
+    vlSelf->__PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__unused_tag_ram_input[1U] 
+        = vlSelf->ic_tag_rdata_i[1U];
+}
+
+extern const VlUnpacked<CData/*0:0*/, 256> Viob_soc_sim__ConstPool__TABLE_hc5f8a02c_0;
+extern const VlUnpacked<CData/*0:0*/, 128> Viob_soc_sim__ConstPool__TABLE_hb804351c_0;
+extern const VlUnpacked<CData/*0:0*/, 128> Viob_soc_sim__ConstPool__TABLE_h040dd589_0;
+extern const VlUnpacked<CData/*0:0*/, 128> Viob_soc_sim__ConstPool__TABLE_h422a9fe7_0;
+extern const VlUnpacked<CData/*0:0*/, 128> Viob_soc_sim__ConstPool__TABLE_hd0338811_0;
+extern const VlUnpacked<CData/*0:0*/, 128> Viob_soc_sim__ConstPool__TABLE_ha686e182_0;
+extern const VlUnpacked<CData/*0:0*/, 64> Viob_soc_sim__ConstPool__TABLE_hf64aebe0_0;
+extern const VlUnpacked<CData/*0:0*/, 64> Viob_soc_sim__ConstPool__TABLE_h323b7bc3_0;
+extern const VlUnpacked<CData/*0:0*/, 64> Viob_soc_sim__ConstPool__TABLE_h6d182578_0;
+extern const VlUnpacked<CData/*0:0*/, 64> Viob_soc_sim__ConstPool__TABLE_hbf9cbdd6_0;
+extern const VlUnpacked<CData/*0:0*/, 64> Viob_soc_sim__ConstPool__TABLE_h6451e8c0_0;
+extern const VlUnpacked<CData/*0:0*/, 64> Viob_soc_sim__ConstPool__TABLE_h2aabc56c_0;
+
+VL_INLINE_OPT void Viob_soc_sim_ibex_core__pi4___nba_sequent__TOP__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__cpu__DOT__u_top__DOT__gen_lockstep__DOT__u_ibex_lockstep__DOT__u_shadow_core__4(Viob_soc_sim_ibex_core__pi4* vlSelf) {
+    if (false && vlSelf) {}  // Prevent unused
+    Viob_soc_sim__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    VL_DEBUG_IF(VL_DBG_MSGF("+                  Viob_soc_sim_ibex_core__pi4___nba_sequent__TOP__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__cpu__DOT__u_top__DOT__gen_lockstep__DOT__u_ibex_lockstep__DOT__u_shadow_core__4\n"); );
     // Init
-    CData/*4:0*/ rf_raddr_a_o;
-    rf_raddr_a_o = 0;
-    CData/*0:0*/ __PVT__mult_sel_ex;
-    __PVT__mult_sel_ex = 0;
-    CData/*1:0*/ __PVT__id_stage_i__DOT__alu_op_a_mux_sel_dec;
-    __PVT__id_stage_i__DOT__alu_op_a_mux_sel_dec = 0;
-    CData/*2:0*/ __PVT__id_stage_i__DOT__imm_b_mux_sel_dec;
-    __PVT__id_stage_i__DOT__imm_b_mux_sel_dec = 0;
-    CData/*0:0*/ __PVT__id_stage_i__DOT__decoder_i__DOT__csr_illegal;
-    __PVT__id_stage_i__DOT__decoder_i__DOT__csr_illegal = 0;
-    CData/*1:0*/ __PVT__id_stage_i__DOT__decoder_i__DOT__csr_op;
-    __PVT__id_stage_i__DOT__decoder_i__DOT__csr_op = 0;
-    CData/*6:0*/ __PVT__id_stage_i__DOT__decoder_i__DOT__opcode;
-    __PVT__id_stage_i__DOT__decoder_i__DOT__opcode = 0;
-    CData/*6:0*/ __PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu;
-    __PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu = 0;
+    CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__179__Vfuncout;
+    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__179__Vfuncout = 0;
     CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__179__csr_pmp_mseccfg_mml;
     __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__179__csr_pmp_mseccfg_mml = 0;
     CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__179__region_csr_pmp_cfg;
@@ -5059,15 +676,42 @@ VL_INLINE_OPT void Viob_soc_sim_ibex_core__pi4___nba_sequent__TOP__iob_soc_sim__
     CData/*7:0*/ __Vtableidx11;
     __Vtableidx11 = 0;
     // Body
+    vlSelf->wb_stage_i__DOT____VdfgTmp_ha5c23953__0 
+        = ((IData)(vlSelf->__PVT__wb_stage_i__DOT__g_writeback_stage__DOT__rf_we_wb_q) 
+           & (IData)(vlSelf->__PVT__wb_stage_i__DOT__g_writeback_stage__DOT__wb_valid_q));
     if (vlSelf->rst_ni) {
         vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs 
             = vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_ns;
+        if (vlSelf->__PVT__en_wb) {
+            vlSelf->__PVT__wb_stage_i__DOT__g_writeback_stage__DOT__g_dummy_instr_wb__DOT__dummy_instr_wb_q 
+                = vlSelf->__PVT__dummy_instr_id;
+            vlSelf->__PVT__wb_stage_i__DOT__g_writeback_stage__DOT__rf_waddr_wb_q 
+                = (0x1fU & (vlSelf->__PVT__instr_rdata_id 
+                            >> 7U));
+        }
         if (vlSelf->__PVT__if_stage_i__DOT__if_id_pipe_reg_we) {
-            vlSelf->__PVT__pc_id = (vlSelf->__PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT__instr_addr_q 
-                                    << 1U);
             vlSelf->__PVT__instr_fetch_err = ((~ (IData)(vlSelf->__PVT__if_stage_i__DOT__gen_dummy_instr__DOT__insert_dummy_instr)) 
                                               & (IData)(vlSelf->__PVT__if_stage_i__DOT__if_instr_err));
+            vlSelf->__PVT__pc_id = (vlSelf->__PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT__instr_addr_q 
+                                    << 1U);
+            vlSelf->__PVT__dummy_instr_id = vlSelf->__PVT__if_stage_i__DOT__gen_dummy_instr__DOT__insert_dummy_instr;
             vlSelf->__PVT__instr_rdata_id = vlSelf->__PVT__if_stage_i__DOT__instr_out;
+        }
+        if (vlSelf->__PVT__cs_registers_i__DOT__mtval_en) {
+            vlSelf->__PVT__cs_registers_i__DOT__u_mtval_csr__DOT__rdata_q 
+                = vlSelf->__PVT__cs_registers_i__DOT__mtval_d;
+        }
+        if (vlSelf->__PVT__cs_registers_i__DOT__mepc_en) {
+            vlSelf->__PVT__cs_registers_i__DOT__u_mepc_csr__DOT__rdata_q 
+                = vlSelf->__PVT__cs_registers_i__DOT__mepc_d;
+        }
+        if (vlSelf->__PVT__load_store_unit_i__DOT__addr_update) {
+            vlSelf->__PVT__load_store_unit_i__DOT__addr_last_q 
+                = ((IData)(vlSelf->__PVT__lsu_addr_incr_req)
+                    ? ((IData)((vlSelf->__PVT__ex_block_i__DOT__alu_adder_result_ext 
+                                >> 3U)) << 2U) : (IData)(
+                                                         (vlSelf->__PVT__ex_block_i__DOT__alu_adder_result_ext 
+                                                          >> 1U)));
         }
         if (((IData)(vlSelf->__PVT__pc_set) | (IData)(vlSelf->if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT____VdfgTmp_hd659e18c__0))) {
             vlSelf->__PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT__instr_addr_q 
@@ -5075,19 +719,32 @@ VL_INLINE_OPT void Viob_soc_sim_ibex_core__pi4___nba_sequent__TOP__iob_soc_sim__
         }
     } else {
         vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs = 0U;
-        vlSelf->__PVT__pc_id = 0U;
         vlSelf->__PVT__instr_fetch_err = 0U;
-        vlSelf->__PVT__instr_rdata_id = 0U;
+        vlSelf->__PVT__wb_stage_i__DOT__g_writeback_stage__DOT__g_dummy_instr_wb__DOT__dummy_instr_wb_q = 0U;
+        vlSelf->__PVT__cs_registers_i__DOT__u_mtval_csr__DOT__rdata_q = 0U;
+        vlSelf->__PVT__cs_registers_i__DOT__u_mepc_csr__DOT__rdata_q = 0U;
+        vlSelf->__PVT__pc_id = 0U;
+        vlSelf->__PVT__load_store_unit_i__DOT__addr_last_q = 0U;
+        vlSelf->__PVT__wb_stage_i__DOT__g_writeback_stage__DOT__rf_waddr_wb_q = 0U;
+        vlSelf->__PVT__dummy_instr_id = 0U;
         vlSelf->__PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT__instr_addr_q = 0U;
+        vlSelf->__PVT__instr_rdata_id = 0U;
     }
     vlSelf->__PVT__if_stage_i__DOT__instr_valid_id_q 
         = ((IData)(vlSelf->rst_ni) && (IData)(vlSelf->__PVT__if_stage_i__DOT__instr_valid_id_d));
-    vlSelf->__PVT__if_stage_i__DOT__gen_dummy_instr__DOT__insert_dummy_instr 
-        = (((IData)(vlSelf->__PVT__cs_registers_i__DOT__u_cpuctrlsts_part_csr__DOT__rdata_q) 
-            >> 2U) & ((IData)(vlSelf->__PVT__if_stage_i__DOT__gen_dummy_instr__DOT__dummy_instr_i__DOT__dummy_cnt_q) 
-                      == ((IData)(vlSelf->__VdfgTmp_h5b1acb32__0) 
-                          & (3U | (0x1cU & ((IData)(vlSelf->__PVT__cs_registers_i__DOT__u_cpuctrlsts_part_csr__DOT__rdata_q) 
-                                            >> 1U))))));
+    vlSelf->__PVT__lsu_addr_incr_req = 0U;
+    if ((4U & (IData)(vlSelf->__PVT__load_store_unit_i__DOT__ls_fsm_cs))) {
+        if ((1U & (~ ((IData)(vlSelf->__PVT__load_store_unit_i__DOT__ls_fsm_cs) 
+                      >> 1U)))) {
+            if ((1U & (~ (IData)(vlSelf->__PVT__load_store_unit_i__DOT__ls_fsm_cs)))) {
+                vlSelf->__PVT__lsu_addr_incr_req = 1U;
+            }
+        }
+    } else if ((2U & (IData)(vlSelf->__PVT__load_store_unit_i__DOT__ls_fsm_cs))) {
+        vlSelf->__PVT__lsu_addr_incr_req = ((1U & (~ (IData)(vlSelf->__PVT__load_store_unit_i__DOT__ls_fsm_cs))) 
+                                            || (IData)(vlSelf->__PVT__load_store_unit_i__DOT__handle_misaligned_q));
+    }
+    vlSelf->__PVT__debug_mode_entering = 0U;
     vlSelf->__PVT__csr_save_wb = 0U;
     vlSelf->__PVT__instr_req_int = 1U;
     vlSelf->__PVT__id_stage_i__DOT__controller_run = 0U;
@@ -5100,713 +757,48 @@ VL_INLINE_OPT void Viob_soc_sim_ibex_core__pi4___nba_sequent__TOP__iob_soc_sim__
             = (1U & ((~ (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__debug_mode_q)) 
                      & (vlSelf->__PVT__cs_registers_i__DOT__u_dcsr_csr__DOT__rdata_q 
                         >> 2U)));
+        vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__instr_fetch_err 
+            = vlSelf->__PVT__instr_fetch_err;
+        vlSelf->id_stage_i__DOT____VdfgTmp_h97dc7a37__0 
+            = (1U & (~ (IData)(vlSelf->__PVT__instr_fetch_err)));
     } else {
         vlSelf->__PVT__instr_first_cycle_id = 0U;
         vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__do_single_step_d 
             = (1U & (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__do_single_step_q));
-    }
-    vlSelf->__PVT__if_stage_i__DOT__gen_dummy_instr__DOT__dummy_instr_i__DOT__dummy_cnt_d 
-        = ((IData)(vlSelf->__PVT__if_stage_i__DOT__gen_dummy_instr__DOT__insert_dummy_instr)
-            ? 0U : (0x1fU & ((IData)(1U) + (IData)(vlSelf->__PVT__if_stage_i__DOT__gen_dummy_instr__DOT__dummy_instr_i__DOT__dummy_cnt_q))));
-    vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__instr_fetch_err 
-        = ((IData)(vlSelf->__PVT__if_stage_i__DOT__instr_valid_id_q) 
-           & (IData)(vlSelf->__PVT__instr_fetch_err));
-    vlSelf->id_stage_i__DOT____VdfgTmp_h97dc7a37__0 
-        = ((~ (IData)(vlSelf->__PVT__instr_fetch_err)) 
-           & (IData)(vlSelf->__PVT__if_stage_i__DOT__instr_valid_id_q));
-    vlSelf->__PVT__id_stage_i__DOT__imm_i_type = ((
-                                                   (- (IData)(
-                                                              (vlSelf->__PVT__instr_rdata_id 
-                                                               >> 0x1fU))) 
-                                                   << 0xcU) 
-                                                  | (vlSelf->__PVT__instr_rdata_id 
-                                                     >> 0x14U));
-    vlSelf->__PVT__rf_rd_b_wb_match = (((0x1fU & (vlSelf->__PVT__instr_rdata_id 
-                                                  >> 0x14U)) 
-                                        == (IData)(vlSelf->__PVT__wb_stage_i__DOT__g_writeback_stage__DOT__rf_waddr_wb_q)) 
-                                       & (0U != (0x1fU 
-                                                 & (vlSelf->__PVT__instr_rdata_id 
-                                                    >> 0x14U))));
-    rf_raddr_a_o = (0x1fU & (((~ (IData)(vlSelf->__PVT__instr_first_cycle_id)) 
-                              & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__use_rs3_q))
-                              ? (vlSelf->__PVT__instr_rdata_id 
-                                 >> 0x1bU) : (vlSelf->__PVT__instr_rdata_id 
-                                              >> 0xfU)));
-    vlSelf->__PVT__id_stage_i__DOT__jump_in_dec = 0U;
-    vlSelf->__PVT__id_stage_i__DOT__jump_set_dec = 0U;
-    vlSelf->__PVT__id_stage_i__DOT__branch_in_dec = 0U;
-    vlSelf->__PVT__id_stage_i__DOT__multdiv_operator = 0U;
-    vlSelf->__PVT__id_stage_i__DOT__multdiv_signed_mode = 0U;
-    vlSelf->__PVT__id_stage_i__DOT__rf_wdata_sel = 0U;
-    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__rf_we = 0U;
-    vlSelf->__PVT__id_stage_i__DOT__rf_ren_a_dec = 0U;
-    vlSelf->__PVT__id_stage_i__DOT__rf_ren_b_dec = 0U;
-    vlSelf->__PVT__csr_access = 0U;
-    __PVT__id_stage_i__DOT__decoder_i__DOT__csr_illegal = 0U;
-    __PVT__id_stage_i__DOT__decoder_i__DOT__csr_op = 0U;
-    vlSelf->__PVT__id_stage_i__DOT__lsu_we = 0U;
-    vlSelf->__PVT__id_stage_i__DOT__lsu_type = 0U;
-    vlSelf->__PVT__id_stage_i__DOT__lsu_req_dec = 0U;
-    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 0U;
-    vlSelf->__PVT__id_stage_i__DOT__ebrk_insn = 0U;
-    vlSelf->__PVT__id_stage_i__DOT__mret_insn_dec = 0U;
-    vlSelf->__PVT__id_stage_i__DOT__dret_insn_dec = 0U;
-    vlSelf->__PVT__id_stage_i__DOT__ecall_insn_dec = 0U;
-    vlSelf->__PVT__id_stage_i__DOT__wfi_insn_dec = 0U;
-    __PVT__id_stage_i__DOT__decoder_i__DOT__opcode 
-        = (0x7fU & vlSelf->__PVT__instr_rdata_id);
-    if ((0x40U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-        if ((0x20U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-            if ((0x10U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-                if ((8U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-                    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-                } else if ((4U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-                    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-                } else if ((2U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-                    if ((1U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-                        if ((0U == (7U & (vlSelf->__PVT__instr_rdata_id 
-                                          >> 0xcU)))) {
-                            if ((0U == (vlSelf->__PVT__instr_rdata_id 
-                                        >> 0x14U))) {
-                                vlSelf->__PVT__id_stage_i__DOT__ecall_insn_dec = 1U;
-                            } else if ((1U == (vlSelf->__PVT__instr_rdata_id 
-                                               >> 0x14U))) {
-                                vlSelf->__PVT__id_stage_i__DOT__ebrk_insn = 1U;
-                            } else if ((0x302U == (vlSelf->__PVT__instr_rdata_id 
-                                                   >> 0x14U))) {
-                                vlSelf->__PVT__id_stage_i__DOT__mret_insn_dec = 1U;
-                            } else if ((0x7b2U == (vlSelf->__PVT__instr_rdata_id 
-                                                   >> 0x14U))) {
-                                vlSelf->__PVT__id_stage_i__DOT__dret_insn_dec = 1U;
-                            } else if ((0x105U == (vlSelf->__PVT__instr_rdata_id 
-                                                   >> 0x14U))) {
-                                vlSelf->__PVT__id_stage_i__DOT__wfi_insn_dec = 1U;
-                            } else {
-                                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-                            }
-                            if ((IData)((0U != (0xf8f80U 
-                                                & vlSelf->__PVT__instr_rdata_id)))) {
-                                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-                            }
-                        } else {
-                            vlSelf->__PVT__csr_access = 1U;
-                            vlSelf->__PVT__id_stage_i__DOT__rf_wdata_sel = 1U;
-                            vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__rf_we = 1U;
-                            if ((1U & (~ (vlSelf->__PVT__instr_rdata_id 
-                                          >> 0xeU)))) {
-                                vlSelf->__PVT__id_stage_i__DOT__rf_ren_a_dec = 1U;
-                            }
-                            if ((1U == (3U & (vlSelf->__PVT__instr_rdata_id 
-                                              >> 0xcU)))) {
-                                __PVT__id_stage_i__DOT__decoder_i__DOT__csr_op = 1U;
-                            } else if ((2U == (3U & 
-                                               (vlSelf->__PVT__instr_rdata_id 
-                                                >> 0xcU)))) {
-                                __PVT__id_stage_i__DOT__decoder_i__DOT__csr_op = 2U;
-                            } else if ((3U == (3U & 
-                                               (vlSelf->__PVT__instr_rdata_id 
-                                                >> 0xcU)))) {
-                                __PVT__id_stage_i__DOT__decoder_i__DOT__csr_op = 3U;
-                            } else {
-                                __PVT__id_stage_i__DOT__decoder_i__DOT__csr_illegal = 1U;
-                            }
-                            vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn 
-                                = __PVT__id_stage_i__DOT__decoder_i__DOT__csr_illegal;
-                        }
-                    } else {
-                        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-                    }
-                } else {
-                    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-                }
-            } else if ((8U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-                if ((4U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-                    if ((2U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-                        if ((1U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-                            vlSelf->__PVT__id_stage_i__DOT__jump_in_dec = 1U;
-                            if (vlSelf->__PVT__instr_first_cycle_id) {
-                                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__rf_we = 1U;
-                                vlSelf->__PVT__id_stage_i__DOT__jump_set_dec = 1U;
-                            } else {
-                                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__rf_we = 1U;
-                            }
-                        } else {
-                            vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-                        }
-                    } else {
-                        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-                    }
-                } else {
-                    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-                }
-            } else if ((4U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-                if ((2U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-                    if ((1U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-                        vlSelf->__PVT__id_stage_i__DOT__jump_in_dec = 1U;
-                        if (vlSelf->__PVT__instr_first_cycle_id) {
-                            vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__rf_we = 1U;
-                            vlSelf->__PVT__id_stage_i__DOT__jump_set_dec = 1U;
-                        } else {
-                            vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__rf_we = 1U;
-                        }
-                        if ((0U != (7U & (vlSelf->__PVT__instr_rdata_id 
-                                          >> 0xcU)))) {
-                            vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-                        }
-                        vlSelf->__PVT__id_stage_i__DOT__rf_ren_a_dec = 1U;
-                    } else {
-                        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-                    }
-                } else {
-                    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-                }
-            } else if ((2U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-                if ((1U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-                    vlSelf->__PVT__id_stage_i__DOT__branch_in_dec = 1U;
-                    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn 
-                        = ((1U & (~ (vlSelf->__PVT__instr_rdata_id 
-                                     >> 0xeU))) && 
-                           (1U & (vlSelf->__PVT__instr_rdata_id 
-                                  >> 0xdU)));
-                    vlSelf->__PVT__id_stage_i__DOT__rf_ren_a_dec = 1U;
-                    vlSelf->__PVT__id_stage_i__DOT__rf_ren_b_dec = 1U;
-                } else {
-                    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-                }
-            } else {
-                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-            }
-        } else {
-            vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-        }
-    } else if ((0x20U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-        if ((0x10U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-            if ((8U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-            } else if ((4U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-                if ((2U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-                    if ((1U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-                        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__rf_we = 1U;
-                    } else {
-                        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-                    }
-                } else {
-                    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-                }
-            } else if ((2U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-                if ((1U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-                    vlSelf->__PVT__id_stage_i__DOT__rf_ren_a_dec = 1U;
-                    vlSelf->__PVT__id_stage_i__DOT__rf_ren_b_dec = 1U;
-                    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__rf_we = 1U;
-                    if ((5U == ((4U & (vlSelf->__PVT__instr_rdata_id 
-                                       >> 0x18U)) | 
-                                (3U & (vlSelf->__PVT__instr_rdata_id 
-                                       >> 0xcU))))) {
-                        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 0U;
-                    } else if ((vlSelf->__PVT__instr_rdata_id 
-                                >> 0x1fU)) {
-                        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-                    } else if ((0x40000000U & vlSelf->__PVT__instr_rdata_id)) {
-                        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn 
-                            = ((0x20000000U & vlSelf->__PVT__instr_rdata_id)
-                                ? ((1U & (vlSelf->__PVT__instr_rdata_id 
-                                          >> 0x1cU)) 
-                                   || ((0x8000000U 
-                                        & vlSelf->__PVT__instr_rdata_id)
-                                        ? ((1U & (vlSelf->__PVT__instr_rdata_id 
-                                                  >> 0x1aU)) 
-                                           || ((1U 
-                                                & (vlSelf->__PVT__instr_rdata_id 
-                                                   >> 0x19U)) 
-                                               || ((0x4000U 
-                                                    & vlSelf->__PVT__instr_rdata_id)
-                                                    ? 
-                                                   ((1U 
-                                                     & (vlSelf->__PVT__instr_rdata_id 
-                                                        >> 0xdU)) 
-                                                    || (1U 
-                                                        & (~ 
-                                                           (vlSelf->__PVT__instr_rdata_id 
-                                                            >> 0xcU))))
-                                                    : 
-                                                   ((1U 
-                                                     & (vlSelf->__PVT__instr_rdata_id 
-                                                        >> 0xdU)) 
-                                                    || (1U 
-                                                        & (~ 
-                                                           (vlSelf->__PVT__instr_rdata_id 
-                                                            >> 0xcU)))))))
-                                        : ((1U & (vlSelf->__PVT__instr_rdata_id 
-                                                  >> 0x1aU)) 
-                                           || ((1U 
-                                                & (vlSelf->__PVT__instr_rdata_id 
-                                                   >> 0x19U)) 
-                                               || ((1U 
-                                                    & (vlSelf->__PVT__instr_rdata_id 
-                                                       >> 0xdU)) 
-                                                   || (1U 
-                                                       & (~ 
-                                                          (vlSelf->__PVT__instr_rdata_id 
-                                                           >> 0xcU))))))))
-                                : ((1U & (vlSelf->__PVT__instr_rdata_id 
-                                          >> 0x1cU)) 
-                                   || ((0x8000000U 
-                                        & vlSelf->__PVT__instr_rdata_id)
-                                        ? ((1U & (vlSelf->__PVT__instr_rdata_id 
-                                                  >> 0x1aU)) 
-                                           || ((1U 
-                                                & (vlSelf->__PVT__instr_rdata_id 
-                                                   >> 0x19U)) 
-                                               || ((0x4000U 
-                                                    & vlSelf->__PVT__instr_rdata_id)
-                                                    ? 
-                                                   ((1U 
-                                                     & (vlSelf->__PVT__instr_rdata_id 
-                                                        >> 0xdU)) 
-                                                    && (1U 
-                                                        & (~ 
-                                                           (vlSelf->__PVT__instr_rdata_id 
-                                                            >> 0xcU))))
-                                                    : 
-                                                   ((1U 
-                                                     & (vlSelf->__PVT__instr_rdata_id 
-                                                        >> 0xdU)) 
-                                                    || (1U 
-                                                        & (~ 
-                                                           (vlSelf->__PVT__instr_rdata_id 
-                                                            >> 0xcU)))))))
-                                        : ((1U & (vlSelf->__PVT__instr_rdata_id 
-                                                  >> 0x1aU)) 
-                                           || ((1U 
-                                                & (vlSelf->__PVT__instr_rdata_id 
-                                                   >> 0x19U)) 
-                                               || ((1U 
-                                                    & (~ 
-                                                       (vlSelf->__PVT__instr_rdata_id 
-                                                        >> 0xeU))) 
-                                                   && ((1U 
-                                                        & (vlSelf->__PVT__instr_rdata_id 
-                                                           >> 0xdU)) 
-                                                       || (1U 
-                                                           & (vlSelf->__PVT__instr_rdata_id 
-                                                              >> 0xcU)))))))));
-                    } else if ((0x20000000U & vlSelf->__PVT__instr_rdata_id)) {
-                        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn 
-                            = ((1U & (vlSelf->__PVT__instr_rdata_id 
-                                      >> 0x1cU)) || 
-                               ((0x8000000U & vlSelf->__PVT__instr_rdata_id)
-                                 ? ((1U & (vlSelf->__PVT__instr_rdata_id 
-                                           >> 0x1aU)) 
-                                    || ((1U & (vlSelf->__PVT__instr_rdata_id 
-                                               >> 0x19U)) 
-                                        || (1U & ((0x4000U 
-                                                   & vlSelf->__PVT__instr_rdata_id)
-                                                   ? 
-                                                  ((1U 
-                                                    & (vlSelf->__PVT__instr_rdata_id 
-                                                       >> 0xdU)) 
-                                                   && (1U 
-                                                       & (vlSelf->__PVT__instr_rdata_id 
-                                                          >> 0xcU)))
-                                                   : 
-                                                  ((0x2000U 
-                                                    & vlSelf->__PVT__instr_rdata_id)
-                                                    ? 
-                                                   (vlSelf->__PVT__instr_rdata_id 
-                                                    >> 0xcU)
-                                                    : 
-                                                   (~ 
-                                                    (vlSelf->__PVT__instr_rdata_id 
-                                                     >> 0xcU)))))))
-                                 : ((1U & (vlSelf->__PVT__instr_rdata_id 
-                                           >> 0x1aU)) 
-                                    || ((1U & (vlSelf->__PVT__instr_rdata_id 
-                                               >> 0x19U)) 
-                                        || (1U & ((0x4000U 
-                                                   & vlSelf->__PVT__instr_rdata_id)
-                                                   ? 
-                                                  ((1U 
-                                                    & (vlSelf->__PVT__instr_rdata_id 
-                                                       >> 0xdU)) 
-                                                   && (1U 
-                                                       & (vlSelf->__PVT__instr_rdata_id 
-                                                          >> 0xcU)))
-                                                   : 
-                                                  ((0x2000U 
-                                                    & vlSelf->__PVT__instr_rdata_id)
-                                                    ? 
-                                                   (vlSelf->__PVT__instr_rdata_id 
-                                                    >> 0xcU)
-                                                    : 
-                                                   (~ 
-                                                    (vlSelf->__PVT__instr_rdata_id 
-                                                     >> 0xcU)))))))));
-                    } else if ((0x10000000U & vlSelf->__PVT__instr_rdata_id)) {
-                        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-                    } else if ((0x8000000U & vlSelf->__PVT__instr_rdata_id)) {
-                        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn 
-                            = ((1U & (vlSelf->__PVT__instr_rdata_id 
-                                      >> 0x1aU)) || 
-                               ((0x2000000U & vlSelf->__PVT__instr_rdata_id)
-                                 ? ((1U & (~ (vlSelf->__PVT__instr_rdata_id 
-                                              >> 0xeU))) 
-                                    && ((1U & (~ (vlSelf->__PVT__instr_rdata_id 
-                                                  >> 0xdU))) 
-                                        && (1U & (~ 
-                                                  (vlSelf->__PVT__instr_rdata_id 
-                                                   >> 0xcU)))))
-                                 : ((0x4000U & vlSelf->__PVT__instr_rdata_id)
-                                     ? ((1U & (vlSelf->__PVT__instr_rdata_id 
-                                               >> 0xdU)) 
-                                        && (1U & (~ 
-                                                  (vlSelf->__PVT__instr_rdata_id 
-                                                   >> 0xcU))))
-                                     : ((1U & (vlSelf->__PVT__instr_rdata_id 
-                                               >> 0xdU)) 
-                                        || (1U & (~ 
-                                                  (vlSelf->__PVT__instr_rdata_id 
-                                                   >> 0xcU)))))));
-                    } else if ((0x4000000U & vlSelf->__PVT__instr_rdata_id)) {
-                        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-                    } else if ((0x2000000U & vlSelf->__PVT__instr_rdata_id)) {
-                        if ((0x4000U & vlSelf->__PVT__instr_rdata_id)) {
-                            if ((0x2000U & vlSelf->__PVT__instr_rdata_id)) {
-                                if ((0x1000U & vlSelf->__PVT__instr_rdata_id)) {
-                                    vlSelf->__PVT__id_stage_i__DOT__multdiv_operator = 3U;
-                                    vlSelf->__PVT__id_stage_i__DOT__multdiv_signed_mode = 0U;
-                                    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 0U;
-                                } else {
-                                    vlSelf->__PVT__id_stage_i__DOT__multdiv_operator = 3U;
-                                    vlSelf->__PVT__id_stage_i__DOT__multdiv_signed_mode = 3U;
-                                    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 0U;
-                                }
-                            } else if ((0x1000U & vlSelf->__PVT__instr_rdata_id)) {
-                                vlSelf->__PVT__id_stage_i__DOT__multdiv_operator = 2U;
-                                vlSelf->__PVT__id_stage_i__DOT__multdiv_signed_mode = 0U;
-                                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 0U;
-                            } else {
-                                vlSelf->__PVT__id_stage_i__DOT__multdiv_operator = 2U;
-                                vlSelf->__PVT__id_stage_i__DOT__multdiv_signed_mode = 3U;
-                                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 0U;
-                            }
-                        } else if ((0x2000U & vlSelf->__PVT__instr_rdata_id)) {
-                            if ((0x1000U & vlSelf->__PVT__instr_rdata_id)) {
-                                vlSelf->__PVT__id_stage_i__DOT__multdiv_operator = 1U;
-                                vlSelf->__PVT__id_stage_i__DOT__multdiv_signed_mode = 0U;
-                                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 0U;
-                            } else {
-                                vlSelf->__PVT__id_stage_i__DOT__multdiv_operator = 1U;
-                                vlSelf->__PVT__id_stage_i__DOT__multdiv_signed_mode = 1U;
-                                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 0U;
-                            }
-                        } else if ((0x1000U & vlSelf->__PVT__instr_rdata_id)) {
-                            vlSelf->__PVT__id_stage_i__DOT__multdiv_operator = 1U;
-                            vlSelf->__PVT__id_stage_i__DOT__multdiv_signed_mode = 3U;
-                            vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 0U;
-                        } else {
-                            vlSelf->__PVT__id_stage_i__DOT__multdiv_operator = 0U;
-                            vlSelf->__PVT__id_stage_i__DOT__multdiv_signed_mode = 0U;
-                            vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 0U;
-                        }
-                    } else {
-                        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 0U;
-                    }
-                } else {
-                    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-                }
-            } else {
-                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-            }
-        } else if ((8U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-            vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-        } else if ((4U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-            vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-        } else if ((2U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-            if ((1U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-                vlSelf->__PVT__id_stage_i__DOT__rf_ren_a_dec = 1U;
-                vlSelf->__PVT__id_stage_i__DOT__rf_ren_b_dec = 1U;
-                vlSelf->__PVT__id_stage_i__DOT__lsu_req_dec = 1U;
-                vlSelf->__PVT__id_stage_i__DOT__lsu_we = 1U;
-                if ((0x4000U & vlSelf->__PVT__instr_rdata_id)) {
-                    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-                }
-                if ((0U == (3U & (vlSelf->__PVT__instr_rdata_id 
-                                  >> 0xcU)))) {
-                    vlSelf->__PVT__id_stage_i__DOT__lsu_type = 2U;
-                } else if ((1U == (3U & (vlSelf->__PVT__instr_rdata_id 
-                                         >> 0xcU)))) {
-                    vlSelf->__PVT__id_stage_i__DOT__lsu_type = 1U;
-                } else if ((2U == (3U & (vlSelf->__PVT__instr_rdata_id 
-                                         >> 0xcU)))) {
-                    vlSelf->__PVT__id_stage_i__DOT__lsu_type = 0U;
-                } else {
-                    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-                }
-            } else {
-                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-            }
-        } else {
-            vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-        }
-    } else if ((0x10U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-        if ((8U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-            vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-        } else if ((4U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-            if ((2U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-                if ((1U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-                    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__rf_we = 1U;
-                } else {
-                    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-                }
-            } else {
-                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-            }
-        } else if ((2U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-            if ((1U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-                vlSelf->__PVT__id_stage_i__DOT__rf_ren_a_dec = 1U;
-                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__rf_we = 1U;
-                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn 
-                    = ((0x4000U & vlSelf->__PVT__instr_rdata_id)
-                        ? ((1U & (~ (vlSelf->__PVT__instr_rdata_id 
-                                     >> 0xdU))) && 
-                           ((1U & (vlSelf->__PVT__instr_rdata_id 
-                                   >> 0xcU)) && ((1U 
-                                                  & (~ 
-                                                     (vlSelf->__PVT__instr_rdata_id 
-                                                      >> 0x1aU))) 
-                                                 && ((vlSelf->__PVT__instr_rdata_id 
-                                                      >> 0x1fU) 
-                                                     || (1U 
-                                                         & ((0x40000000U 
-                                                             & vlSelf->__PVT__instr_rdata_id)
-                                                             ? 
-                                                            ((0x20000000U 
-                                                              & vlSelf->__PVT__instr_rdata_id)
-                                                              ? 
-                                                             (vlSelf->__PVT__instr_rdata_id 
-                                                              >> 0x1cU)
-                                                              : 
-                                                             ((1U 
-                                                               & (vlSelf->__PVT__instr_rdata_id 
-                                                                  >> 0x1cU)) 
-                                                              || ((1U 
-                                                                   & (~ 
-                                                                      (vlSelf->__PVT__instr_rdata_id 
-                                                                       >> 0x1bU))) 
-                                                                  && (0U 
-                                                                      != 
-                                                                      (3U 
-                                                                       & (vlSelf->__PVT__instr_rdata_id 
-                                                                          >> 0x19U))))))
-                                                             : 
-                                                            ((0x20000000U 
-                                                              & vlSelf->__PVT__instr_rdata_id)
-                                                              ? 
-                                                             (vlSelf->__PVT__instr_rdata_id 
-                                                              >> 0x1cU)
-                                                              : 
-                                                             ((1U 
-                                                               & (vlSelf->__PVT__instr_rdata_id 
-                                                                  >> 0x1cU)) 
-                                                              || (1U 
-                                                                  & ((0x8000000U 
-                                                                      & vlSelf->__PVT__instr_rdata_id)
-                                                                      ? 
-                                                                     (vlSelf->__PVT__instr_rdata_id 
-                                                                      >> 0x1aU)
-                                                                      : 
-                                                                     (0U 
-                                                                      != 
-                                                                      (3U 
-                                                                       & (vlSelf->__PVT__instr_rdata_id 
-                                                                          >> 0x19U)))))))))))))
-                        : ((1U & (~ (vlSelf->__PVT__instr_rdata_id 
-                                     >> 0xdU))) && 
-                           ((1U & (vlSelf->__PVT__instr_rdata_id 
-                                   >> 0xcU)) && ((vlSelf->__PVT__instr_rdata_id 
-                                                  >> 0x1fU) 
-                                                 || (1U 
-                                                     & ((0x40000000U 
-                                                         & vlSelf->__PVT__instr_rdata_id)
-                                                         ? 
-                                                        ((0x20000000U 
-                                                          & vlSelf->__PVT__instr_rdata_id)
-                                                          ? 
-                                                         ((1U 
-                                                           & (vlSelf->__PVT__instr_rdata_id 
-                                                              >> 0x1cU)) 
-                                                          || ((1U 
-                                                               & (~ 
-                                                                  (vlSelf->__PVT__instr_rdata_id 
-                                                                   >> 0x1bU))) 
-                                                              && ((1U 
-                                                                   & (vlSelf->__PVT__instr_rdata_id 
-                                                                      >> 0x1aU)) 
-                                                                  || ((1U 
-                                                                       & (vlSelf->__PVT__instr_rdata_id 
-                                                                          >> 0x19U)) 
-                                                                      || ((0x1000000U 
-                                                                           & vlSelf->__PVT__instr_rdata_id)
-                                                                           ? 
-                                                                          ((1U 
-                                                                            & (vlSelf->__PVT__instr_rdata_id 
-                                                                               >> 0x16U)) 
-                                                                           || ((1U 
-                                                                                & (vlSelf->__PVT__instr_rdata_id 
-                                                                                >> 0x15U)) 
-                                                                               && (1U 
-                                                                                & (vlSelf->__PVT__instr_rdata_id 
-                                                                                >> 0x14U))))
-                                                                           : 
-                                                                          ((1U 
-                                                                            & (vlSelf->__PVT__instr_rdata_id 
-                                                                               >> 0x17U)) 
-                                                                           || (1U 
-                                                                               & ((0x400000U 
-                                                                                & vlSelf->__PVT__instr_rdata_id)
-                                                                                 ? 
-                                                                                (vlSelf->__PVT__instr_rdata_id 
-                                                                                >> 0x15U)
-                                                                                 : 
-                                                                                ((1U 
-                                                                                & (vlSelf->__PVT__instr_rdata_id 
-                                                                                >> 0x15U)) 
-                                                                                && (1U 
-                                                                                & (vlSelf->__PVT__instr_rdata_id 
-                                                                                >> 0x14U)))))))))))
-                                                          : 
-                                                         ((1U 
-                                                           & (vlSelf->__PVT__instr_rdata_id 
-                                                              >> 0x1cU)) 
-                                                          || (1U 
-                                                              & (~ 
-                                                                 (vlSelf->__PVT__instr_rdata_id 
-                                                                  >> 0x1bU)))))
-                                                         : 
-                                                        ((0x20000000U 
-                                                          & vlSelf->__PVT__instr_rdata_id)
-                                                          ? 
-                                                         (vlSelf->__PVT__instr_rdata_id 
-                                                          >> 0x1cU)
-                                                          : 
-                                                         ((1U 
-                                                           & (vlSelf->__PVT__instr_rdata_id 
-                                                              >> 0x1cU)) 
-                                                          || (1U 
-                                                              & ((0x8000000U 
-                                                                  & vlSelf->__PVT__instr_rdata_id)
-                                                                  ? 
-                                                                 (vlSelf->__PVT__instr_rdata_id 
-                                                                  >> 0x1aU)
-                                                                  : 
-                                                                 (0U 
-                                                                  != 
-                                                                  (3U 
-                                                                   & (vlSelf->__PVT__instr_rdata_id 
-                                                                      >> 0x19U)))))))))))));
-            } else {
-                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-            }
-        } else {
-            vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-        }
-    } else if ((8U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-        if ((4U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-            if ((2U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-                if ((1U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-                    if ((0U == (7U & (vlSelf->__PVT__instr_rdata_id 
-                                      >> 0xcU)))) {
-                        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__rf_we = 0U;
-                    } else if ((1U == (7U & (vlSelf->__PVT__instr_rdata_id 
-                                             >> 0xcU)))) {
-                        vlSelf->__PVT__id_stage_i__DOT__jump_in_dec = 1U;
-                        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__rf_we = 0U;
-                        if (vlSelf->__PVT__instr_first_cycle_id) {
-                            vlSelf->__PVT__id_stage_i__DOT__jump_set_dec = 1U;
-                        }
-                    } else {
-                        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-                    }
-                } else {
-                    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-                }
-            } else {
-                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-            }
-        } else {
-            vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-        }
-    } else if ((4U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-    } else if ((2U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-        if ((1U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
-            vlSelf->__PVT__id_stage_i__DOT__rf_ren_a_dec = 1U;
-            vlSelf->__PVT__id_stage_i__DOT__lsu_req_dec = 1U;
-            vlSelf->__PVT__id_stage_i__DOT__lsu_type = 0U;
-            if ((0U == (3U & (vlSelf->__PVT__instr_rdata_id 
-                              >> 0xcU)))) {
-                vlSelf->__PVT__id_stage_i__DOT__lsu_type = 2U;
-            } else if ((1U == (3U & (vlSelf->__PVT__instr_rdata_id 
-                                     >> 0xcU)))) {
-                vlSelf->__PVT__id_stage_i__DOT__lsu_type = 1U;
-            } else if ((2U == (3U & (vlSelf->__PVT__instr_rdata_id 
-                                     >> 0xcU)))) {
-                vlSelf->__PVT__id_stage_i__DOT__lsu_type = 0U;
-                if ((0x4000U & vlSelf->__PVT__instr_rdata_id)) {
-                    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-                }
-            } else {
-                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-            }
-        } else {
-            vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-        }
-    } else {
-        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-    }
-    if (vlSelf->__PVT__illegal_c_insn_id) {
-        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
-    }
-    if (vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn) {
-        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__rf_we = 0U;
-        vlSelf->__PVT__id_stage_i__DOT__lsu_req_dec = 0U;
-        vlSelf->__PVT__id_stage_i__DOT__lsu_we = 0U;
-        vlSelf->__PVT__id_stage_i__DOT__jump_in_dec = 0U;
-        vlSelf->__PVT__id_stage_i__DOT__jump_set_dec = 0U;
-        vlSelf->__PVT__id_stage_i__DOT__branch_in_dec = 0U;
-        vlSelf->__PVT__csr_access = 0U;
+        vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__instr_fetch_err = 0U;
+        vlSelf->id_stage_i__DOT____VdfgTmp_h97dc7a37__0 = 0U;
     }
     vlSelf->__PVT__id_stage_i__DOT__alu_operator = 0x2cU;
-    __PVT__id_stage_i__DOT__alu_op_a_mux_sel_dec = 3U;
+    vlSelf->__PVT__id_stage_i__DOT__alu_op_a_mux_sel_dec = 3U;
     vlSelf->__PVT__id_stage_i__DOT__alu_op_b_mux_sel_dec = 1U;
     vlSelf->__PVT__id_stage_i__DOT__imm_a_mux_sel = 1U;
-    __PVT__id_stage_i__DOT__imm_b_mux_sel_dec = 0U;
+    vlSelf->__PVT__id_stage_i__DOT__imm_b_mux_sel_dec = 0U;
     vlSelf->__PVT__id_stage_i__DOT__bt_a_mux_sel = 2U;
     vlSelf->__PVT__id_stage_i__DOT__bt_b_mux_sel = 0U;
-    __PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu 
+    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu 
         = (0x7fU & vlSelf->__PVT__instr_rdata_alu_id);
     vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__use_rs3_d = 0U;
     vlSelf->__PVT__id_stage_i__DOT__alu_multicycle_dec = 0U;
-    __PVT__mult_sel_ex = 0U;
+    vlSelf->__PVT__mult_sel_ex = 0U;
     vlSelf->__PVT__div_sel_ex = 0U;
-    if ((0x40U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
-        if ((0x20U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
-            if ((0x10U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
-                if ((1U & (~ ((IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu) 
+    if ((0x40U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
+        if ((0x20U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
+            if ((0x10U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
+                if ((1U & (~ ((IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu) 
                               >> 3U)))) {
-                    if ((1U & (~ ((IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu) 
+                    if ((1U & (~ ((IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu) 
                                   >> 2U)))) {
-                        if ((2U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
-                            if ((1U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
+                        if ((2U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
+                            if ((1U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
                                 if ((0U == (7U & (vlSelf->__PVT__instr_rdata_alu_id 
                                                   >> 0xcU)))) {
-                                    __PVT__id_stage_i__DOT__alu_op_a_mux_sel_dec = 0U;
+                                    vlSelf->__PVT__id_stage_i__DOT__alu_op_a_mux_sel_dec = 0U;
                                     vlSelf->__PVT__id_stage_i__DOT__alu_op_b_mux_sel_dec = 1U;
                                 } else {
                                     vlSelf->__PVT__id_stage_i__DOT__alu_op_b_mux_sel_dec = 1U;
                                     vlSelf->__PVT__id_stage_i__DOT__imm_a_mux_sel = 0U;
-                                    __PVT__id_stage_i__DOT__imm_b_mux_sel_dec = 0U;
-                                    __PVT__id_stage_i__DOT__alu_op_a_mux_sel_dec 
+                                    vlSelf->__PVT__id_stage_i__DOT__imm_b_mux_sel_dec = 0U;
+                                    vlSelf->__PVT__id_stage_i__DOT__alu_op_a_mux_sel_dec 
                                         = ((0x4000U 
                                             & vlSelf->__PVT__instr_rdata_alu_id)
                                             ? 3U : 0U);
@@ -5815,32 +807,32 @@ VL_INLINE_OPT void Viob_soc_sim_ibex_core__pi4___nba_sequent__TOP__iob_soc_sim__
                         }
                     }
                 }
-            } else if ((8U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
-                if ((4U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
-                    if ((2U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
-                        if ((1U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
+            } else if ((8U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
+                if ((4U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
+                    if ((2U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
+                        if ((1U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
                             vlSelf->__PVT__id_stage_i__DOT__bt_a_mux_sel = 2U;
                             vlSelf->__PVT__id_stage_i__DOT__bt_b_mux_sel = 4U;
-                            __PVT__id_stage_i__DOT__alu_op_a_mux_sel_dec = 2U;
+                            vlSelf->__PVT__id_stage_i__DOT__alu_op_a_mux_sel_dec = 2U;
                             vlSelf->__PVT__id_stage_i__DOT__alu_op_b_mux_sel_dec = 1U;
-                            __PVT__id_stage_i__DOT__imm_b_mux_sel_dec = 5U;
+                            vlSelf->__PVT__id_stage_i__DOT__imm_b_mux_sel_dec = 5U;
                             vlSelf->__PVT__id_stage_i__DOT__alu_operator = 0U;
                         }
                     }
                 }
-            } else if ((4U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
-                if ((2U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
-                    if ((1U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
+            } else if ((4U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
+                if ((2U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
+                    if ((1U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
                         vlSelf->__PVT__id_stage_i__DOT__bt_a_mux_sel = 0U;
                         vlSelf->__PVT__id_stage_i__DOT__bt_b_mux_sel = 0U;
-                        __PVT__id_stage_i__DOT__alu_op_a_mux_sel_dec = 2U;
+                        vlSelf->__PVT__id_stage_i__DOT__alu_op_a_mux_sel_dec = 2U;
                         vlSelf->__PVT__id_stage_i__DOT__alu_op_b_mux_sel_dec = 1U;
-                        __PVT__id_stage_i__DOT__imm_b_mux_sel_dec = 5U;
+                        vlSelf->__PVT__id_stage_i__DOT__imm_b_mux_sel_dec = 5U;
                         vlSelf->__PVT__id_stage_i__DOT__alu_operator = 0U;
                     }
                 }
-            } else if ((2U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
-                if ((1U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
+            } else if ((2U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
+                if ((1U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
                     if ((0x4000U & vlSelf->__PVT__instr_rdata_alu_id)) {
                         vlSelf->__PVT__id_stage_i__DOT__alu_operator 
                             = ((0x2000U & vlSelf->__PVT__instr_rdata_alu_id)
@@ -5860,29 +852,29 @@ VL_INLINE_OPT void Viob_soc_sim_ibex_core__pi4___nba_sequent__TOP__iob_soc_sim__
                                       >> 1U)) | (IData)(vlSelf->__PVT__id_stage_i__DOT__g_sec_branch_taken__DOT__branch_taken_q)))
                             ? 2U : 5U);
                     if (vlSelf->__PVT__instr_first_cycle_id) {
-                        __PVT__id_stage_i__DOT__alu_op_a_mux_sel_dec = 0U;
+                        vlSelf->__PVT__id_stage_i__DOT__alu_op_a_mux_sel_dec = 0U;
                         vlSelf->__PVT__id_stage_i__DOT__alu_op_b_mux_sel_dec = 0U;
                     }
                 }
             }
         }
-    } else if ((0x20U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
-        if ((0x10U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
-            if ((1U & (~ ((IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu) 
+    } else if ((0x20U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
+        if ((0x10U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
+            if ((1U & (~ ((IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu) 
                           >> 3U)))) {
-                if ((4U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
-                    if ((2U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
-                        if ((1U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
-                            __PVT__id_stage_i__DOT__alu_op_a_mux_sel_dec = 3U;
+                if ((4U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
+                    if ((2U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
+                        if ((1U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
+                            vlSelf->__PVT__id_stage_i__DOT__alu_op_a_mux_sel_dec = 3U;
                             vlSelf->__PVT__id_stage_i__DOT__alu_op_b_mux_sel_dec = 1U;
                             vlSelf->__PVT__id_stage_i__DOT__imm_a_mux_sel = 1U;
-                            __PVT__id_stage_i__DOT__imm_b_mux_sel_dec = 3U;
+                            vlSelf->__PVT__id_stage_i__DOT__imm_b_mux_sel_dec = 3U;
                             vlSelf->__PVT__id_stage_i__DOT__alu_operator = 0U;
                         }
                     }
-                } else if ((2U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
-                    if ((1U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
-                        __PVT__id_stage_i__DOT__alu_op_a_mux_sel_dec = 0U;
+                } else if ((2U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
+                    if ((1U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
+                        vlSelf->__PVT__id_stage_i__DOT__alu_op_a_mux_sel_dec = 0U;
                         vlSelf->__PVT__id_stage_i__DOT__alu_op_b_mux_sel_dec = 0U;
                         if ((0x4000000U & vlSelf->__PVT__instr_rdata_alu_id)) {
                             if ((0x4000000U & vlSelf->__PVT__instr_rdata_alu_id)) {
@@ -6295,19 +1287,19 @@ VL_INLINE_OPT void Viob_soc_sim_ibex_core__pi4___nba_sequent__TOP__iob_soc_sim__
                                             if ((0x1000U 
                                                  & vlSelf->__PVT__instr_rdata_alu_id)) {
                                                 vlSelf->__PVT__id_stage_i__DOT__alu_operator = 0U;
-                                                __PVT__mult_sel_ex = 1U;
+                                                vlSelf->__PVT__mult_sel_ex = 1U;
                                             } else {
                                                 vlSelf->__PVT__id_stage_i__DOT__alu_operator = 0U;
-                                                __PVT__mult_sel_ex = 1U;
+                                                vlSelf->__PVT__mult_sel_ex = 1U;
                                             }
                                         } else if (
                                                    (0x1000U 
                                                     & vlSelf->__PVT__instr_rdata_alu_id)) {
                                             vlSelf->__PVT__id_stage_i__DOT__alu_operator = 0U;
-                                            __PVT__mult_sel_ex = 1U;
+                                            vlSelf->__PVT__mult_sel_ex = 1U;
                                         } else {
                                             vlSelf->__PVT__id_stage_i__DOT__alu_operator = 0U;
-                                            __PVT__mult_sel_ex = 1U;
+                                            vlSelf->__PVT__mult_sel_ex = 1U;
                                         }
                                     } else {
                                         vlSelf->__PVT__id_stage_i__DOT__alu_operator 
@@ -6346,41 +1338,41 @@ VL_INLINE_OPT void Viob_soc_sim_ibex_core__pi4___nba_sequent__TOP__iob_soc_sim__
                     }
                 }
             }
-        } else if ((1U & (~ ((IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu) 
+        } else if ((1U & (~ ((IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu) 
                              >> 3U)))) {
-            if ((1U & (~ ((IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu) 
+            if ((1U & (~ ((IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu) 
                           >> 2U)))) {
-                if ((2U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
-                    if ((1U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
-                        __PVT__id_stage_i__DOT__alu_op_a_mux_sel_dec = 0U;
+                if ((2U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
+                    if ((1U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
+                        vlSelf->__PVT__id_stage_i__DOT__alu_op_a_mux_sel_dec = 0U;
                         vlSelf->__PVT__id_stage_i__DOT__alu_op_b_mux_sel_dec = 0U;
                         vlSelf->__PVT__id_stage_i__DOT__alu_operator = 0U;
                         if ((1U & (~ (vlSelf->__PVT__instr_rdata_alu_id 
                                       >> 0xeU)))) {
-                            __PVT__id_stage_i__DOT__imm_b_mux_sel_dec = 1U;
+                            vlSelf->__PVT__id_stage_i__DOT__imm_b_mux_sel_dec = 1U;
                             vlSelf->__PVT__id_stage_i__DOT__alu_op_b_mux_sel_dec = 1U;
                         }
                     }
                 }
             }
         }
-    } else if ((0x10U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
-        if ((1U & (~ ((IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu) 
+    } else if ((0x10U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
+        if ((1U & (~ ((IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu) 
                       >> 3U)))) {
-            if ((4U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
-                if ((2U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
-                    if ((1U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
-                        __PVT__id_stage_i__DOT__alu_op_a_mux_sel_dec = 2U;
+            if ((4U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
+                if ((2U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
+                    if ((1U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
+                        vlSelf->__PVT__id_stage_i__DOT__alu_op_a_mux_sel_dec = 2U;
                         vlSelf->__PVT__id_stage_i__DOT__alu_op_b_mux_sel_dec = 1U;
-                        __PVT__id_stage_i__DOT__imm_b_mux_sel_dec = 3U;
+                        vlSelf->__PVT__id_stage_i__DOT__imm_b_mux_sel_dec = 3U;
                         vlSelf->__PVT__id_stage_i__DOT__alu_operator = 0U;
                     }
                 }
-            } else if ((2U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
-                if ((1U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
-                    __PVT__id_stage_i__DOT__alu_op_a_mux_sel_dec = 0U;
+            } else if ((2U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
+                if ((1U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
+                    vlSelf->__PVT__id_stage_i__DOT__alu_op_a_mux_sel_dec = 0U;
                     vlSelf->__PVT__id_stage_i__DOT__alu_op_b_mux_sel_dec = 1U;
-                    __PVT__id_stage_i__DOT__imm_b_mux_sel_dec = 0U;
+                    vlSelf->__PVT__id_stage_i__DOT__imm_b_mux_sel_dec = 0U;
                     if ((0x4000U & vlSelf->__PVT__instr_rdata_alu_id)) {
                         if ((0x2000U & vlSelf->__PVT__instr_rdata_alu_id)) {
                             vlSelf->__PVT__id_stage_i__DOT__alu_operator 
@@ -6605,14 +1597,14 @@ VL_INLINE_OPT void Viob_soc_sim_ibex_core__pi4___nba_sequent__TOP__iob_soc_sim__
                 }
             }
         }
-    } else if ((8U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
-        if ((4U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
-            if ((2U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
-                if ((1U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
+    } else if ((8U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
+        if ((4U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
+            if ((2U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
+                if ((1U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
                     if ((0U == (7U & (vlSelf->__PVT__instr_rdata_alu_id 
                                       >> 0xcU)))) {
                         vlSelf->__PVT__id_stage_i__DOT__alu_operator = 0U;
-                        __PVT__id_stage_i__DOT__alu_op_a_mux_sel_dec = 0U;
+                        vlSelf->__PVT__id_stage_i__DOT__alu_op_a_mux_sel_dec = 0U;
                         vlSelf->__PVT__id_stage_i__DOT__alu_op_b_mux_sel_dec = 1U;
                     } else if ((1U == (7U & (vlSelf->__PVT__instr_rdata_alu_id 
                                              >> 0xcU)))) {
@@ -6622,20 +1614,851 @@ VL_INLINE_OPT void Viob_soc_sim_ibex_core__pi4___nba_sequent__TOP__iob_soc_sim__
                 }
             }
         }
-    } else if ((1U & (~ ((IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu) 
+    } else if ((1U & (~ ((IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu) 
                          >> 2U)))) {
-        if ((2U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
-            if ((1U & (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
-                __PVT__id_stage_i__DOT__alu_op_a_mux_sel_dec = 0U;
+        if ((2U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
+            if ((1U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu))) {
+                vlSelf->__PVT__id_stage_i__DOT__alu_op_a_mux_sel_dec = 0U;
                 vlSelf->__PVT__id_stage_i__DOT__alu_operator = 0U;
                 vlSelf->__PVT__id_stage_i__DOT__alu_op_b_mux_sel_dec = 1U;
-                __PVT__id_stage_i__DOT__imm_b_mux_sel_dec = 0U;
+                vlSelf->__PVT__id_stage_i__DOT__imm_b_mux_sel_dec = 0U;
             }
         }
     }
-    vlSelf->__PVT__rf_rd_a_wb_match = (((IData)(rf_raddr_a_o) 
+    vlSelf->__PVT__if_stage_i__DOT__gen_dummy_instr__DOT__insert_dummy_instr 
+        = (((IData)(vlSelf->__PVT__cs_registers_i__DOT__u_cpuctrlsts_part_csr__DOT__rdata_q) 
+            >> 2U) & ((IData)(vlSelf->__PVT__if_stage_i__DOT__gen_dummy_instr__DOT__dummy_instr_i__DOT__dummy_cnt_q) 
+                      == ((IData)(vlSelf->__VdfgTmp_h5b1acb32__0) 
+                          & (3U | (0x1cU & ((IData)(vlSelf->__PVT__cs_registers_i__DOT__u_cpuctrlsts_part_csr__DOT__rdata_q) 
+                                            >> 1U))))));
+    vlSelf->__PVT__ex_block_i__DOT__multdiv_sel = ((IData)(vlSelf->__PVT__div_sel_ex) 
+                                                   | (IData)(vlSelf->__PVT__mult_sel_ex));
+    if (vlSelf->__PVT__lsu_addr_incr_req) {
+        vlSelf->__PVT__id_stage_i__DOT__alu_op_a_mux_sel = 1U;
+        vlSelf->__PVT__id_stage_i__DOT__imm_b_mux_sel = 6U;
+    } else {
+        vlSelf->__PVT__id_stage_i__DOT__alu_op_a_mux_sel 
+            = vlSelf->__PVT__id_stage_i__DOT__alu_op_a_mux_sel_dec;
+        vlSelf->__PVT__id_stage_i__DOT__imm_b_mux_sel 
+            = vlSelf->__PVT__id_stage_i__DOT__imm_b_mux_sel_dec;
+    }
+    if ((0x13U != (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))) {
+        if ((0x14U != (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))) {
+            if ((0x15U == (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))) {
+                vlSelf->__PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__gen_alu_rvb_otearlgrey_full__DOT__unnamedblk10__DOT__h = 2U;
+            }
+        }
+        if ((0x14U == (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))) {
+            vlSelf->__PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__gen_alu_rvb_otearlgrey_full__DOT__unnamedblk9__DOT__b = 4U;
+        }
+    }
+    __Vtableidx11 = (((IData)(vlSelf->__PVT__instr_first_cycle_id) 
+                      << 7U) | (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator));
+    vlSelf->__PVT__ex_block_i__DOT__alu_i__DOT__bwlogic_op_b_negate 
+        = Viob_soc_sim__ConstPool__TABLE_hc5f8a02c_0
+        [__Vtableidx11];
+    vlSelf->__PVT__ex_block_i__DOT__alu_i__DOT__shift_sbmode 
+        = ((0x31U == (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator)) 
+           | ((0x32U == (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator)) 
+              | (0x33U == (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))));
+    __Vtableidx9 = vlSelf->__PVT__id_stage_i__DOT__alu_operator;
+    vlSelf->__PVT__ex_block_i__DOT__alu_i__DOT__cmp_signed 
+        = Viob_soc_sim__ConstPool__TABLE_hb804351c_0
+        [__Vtableidx9];
+    vlSelf->__PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__gen_alu_rvb_otearlgrey_full__DOT__crc_cpoly 
+        = ((0x40U == (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator)) 
+           | ((0x3eU == (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator)) 
+              | (0x3cU == (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))));
+    vlSelf->__PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__crc_bmode 
+        = ((0x3bU == (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator)) 
+           | (0x3cU == (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator)));
+    vlSelf->__PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__crc_hmode 
+        = ((0x3dU == (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator)) 
+           | (0x3eU == (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator)));
+    vlSelf->__PVT__ex_block_i__DOT__alu_imd_val_we 
+        = ((0x40U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
+            ? ((0x20U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
+                ? 0U : ((0x10U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
+                         ? 0U : ((8U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
+                                  ? 0U : ((4U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
+                                           ? 0U : (
+                                                   (2U 
+                                                    & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
+                                                    ? 0U
+                                                    : 
+                                                   ((1U 
+                                                     & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
+                                                     ? 0U
+                                                     : 
+                                                    ((IData)(vlSelf->__PVT__instr_first_cycle_id)
+                                                      ? 1U
+                                                      : 0U)))))))
+            : ((0x20U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
+                ? ((0x10U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
+                    ? ((8U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
+                        ? ((4U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
+                            ? ((IData)(vlSelf->__PVT__instr_first_cycle_id)
+                                ? 1U : 0U) : ((2U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
+                                               ? ((1U 
+                                                   & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
+                                                   ? 
+                                                  ((IData)(vlSelf->__PVT__instr_first_cycle_id)
+                                                    ? 1U
+                                                    : 0U)
+                                                   : 0U)
+                                               : 0U))
+                        : ((4U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
+                            ? 0U : ((2U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
+                                     ? 0U : ((1U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
+                                              ? 0U : 
+                                             ((IData)(vlSelf->__PVT__instr_first_cycle_id)
+                                               ? 1U
+                                               : 0U)))))
+                    : ((8U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
+                        ? ((4U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
+                            ? ((2U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
+                                ? ((1U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
+                                    ? ((IData)(vlSelf->__PVT__instr_first_cycle_id)
+                                        ? 1U : 0U) : 
+                                   ((IData)(vlSelf->__PVT__instr_first_cycle_id)
+                                     ? 1U : 0U)) : 
+                               ((1U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
+                                 ? ((IData)(vlSelf->__PVT__instr_first_cycle_id)
+                                     ? 1U : 0U) : 0U))
+                            : 0U) : 0U)) : ((0x10U 
+                                             & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
+                                             ? 0U : 
+                                            ((8U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
+                                              ? ((4U 
+                                                  & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
+                                                  ? 
+                                                 ((2U 
+                                                   & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
+                                                   ? 
+                                                  ((1U 
+                                                    & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
+                                                    ? 0U
+                                                    : 
+                                                   ((IData)(vlSelf->__PVT__instr_first_cycle_id)
+                                                     ? 1U
+                                                     : 0U))
+                                                   : 
+                                                  ((1U 
+                                                    & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
+                                                    ? 
+                                                   ((IData)(vlSelf->__PVT__instr_first_cycle_id)
+                                                     ? 1U
+                                                     : 0U)
+                                                    : 0U))
+                                                  : 0U)
+                                              : 0U))));
+    vlSelf->__PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__gen_alu_rvb_otearlgrey_full__DOT__crc_op 
+        = ((0x40U == (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator)) 
+           | ((0x3fU == (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator)) 
+              | ((0x3eU == (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator)) 
+                 | ((0x3dU == (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator)) 
+                    | ((0x3cU == (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator)) 
+                       | (0x3bU == (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator)))))));
+    __Vtableidx8 = vlSelf->__PVT__id_stage_i__DOT__alu_operator;
+    vlSelf->__PVT__ex_block_i__DOT__alu_i__DOT__adder_op_a_shift1 
+        = Viob_soc_sim__ConstPool__TABLE_h040dd589_0
+        [__Vtableidx8];
+    vlSelf->__PVT__ex_block_i__DOT__alu_i__DOT__adder_op_a_shift2 
+        = Viob_soc_sim__ConstPool__TABLE_h422a9fe7_0
+        [__Vtableidx8];
+    vlSelf->__PVT__ex_block_i__DOT__alu_i__DOT__adder_op_a_shift3 
+        = Viob_soc_sim__ConstPool__TABLE_hd0338811_0
+        [__Vtableidx8];
+    vlSelf->__PVT__ex_block_i__DOT__alu_i__DOT__adder_op_b_negate 
+        = Viob_soc_sim__ConstPool__TABLE_ha686e182_0
+        [__Vtableidx8];
+    vlSelf->__PVT__if_stage_i__DOT__gen_dummy_instr__DOT__dummy_instr_i__DOT__dummy_cnt_d 
+        = ((IData)(vlSelf->__PVT__if_stage_i__DOT__gen_dummy_instr__DOT__insert_dummy_instr)
+            ? 0U : (0x1fU & ((IData)(1U) + (IData)(vlSelf->__PVT__if_stage_i__DOT__gen_dummy_instr__DOT__dummy_instr_i__DOT__dummy_cnt_q))));
+    vlSelf->__PVT__g_pmp__DOT__pmp_req_addr[0U] = (QData)((IData)(
+                                                                  (vlSelf->__PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT__instr_addr_q 
+                                                                   << 1U)));
+    vlSelf->__PVT__g_pmp__DOT__pmp_req_addr[1U] = (QData)((IData)(
+                                                                  ((IData)(2U) 
+                                                                   + 
+                                                                   (vlSelf->__PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT__instr_addr_q 
+                                                                    << 1U))));
+    vlSelf->__PVT__trigger_match = ((IData)(vlSelf->__PVT__cs_registers_i__DOT__gen_trigger_regs__DOT__g_dbg_tmatch_reg__BRA__0__KET____DOT__u_tmatch_control_csr__DOT__rdata_q) 
+                                    & (vlSelf->__PVT__cs_registers_i__DOT__gen_trigger_regs__DOT__g_dbg_tmatch_reg__BRA__0__KET____DOT__u_tmatch_value_csr__DOT__rdata_q 
+                                       == (vlSelf->__PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT__instr_addr_q 
+                                           << 1U)));
+    vlSelf->rf_raddr_a_o = (0x1fU & (((~ (IData)(vlSelf->__PVT__instr_first_cycle_id)) 
+                                      & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__use_rs3_q))
+                                      ? (vlSelf->__PVT__instr_rdata_id 
+                                         >> 0x1bU) : 
+                                     (vlSelf->__PVT__instr_rdata_id 
+                                      >> 0xfU)));
+    vlSelf->__PVT__id_stage_i__DOT__imm_i_type = ((
+                                                   (- (IData)(
+                                                              (vlSelf->__PVT__instr_rdata_id 
+                                                               >> 0x1fU))) 
+                                                   << 0xcU) 
+                                                  | (vlSelf->__PVT__instr_rdata_id 
+                                                     >> 0x14U));
+    vlSelf->__PVT__rf_rd_b_wb_match = (((0x1fU & (vlSelf->__PVT__instr_rdata_id 
+                                                  >> 0x14U)) 
                                         == (IData)(vlSelf->__PVT__wb_stage_i__DOT__g_writeback_stage__DOT__rf_waddr_wb_q)) 
-                                       & (0U != (IData)(rf_raddr_a_o)));
+                                       & (0U != (0x1fU 
+                                                 & (vlSelf->__PVT__instr_rdata_id 
+                                                    >> 0x14U))));
+    vlSelf->__PVT__id_stage_i__DOT__jump_in_dec = 0U;
+    vlSelf->__PVT__id_stage_i__DOT__jump_set_dec = 0U;
+    vlSelf->__PVT__id_stage_i__DOT__branch_in_dec = 0U;
+    vlSelf->__PVT__icache_inval = 0U;
+    vlSelf->__PVT__id_stage_i__DOT__multdiv_operator = 0U;
+    vlSelf->__PVT__id_stage_i__DOT__multdiv_signed_mode = 0U;
+    vlSelf->__PVT__id_stage_i__DOT__rf_wdata_sel = 0U;
+    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__rf_we = 0U;
+    vlSelf->__PVT__id_stage_i__DOT__rf_ren_a_dec = 0U;
+    vlSelf->__PVT__id_stage_i__DOT__rf_ren_b_dec = 0U;
+    vlSelf->__PVT__csr_access = 0U;
+    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__csr_illegal = 0U;
+    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__csr_op = 0U;
+    vlSelf->__PVT__id_stage_i__DOT__lsu_we = 0U;
+    vlSelf->__PVT__id_stage_i__DOT__lsu_type = 0U;
+    vlSelf->__PVT__id_stage_i__DOT__lsu_sign_ext = 0U;
+    vlSelf->__PVT__id_stage_i__DOT__lsu_req_dec = 0U;
+    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 0U;
+    vlSelf->__PVT__id_stage_i__DOT__ebrk_insn = 0U;
+    vlSelf->__PVT__id_stage_i__DOT__mret_insn_dec = 0U;
+    vlSelf->__PVT__id_stage_i__DOT__dret_insn_dec = 0U;
+    vlSelf->__PVT__id_stage_i__DOT__ecall_insn_dec = 0U;
+    vlSelf->__PVT__id_stage_i__DOT__wfi_insn_dec = 0U;
+    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode 
+        = (0x7fU & vlSelf->__PVT__instr_rdata_id);
+    if ((0x40U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+        if ((0x20U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+            if ((0x10U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+                if ((8U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+                    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+                } else if ((4U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+                    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+                } else if ((2U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+                    if ((1U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+                        if ((0U == (7U & (vlSelf->__PVT__instr_rdata_id 
+                                          >> 0xcU)))) {
+                            if ((0U == (vlSelf->__PVT__instr_rdata_id 
+                                        >> 0x14U))) {
+                                vlSelf->__PVT__id_stage_i__DOT__ecall_insn_dec = 1U;
+                            } else if ((1U == (vlSelf->__PVT__instr_rdata_id 
+                                               >> 0x14U))) {
+                                vlSelf->__PVT__id_stage_i__DOT__ebrk_insn = 1U;
+                            } else if ((0x302U == (vlSelf->__PVT__instr_rdata_id 
+                                                   >> 0x14U))) {
+                                vlSelf->__PVT__id_stage_i__DOT__mret_insn_dec = 1U;
+                            } else if ((0x7b2U == (vlSelf->__PVT__instr_rdata_id 
+                                                   >> 0x14U))) {
+                                vlSelf->__PVT__id_stage_i__DOT__dret_insn_dec = 1U;
+                            } else if ((0x105U == (vlSelf->__PVT__instr_rdata_id 
+                                                   >> 0x14U))) {
+                                vlSelf->__PVT__id_stage_i__DOT__wfi_insn_dec = 1U;
+                            } else {
+                                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+                            }
+                            if ((IData)((0U != (0xf8f80U 
+                                                & vlSelf->__PVT__instr_rdata_id)))) {
+                                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+                            }
+                        } else {
+                            vlSelf->__PVT__csr_access = 1U;
+                            vlSelf->__PVT__id_stage_i__DOT__rf_wdata_sel = 1U;
+                            vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__rf_we = 1U;
+                            if ((1U & (~ (vlSelf->__PVT__instr_rdata_id 
+                                          >> 0xeU)))) {
+                                vlSelf->__PVT__id_stage_i__DOT__rf_ren_a_dec = 1U;
+                            }
+                            if ((1U == (3U & (vlSelf->__PVT__instr_rdata_id 
+                                              >> 0xcU)))) {
+                                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__csr_op = 1U;
+                            } else if ((2U == (3U & 
+                                               (vlSelf->__PVT__instr_rdata_id 
+                                                >> 0xcU)))) {
+                                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__csr_op = 2U;
+                            } else if ((3U == (3U & 
+                                               (vlSelf->__PVT__instr_rdata_id 
+                                                >> 0xcU)))) {
+                                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__csr_op = 3U;
+                            } else {
+                                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__csr_illegal = 1U;
+                            }
+                            vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn 
+                                = vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__csr_illegal;
+                        }
+                    } else {
+                        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+                    }
+                } else {
+                    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+                }
+            } else if ((8U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+                if ((4U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+                    if ((2U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+                        if ((1U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+                            vlSelf->__PVT__id_stage_i__DOT__jump_in_dec = 1U;
+                            if (vlSelf->__PVT__instr_first_cycle_id) {
+                                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__rf_we = 1U;
+                                vlSelf->__PVT__id_stage_i__DOT__jump_set_dec = 1U;
+                            } else {
+                                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__rf_we = 1U;
+                            }
+                        } else {
+                            vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+                        }
+                    } else {
+                        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+                    }
+                } else {
+                    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+                }
+            } else if ((4U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+                if ((2U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+                    if ((1U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+                        vlSelf->__PVT__id_stage_i__DOT__jump_in_dec = 1U;
+                        if (vlSelf->__PVT__instr_first_cycle_id) {
+                            vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__rf_we = 1U;
+                            vlSelf->__PVT__id_stage_i__DOT__jump_set_dec = 1U;
+                        } else {
+                            vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__rf_we = 1U;
+                        }
+                        if ((0U != (7U & (vlSelf->__PVT__instr_rdata_id 
+                                          >> 0xcU)))) {
+                            vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+                        }
+                        vlSelf->__PVT__id_stage_i__DOT__rf_ren_a_dec = 1U;
+                    } else {
+                        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+                    }
+                } else {
+                    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+                }
+            } else if ((2U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+                if ((1U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+                    vlSelf->__PVT__id_stage_i__DOT__branch_in_dec = 1U;
+                    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn 
+                        = ((1U & (~ (vlSelf->__PVT__instr_rdata_id 
+                                     >> 0xeU))) && 
+                           (1U & (vlSelf->__PVT__instr_rdata_id 
+                                  >> 0xdU)));
+                    vlSelf->__PVT__id_stage_i__DOT__rf_ren_a_dec = 1U;
+                    vlSelf->__PVT__id_stage_i__DOT__rf_ren_b_dec = 1U;
+                } else {
+                    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+                }
+            } else {
+                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+            }
+        } else {
+            vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+        }
+    } else if ((0x20U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+        if ((0x10U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+            if ((8U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+            } else if ((4U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+                if ((2U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+                    if ((1U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+                        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__rf_we = 1U;
+                    } else {
+                        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+                    }
+                } else {
+                    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+                }
+            } else if ((2U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+                if ((1U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+                    vlSelf->__PVT__id_stage_i__DOT__rf_ren_a_dec = 1U;
+                    vlSelf->__PVT__id_stage_i__DOT__rf_ren_b_dec = 1U;
+                    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__rf_we = 1U;
+                    if ((5U == ((4U & (vlSelf->__PVT__instr_rdata_id 
+                                       >> 0x18U)) | 
+                                (3U & (vlSelf->__PVT__instr_rdata_id 
+                                       >> 0xcU))))) {
+                        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 0U;
+                    } else if ((vlSelf->__PVT__instr_rdata_id 
+                                >> 0x1fU)) {
+                        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+                    } else if ((0x40000000U & vlSelf->__PVT__instr_rdata_id)) {
+                        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn 
+                            = ((0x20000000U & vlSelf->__PVT__instr_rdata_id)
+                                ? ((1U & (vlSelf->__PVT__instr_rdata_id 
+                                          >> 0x1cU)) 
+                                   || ((0x8000000U 
+                                        & vlSelf->__PVT__instr_rdata_id)
+                                        ? ((1U & (vlSelf->__PVT__instr_rdata_id 
+                                                  >> 0x1aU)) 
+                                           || ((1U 
+                                                & (vlSelf->__PVT__instr_rdata_id 
+                                                   >> 0x19U)) 
+                                               || ((0x4000U 
+                                                    & vlSelf->__PVT__instr_rdata_id)
+                                                    ? 
+                                                   ((1U 
+                                                     & (vlSelf->__PVT__instr_rdata_id 
+                                                        >> 0xdU)) 
+                                                    || (1U 
+                                                        & (~ 
+                                                           (vlSelf->__PVT__instr_rdata_id 
+                                                            >> 0xcU))))
+                                                    : 
+                                                   ((1U 
+                                                     & (vlSelf->__PVT__instr_rdata_id 
+                                                        >> 0xdU)) 
+                                                    || (1U 
+                                                        & (~ 
+                                                           (vlSelf->__PVT__instr_rdata_id 
+                                                            >> 0xcU)))))))
+                                        : ((1U & (vlSelf->__PVT__instr_rdata_id 
+                                                  >> 0x1aU)) 
+                                           || ((1U 
+                                                & (vlSelf->__PVT__instr_rdata_id 
+                                                   >> 0x19U)) 
+                                               || ((1U 
+                                                    & (vlSelf->__PVT__instr_rdata_id 
+                                                       >> 0xdU)) 
+                                                   || (1U 
+                                                       & (~ 
+                                                          (vlSelf->__PVT__instr_rdata_id 
+                                                           >> 0xcU))))))))
+                                : ((1U & (vlSelf->__PVT__instr_rdata_id 
+                                          >> 0x1cU)) 
+                                   || ((0x8000000U 
+                                        & vlSelf->__PVT__instr_rdata_id)
+                                        ? ((1U & (vlSelf->__PVT__instr_rdata_id 
+                                                  >> 0x1aU)) 
+                                           || ((1U 
+                                                & (vlSelf->__PVT__instr_rdata_id 
+                                                   >> 0x19U)) 
+                                               || ((0x4000U 
+                                                    & vlSelf->__PVT__instr_rdata_id)
+                                                    ? 
+                                                   ((1U 
+                                                     & (vlSelf->__PVT__instr_rdata_id 
+                                                        >> 0xdU)) 
+                                                    && (1U 
+                                                        & (~ 
+                                                           (vlSelf->__PVT__instr_rdata_id 
+                                                            >> 0xcU))))
+                                                    : 
+                                                   ((1U 
+                                                     & (vlSelf->__PVT__instr_rdata_id 
+                                                        >> 0xdU)) 
+                                                    || (1U 
+                                                        & (~ 
+                                                           (vlSelf->__PVT__instr_rdata_id 
+                                                            >> 0xcU)))))))
+                                        : ((1U & (vlSelf->__PVT__instr_rdata_id 
+                                                  >> 0x1aU)) 
+                                           || ((1U 
+                                                & (vlSelf->__PVT__instr_rdata_id 
+                                                   >> 0x19U)) 
+                                               || ((1U 
+                                                    & (~ 
+                                                       (vlSelf->__PVT__instr_rdata_id 
+                                                        >> 0xeU))) 
+                                                   && ((1U 
+                                                        & (vlSelf->__PVT__instr_rdata_id 
+                                                           >> 0xdU)) 
+                                                       || (1U 
+                                                           & (vlSelf->__PVT__instr_rdata_id 
+                                                              >> 0xcU)))))))));
+                    } else if ((0x20000000U & vlSelf->__PVT__instr_rdata_id)) {
+                        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn 
+                            = ((1U & (vlSelf->__PVT__instr_rdata_id 
+                                      >> 0x1cU)) || 
+                               ((0x8000000U & vlSelf->__PVT__instr_rdata_id)
+                                 ? ((1U & (vlSelf->__PVT__instr_rdata_id 
+                                           >> 0x1aU)) 
+                                    || ((1U & (vlSelf->__PVT__instr_rdata_id 
+                                               >> 0x19U)) 
+                                        || (1U & ((0x4000U 
+                                                   & vlSelf->__PVT__instr_rdata_id)
+                                                   ? 
+                                                  ((1U 
+                                                    & (vlSelf->__PVT__instr_rdata_id 
+                                                       >> 0xdU)) 
+                                                   && (1U 
+                                                       & (vlSelf->__PVT__instr_rdata_id 
+                                                          >> 0xcU)))
+                                                   : 
+                                                  ((0x2000U 
+                                                    & vlSelf->__PVT__instr_rdata_id)
+                                                    ? 
+                                                   (vlSelf->__PVT__instr_rdata_id 
+                                                    >> 0xcU)
+                                                    : 
+                                                   (~ 
+                                                    (vlSelf->__PVT__instr_rdata_id 
+                                                     >> 0xcU)))))))
+                                 : ((1U & (vlSelf->__PVT__instr_rdata_id 
+                                           >> 0x1aU)) 
+                                    || ((1U & (vlSelf->__PVT__instr_rdata_id 
+                                               >> 0x19U)) 
+                                        || (1U & ((0x4000U 
+                                                   & vlSelf->__PVT__instr_rdata_id)
+                                                   ? 
+                                                  ((1U 
+                                                    & (vlSelf->__PVT__instr_rdata_id 
+                                                       >> 0xdU)) 
+                                                   && (1U 
+                                                       & (vlSelf->__PVT__instr_rdata_id 
+                                                          >> 0xcU)))
+                                                   : 
+                                                  ((0x2000U 
+                                                    & vlSelf->__PVT__instr_rdata_id)
+                                                    ? 
+                                                   (vlSelf->__PVT__instr_rdata_id 
+                                                    >> 0xcU)
+                                                    : 
+                                                   (~ 
+                                                    (vlSelf->__PVT__instr_rdata_id 
+                                                     >> 0xcU)))))))));
+                    } else if ((0x10000000U & vlSelf->__PVT__instr_rdata_id)) {
+                        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+                    } else if ((0x8000000U & vlSelf->__PVT__instr_rdata_id)) {
+                        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn 
+                            = ((1U & (vlSelf->__PVT__instr_rdata_id 
+                                      >> 0x1aU)) || 
+                               ((0x2000000U & vlSelf->__PVT__instr_rdata_id)
+                                 ? ((1U & (~ (vlSelf->__PVT__instr_rdata_id 
+                                              >> 0xeU))) 
+                                    && ((1U & (~ (vlSelf->__PVT__instr_rdata_id 
+                                                  >> 0xdU))) 
+                                        && (1U & (~ 
+                                                  (vlSelf->__PVT__instr_rdata_id 
+                                                   >> 0xcU)))))
+                                 : ((0x4000U & vlSelf->__PVT__instr_rdata_id)
+                                     ? ((1U & (vlSelf->__PVT__instr_rdata_id 
+                                               >> 0xdU)) 
+                                        && (1U & (~ 
+                                                  (vlSelf->__PVT__instr_rdata_id 
+                                                   >> 0xcU))))
+                                     : ((1U & (vlSelf->__PVT__instr_rdata_id 
+                                               >> 0xdU)) 
+                                        || (1U & (~ 
+                                                  (vlSelf->__PVT__instr_rdata_id 
+                                                   >> 0xcU)))))));
+                    } else if ((0x4000000U & vlSelf->__PVT__instr_rdata_id)) {
+                        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+                    } else if ((0x2000000U & vlSelf->__PVT__instr_rdata_id)) {
+                        if ((0x4000U & vlSelf->__PVT__instr_rdata_id)) {
+                            if ((0x2000U & vlSelf->__PVT__instr_rdata_id)) {
+                                if ((0x1000U & vlSelf->__PVT__instr_rdata_id)) {
+                                    vlSelf->__PVT__id_stage_i__DOT__multdiv_operator = 3U;
+                                    vlSelf->__PVT__id_stage_i__DOT__multdiv_signed_mode = 0U;
+                                    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 0U;
+                                } else {
+                                    vlSelf->__PVT__id_stage_i__DOT__multdiv_operator = 3U;
+                                    vlSelf->__PVT__id_stage_i__DOT__multdiv_signed_mode = 3U;
+                                    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 0U;
+                                }
+                            } else if ((0x1000U & vlSelf->__PVT__instr_rdata_id)) {
+                                vlSelf->__PVT__id_stage_i__DOT__multdiv_operator = 2U;
+                                vlSelf->__PVT__id_stage_i__DOT__multdiv_signed_mode = 0U;
+                                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 0U;
+                            } else {
+                                vlSelf->__PVT__id_stage_i__DOT__multdiv_operator = 2U;
+                                vlSelf->__PVT__id_stage_i__DOT__multdiv_signed_mode = 3U;
+                                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 0U;
+                            }
+                        } else if ((0x2000U & vlSelf->__PVT__instr_rdata_id)) {
+                            if ((0x1000U & vlSelf->__PVT__instr_rdata_id)) {
+                                vlSelf->__PVT__id_stage_i__DOT__multdiv_operator = 1U;
+                                vlSelf->__PVT__id_stage_i__DOT__multdiv_signed_mode = 0U;
+                                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 0U;
+                            } else {
+                                vlSelf->__PVT__id_stage_i__DOT__multdiv_operator = 1U;
+                                vlSelf->__PVT__id_stage_i__DOT__multdiv_signed_mode = 1U;
+                                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 0U;
+                            }
+                        } else if ((0x1000U & vlSelf->__PVT__instr_rdata_id)) {
+                            vlSelf->__PVT__id_stage_i__DOT__multdiv_operator = 1U;
+                            vlSelf->__PVT__id_stage_i__DOT__multdiv_signed_mode = 3U;
+                            vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 0U;
+                        } else {
+                            vlSelf->__PVT__id_stage_i__DOT__multdiv_operator = 0U;
+                            vlSelf->__PVT__id_stage_i__DOT__multdiv_signed_mode = 0U;
+                            vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 0U;
+                        }
+                    } else {
+                        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 0U;
+                    }
+                } else {
+                    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+                }
+            } else {
+                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+            }
+        } else if ((8U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+            vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+        } else if ((4U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+            vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+        } else if ((2U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+            if ((1U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+                vlSelf->__PVT__id_stage_i__DOT__rf_ren_a_dec = 1U;
+                vlSelf->__PVT__id_stage_i__DOT__rf_ren_b_dec = 1U;
+                vlSelf->__PVT__id_stage_i__DOT__lsu_req_dec = 1U;
+                vlSelf->__PVT__id_stage_i__DOT__lsu_we = 1U;
+                if ((0x4000U & vlSelf->__PVT__instr_rdata_id)) {
+                    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+                }
+                if ((0U == (3U & (vlSelf->__PVT__instr_rdata_id 
+                                  >> 0xcU)))) {
+                    vlSelf->__PVT__id_stage_i__DOT__lsu_type = 2U;
+                } else if ((1U == (3U & (vlSelf->__PVT__instr_rdata_id 
+                                         >> 0xcU)))) {
+                    vlSelf->__PVT__id_stage_i__DOT__lsu_type = 1U;
+                } else if ((2U == (3U & (vlSelf->__PVT__instr_rdata_id 
+                                         >> 0xcU)))) {
+                    vlSelf->__PVT__id_stage_i__DOT__lsu_type = 0U;
+                } else {
+                    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+                }
+            } else {
+                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+            }
+        } else {
+            vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+        }
+    } else if ((0x10U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+        if ((8U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+            vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+        } else if ((4U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+            if ((2U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+                if ((1U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+                    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__rf_we = 1U;
+                } else {
+                    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+                }
+            } else {
+                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+            }
+        } else if ((2U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+            if ((1U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+                vlSelf->__PVT__id_stage_i__DOT__rf_ren_a_dec = 1U;
+                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__rf_we = 1U;
+                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn 
+                    = ((0x4000U & vlSelf->__PVT__instr_rdata_id)
+                        ? ((1U & (~ (vlSelf->__PVT__instr_rdata_id 
+                                     >> 0xdU))) && 
+                           ((1U & (vlSelf->__PVT__instr_rdata_id 
+                                   >> 0xcU)) && ((1U 
+                                                  & (~ 
+                                                     (vlSelf->__PVT__instr_rdata_id 
+                                                      >> 0x1aU))) 
+                                                 && ((vlSelf->__PVT__instr_rdata_id 
+                                                      >> 0x1fU) 
+                                                     || (1U 
+                                                         & ((0x40000000U 
+                                                             & vlSelf->__PVT__instr_rdata_id)
+                                                             ? 
+                                                            ((0x20000000U 
+                                                              & vlSelf->__PVT__instr_rdata_id)
+                                                              ? 
+                                                             (vlSelf->__PVT__instr_rdata_id 
+                                                              >> 0x1cU)
+                                                              : 
+                                                             ((1U 
+                                                               & (vlSelf->__PVT__instr_rdata_id 
+                                                                  >> 0x1cU)) 
+                                                              || ((1U 
+                                                                   & (~ 
+                                                                      (vlSelf->__PVT__instr_rdata_id 
+                                                                       >> 0x1bU))) 
+                                                                  && (0U 
+                                                                      != 
+                                                                      (3U 
+                                                                       & (vlSelf->__PVT__instr_rdata_id 
+                                                                          >> 0x19U))))))
+                                                             : 
+                                                            ((0x20000000U 
+                                                              & vlSelf->__PVT__instr_rdata_id)
+                                                              ? 
+                                                             (vlSelf->__PVT__instr_rdata_id 
+                                                              >> 0x1cU)
+                                                              : 
+                                                             ((1U 
+                                                               & (vlSelf->__PVT__instr_rdata_id 
+                                                                  >> 0x1cU)) 
+                                                              || (1U 
+                                                                  & ((0x8000000U 
+                                                                      & vlSelf->__PVT__instr_rdata_id)
+                                                                      ? 
+                                                                     (vlSelf->__PVT__instr_rdata_id 
+                                                                      >> 0x1aU)
+                                                                      : 
+                                                                     (0U 
+                                                                      != 
+                                                                      (3U 
+                                                                       & (vlSelf->__PVT__instr_rdata_id 
+                                                                          >> 0x19U)))))))))))))
+                        : ((1U & (~ (vlSelf->__PVT__instr_rdata_id 
+                                     >> 0xdU))) && 
+                           ((1U & (vlSelf->__PVT__instr_rdata_id 
+                                   >> 0xcU)) && ((vlSelf->__PVT__instr_rdata_id 
+                                                  >> 0x1fU) 
+                                                 || (1U 
+                                                     & ((0x40000000U 
+                                                         & vlSelf->__PVT__instr_rdata_id)
+                                                         ? 
+                                                        ((0x20000000U 
+                                                          & vlSelf->__PVT__instr_rdata_id)
+                                                          ? 
+                                                         ((1U 
+                                                           & (vlSelf->__PVT__instr_rdata_id 
+                                                              >> 0x1cU)) 
+                                                          || ((1U 
+                                                               & (~ 
+                                                                  (vlSelf->__PVT__instr_rdata_id 
+                                                                   >> 0x1bU))) 
+                                                              && ((1U 
+                                                                   & (vlSelf->__PVT__instr_rdata_id 
+                                                                      >> 0x1aU)) 
+                                                                  || ((1U 
+                                                                       & (vlSelf->__PVT__instr_rdata_id 
+                                                                          >> 0x19U)) 
+                                                                      || ((0x1000000U 
+                                                                           & vlSelf->__PVT__instr_rdata_id)
+                                                                           ? 
+                                                                          ((1U 
+                                                                            & (vlSelf->__PVT__instr_rdata_id 
+                                                                               >> 0x16U)) 
+                                                                           || ((1U 
+                                                                                & (vlSelf->__PVT__instr_rdata_id 
+                                                                                >> 0x15U)) 
+                                                                               && (1U 
+                                                                                & (vlSelf->__PVT__instr_rdata_id 
+                                                                                >> 0x14U))))
+                                                                           : 
+                                                                          ((1U 
+                                                                            & (vlSelf->__PVT__instr_rdata_id 
+                                                                               >> 0x17U)) 
+                                                                           || (1U 
+                                                                               & ((0x400000U 
+                                                                                & vlSelf->__PVT__instr_rdata_id)
+                                                                                 ? 
+                                                                                (vlSelf->__PVT__instr_rdata_id 
+                                                                                >> 0x15U)
+                                                                                 : 
+                                                                                ((1U 
+                                                                                & (vlSelf->__PVT__instr_rdata_id 
+                                                                                >> 0x15U)) 
+                                                                                && (1U 
+                                                                                & (vlSelf->__PVT__instr_rdata_id 
+                                                                                >> 0x14U)))))))))))
+                                                          : 
+                                                         ((1U 
+                                                           & (vlSelf->__PVT__instr_rdata_id 
+                                                              >> 0x1cU)) 
+                                                          || (1U 
+                                                              & (~ 
+                                                                 (vlSelf->__PVT__instr_rdata_id 
+                                                                  >> 0x1bU)))))
+                                                         : 
+                                                        ((0x20000000U 
+                                                          & vlSelf->__PVT__instr_rdata_id)
+                                                          ? 
+                                                         (vlSelf->__PVT__instr_rdata_id 
+                                                          >> 0x1cU)
+                                                          : 
+                                                         ((1U 
+                                                           & (vlSelf->__PVT__instr_rdata_id 
+                                                              >> 0x1cU)) 
+                                                          || (1U 
+                                                              & ((0x8000000U 
+                                                                  & vlSelf->__PVT__instr_rdata_id)
+                                                                  ? 
+                                                                 (vlSelf->__PVT__instr_rdata_id 
+                                                                  >> 0x1aU)
+                                                                  : 
+                                                                 (0U 
+                                                                  != 
+                                                                  (3U 
+                                                                   & (vlSelf->__PVT__instr_rdata_id 
+                                                                      >> 0x19U)))))))))))));
+            } else {
+                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+            }
+        } else {
+            vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+        }
+    } else if ((8U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+        if ((4U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+            if ((2U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+                if ((1U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+                    if ((0U == (7U & (vlSelf->__PVT__instr_rdata_id 
+                                      >> 0xcU)))) {
+                        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__rf_we = 0U;
+                    } else if ((1U == (7U & (vlSelf->__PVT__instr_rdata_id 
+                                             >> 0xcU)))) {
+                        vlSelf->__PVT__id_stage_i__DOT__jump_in_dec = 1U;
+                        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__rf_we = 0U;
+                        if (vlSelf->__PVT__instr_first_cycle_id) {
+                            vlSelf->__PVT__id_stage_i__DOT__jump_set_dec = 1U;
+                            vlSelf->__PVT__icache_inval = 1U;
+                        }
+                    } else {
+                        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+                    }
+                } else {
+                    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+                }
+            } else {
+                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+            }
+        } else {
+            vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+        }
+    } else if ((4U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+    } else if ((2U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+        if ((1U & (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__opcode))) {
+            vlSelf->__PVT__id_stage_i__DOT__rf_ren_a_dec = 1U;
+            vlSelf->__PVT__id_stage_i__DOT__lsu_req_dec = 1U;
+            vlSelf->__PVT__id_stage_i__DOT__lsu_type = 0U;
+            vlSelf->__PVT__id_stage_i__DOT__lsu_sign_ext 
+                = (1U & (~ (vlSelf->__PVT__instr_rdata_id 
+                            >> 0xeU)));
+            if ((0U == (3U & (vlSelf->__PVT__instr_rdata_id 
+                              >> 0xcU)))) {
+                vlSelf->__PVT__id_stage_i__DOT__lsu_type = 2U;
+            } else if ((1U == (3U & (vlSelf->__PVT__instr_rdata_id 
+                                     >> 0xcU)))) {
+                vlSelf->__PVT__id_stage_i__DOT__lsu_type = 1U;
+            } else if ((2U == (3U & (vlSelf->__PVT__instr_rdata_id 
+                                     >> 0xcU)))) {
+                vlSelf->__PVT__id_stage_i__DOT__lsu_type = 0U;
+                if ((0x4000U & vlSelf->__PVT__instr_rdata_id)) {
+                    vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+                }
+            } else {
+                vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+            }
+        } else {
+            vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+        }
+    } else {
+        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+    }
+    if (vlSelf->__PVT__illegal_c_insn_id) {
+        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn = 1U;
+    }
+    if (vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn) {
+        vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__rf_we = 0U;
+        vlSelf->__PVT__id_stage_i__DOT__lsu_req_dec = 0U;
+        vlSelf->__PVT__id_stage_i__DOT__lsu_we = 0U;
+        vlSelf->__PVT__id_stage_i__DOT__jump_in_dec = 0U;
+        vlSelf->__PVT__id_stage_i__DOT__jump_set_dec = 0U;
+        vlSelf->__PVT__id_stage_i__DOT__branch_in_dec = 0U;
+        vlSelf->__PVT__csr_access = 0U;
+    }
+    vlSelf->__PVT__rf_rd_a_wb_match = (((IData)(vlSelf->rf_raddr_a_o) 
+                                        == (IData)(vlSelf->__PVT__wb_stage_i__DOT__g_writeback_stage__DOT__rf_waddr_wb_q)) 
+                                       & (0U != (IData)(vlSelf->rf_raddr_a_o)));
     vlSelf->__PVT__ex_block_i__DOT__gen_multdiv_fast__DOT__multdiv_i__DOT__gen_mult_single_cycle__DOT__mult_state_d = 0U;
     if (vlSelf->__PVT__ex_block_i__DOT__gen_multdiv_fast__DOT__multdiv_i__DOT__gen_mult_single_cycle__DOT__mult_state_q) {
         vlSelf->__PVT__ex_block_i__DOT__gen_multdiv_fast__DOT__multdiv_i__DOT__gen_mult_single_cycle__DOT__mult_state_d = 0U;
@@ -7099,152 +2922,17 @@ VL_INLINE_OPT void Viob_soc_sim_ibex_core__pi4___nba_sequent__TOP__iob_soc_sim__
     vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__mret_insn 
         = ((IData)(vlSelf->__PVT__id_stage_i__DOT__mret_insn_dec) 
            & (IData)(vlSelf->__PVT__if_stage_i__DOT__instr_valid_id_q));
-    vlSelf->__PVT__csr_op = __PVT__id_stage_i__DOT__decoder_i__DOT__csr_op;
-    if ((IData)(((0U == (0xf8000U & vlSelf->__PVT__instr_rdata_id)) 
-                 & ((2U == (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__csr_op)) 
-                    | (3U == (IData)(__PVT__id_stage_i__DOT__decoder_i__DOT__csr_op)))))) {
-        vlSelf->__PVT__csr_op = 0U;
-    }
     vlSelf->__PVT__id_stage_i__DOT__div_en_dec = ((~ (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn)) 
                                                   & (IData)(vlSelf->__PVT__div_sel_ex));
     vlSelf->__PVT__id_stage_i__DOT__mult_en_dec = (
                                                    (~ (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn)) 
-                                                   & (IData)(__PVT__mult_sel_ex));
-    vlSelf->__PVT__ex_block_i__DOT__multdiv_sel = ((IData)(vlSelf->__PVT__div_sel_ex) 
-                                                   | (IData)(__PVT__mult_sel_ex));
-    if (vlSelf->__PVT__lsu_addr_incr_req) {
-        vlSelf->__PVT__id_stage_i__DOT__alu_op_a_mux_sel = 1U;
-        vlSelf->__PVT__id_stage_i__DOT__imm_b_mux_sel = 6U;
-    } else {
-        vlSelf->__PVT__id_stage_i__DOT__alu_op_a_mux_sel 
-            = __PVT__id_stage_i__DOT__alu_op_a_mux_sel_dec;
-        vlSelf->__PVT__id_stage_i__DOT__imm_b_mux_sel 
-            = __PVT__id_stage_i__DOT__imm_b_mux_sel_dec;
+                                                   & (IData)(vlSelf->__PVT__mult_sel_ex));
+    vlSelf->__PVT__csr_op = vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__csr_op;
+    if ((IData)(((0U == (0xf8000U & vlSelf->__PVT__instr_rdata_id)) 
+                 & ((2U == (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__csr_op)) 
+                    | (3U == (IData)(vlSelf->__PVT__id_stage_i__DOT__decoder_i__DOT__csr_op)))))) {
+        vlSelf->__PVT__csr_op = 0U;
     }
-    __Vtableidx11 = (((IData)(vlSelf->__PVT__instr_first_cycle_id) 
-                      << 7U) | (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator));
-    vlSelf->__PVT__ex_block_i__DOT__alu_i__DOT__bwlogic_op_b_negate 
-        = Viob_soc_sim__ConstPool__TABLE_h56aa66f2_0
-        [__Vtableidx11];
-    vlSelf->__PVT__ex_block_i__DOT__alu_i__DOT__shift_sbmode 
-        = ((0x31U == (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator)) 
-           | ((0x32U == (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator)) 
-              | (0x33U == (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))));
-    __Vtableidx9 = vlSelf->__PVT__id_stage_i__DOT__alu_operator;
-    vlSelf->__PVT__ex_block_i__DOT__alu_i__DOT__cmp_signed 
-        = Viob_soc_sim__ConstPool__TABLE_he017713b_0
-        [__Vtableidx9];
-    vlSelf->__PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__gen_alu_rvb_otearlgrey_full__DOT__crc_cpoly 
-        = ((0x40U == (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator)) 
-           | ((0x3eU == (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator)) 
-              | (0x3cU == (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))));
-    vlSelf->__PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__crc_bmode 
-        = ((0x3bU == (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator)) 
-           | (0x3cU == (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator)));
-    vlSelf->__PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__crc_hmode 
-        = ((0x3dU == (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator)) 
-           | (0x3eU == (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator)));
-    vlSelf->__PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__gen_alu_rvb_otearlgrey_full__DOT__crc_op 
-        = ((0x40U == (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator)) 
-           | ((0x3fU == (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator)) 
-              | ((0x3eU == (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator)) 
-                 | ((0x3dU == (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator)) 
-                    | ((0x3cU == (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator)) 
-                       | (0x3bU == (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator)))))));
-    vlSelf->__PVT__ex_block_i__DOT__alu_imd_val_we 
-        = ((0x40U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
-            ? ((0x20U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
-                ? 0U : ((0x10U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
-                         ? 0U : ((8U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
-                                  ? 0U : ((4U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
-                                           ? 0U : (
-                                                   (2U 
-                                                    & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
-                                                    ? 0U
-                                                    : 
-                                                   ((1U 
-                                                     & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
-                                                     ? 0U
-                                                     : 
-                                                    ((IData)(vlSelf->__PVT__instr_first_cycle_id)
-                                                      ? 1U
-                                                      : 0U)))))))
-            : ((0x20U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
-                ? ((0x10U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
-                    ? ((8U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
-                        ? ((4U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
-                            ? ((IData)(vlSelf->__PVT__instr_first_cycle_id)
-                                ? 1U : 0U) : ((2U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
-                                               ? ((1U 
-                                                   & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
-                                                   ? 
-                                                  ((IData)(vlSelf->__PVT__instr_first_cycle_id)
-                                                    ? 1U
-                                                    : 0U)
-                                                   : 0U)
-                                               : 0U))
-                        : ((4U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
-                            ? 0U : ((2U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
-                                     ? 0U : ((1U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
-                                              ? 0U : 
-                                             ((IData)(vlSelf->__PVT__instr_first_cycle_id)
-                                               ? 1U
-                                               : 0U)))))
-                    : ((8U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
-                        ? ((4U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
-                            ? ((2U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
-                                ? ((1U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
-                                    ? ((IData)(vlSelf->__PVT__instr_first_cycle_id)
-                                        ? 1U : 0U) : 
-                                   ((IData)(vlSelf->__PVT__instr_first_cycle_id)
-                                     ? 1U : 0U)) : 
-                               ((1U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
-                                 ? ((IData)(vlSelf->__PVT__instr_first_cycle_id)
-                                     ? 1U : 0U) : 0U))
-                            : 0U) : 0U)) : ((0x10U 
-                                             & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
-                                             ? 0U : 
-                                            ((8U & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
-                                              ? ((4U 
-                                                  & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
-                                                  ? 
-                                                 ((2U 
-                                                   & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
-                                                   ? 
-                                                  ((1U 
-                                                    & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
-                                                    ? 0U
-                                                    : 
-                                                   ((IData)(vlSelf->__PVT__instr_first_cycle_id)
-                                                     ? 1U
-                                                     : 0U))
-                                                   : 
-                                                  ((1U 
-                                                    & (IData)(vlSelf->__PVT__id_stage_i__DOT__alu_operator))
-                                                    ? 
-                                                   ((IData)(vlSelf->__PVT__instr_first_cycle_id)
-                                                     ? 1U
-                                                     : 0U)
-                                                    : 0U))
-                                                  : 0U)
-                                              : 0U))));
-    __Vtableidx8 = vlSelf->__PVT__id_stage_i__DOT__alu_operator;
-    vlSelf->__PVT__ex_block_i__DOT__alu_i__DOT__adder_op_a_shift1 
-        = Viob_soc_sim__ConstPool__TABLE_he6611871_0
-        [__Vtableidx8];
-    vlSelf->__PVT__ex_block_i__DOT__alu_i__DOT__adder_op_a_shift2 
-        = Viob_soc_sim__ConstPool__TABLE_hde970e00_0
-        [__Vtableidx8];
-    vlSelf->__PVT__ex_block_i__DOT__alu_i__DOT__adder_op_a_shift3 
-        = Viob_soc_sim__ConstPool__TABLE_h14eb773e_0
-        [__Vtableidx8];
-    vlSelf->__PVT__ex_block_i__DOT__alu_i__DOT__adder_op_b_negate 
-        = Viob_soc_sim__ConstPool__TABLE_hf12c31da_0
-        [__Vtableidx8];
-    vlSelf->__PVT__trigger_match = ((IData)(vlSelf->__PVT__cs_registers_i__DOT__gen_trigger_regs__DOT__g_dbg_tmatch_reg__BRA__0__KET____DOT__u_tmatch_control_csr__DOT__rdata_q) 
-                                    & (vlSelf->__PVT__cs_registers_i__DOT__gen_trigger_regs__DOT__g_dbg_tmatch_reg__BRA__0__KET____DOT__u_tmatch_value_csr__DOT__rdata_q 
-                                       == (vlSelf->__PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT__instr_addr_q 
-                                           << 1U)));
     __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__179__permission_check 
         = (1U & (IData)(vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check));
     __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__179__priv_mode 
@@ -7278,15 +2966,11 @@ VL_INLINE_OPT void Viob_soc_sim_ibex_core__pi4___nba_sequent__TOP__iob_soc_sim__
         }
     }
     if ((8U & (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs))) {
-        if ((4U & (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs))) {
-            vlSelf->__PVT__instr_req_int = 0U;
-        } else if ((2U & (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs))) {
-            vlSelf->__PVT__instr_req_int = 0U;
-        }
         if ((1U & (~ ((IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs) 
                       >> 2U)))) {
             if ((1U & (~ ((IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs) 
                           >> 1U)))) {
+                vlSelf->__PVT__debug_mode_entering = 1U;
                 vlSelf->__PVT__exc_pc_mux_id = 2U;
                 if ((1U & (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs))) {
                     if (((IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ebreak_into_debug) 
@@ -7297,6 +2981,11 @@ VL_INLINE_OPT void Viob_soc_sim_ibex_core__pi4___nba_sequent__TOP__iob_soc_sim__
                     vlSelf->__PVT__debug_csr_save = 1U;
                 }
             }
+        }
+        if ((4U & (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs))) {
+            vlSelf->__PVT__instr_req_int = 0U;
+        } else if ((2U & (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs))) {
+            vlSelf->__PVT__instr_req_int = 0U;
         }
     } else {
         if ((1U & (~ ((IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs) 
@@ -7321,7 +3010,7 @@ VL_INLINE_OPT void Viob_soc_sim_ibex_core__pi4___nba_sequent__TOP__iob_soc_sim__
             }
         }
     }
-    vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__179__Vfuncout 
+    __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__179__Vfuncout 
         = ((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__179__csr_pmp_mseccfg_mml)
             ? ([&]() {
                 vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__180__permission_check 
@@ -7373,7 +3062,7 @@ VL_INLINE_OPT void Viob_soc_sim_ibex_core__pi4___nba_sequent__TOP__iob_soc_sim__
             }(), (IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__181__Vfuncout)));
     vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check 
         = ((0xfffffffffffeULL & vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check) 
-           | (IData)((IData)(vlSelf->__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__179__Vfuncout)));
+           | (IData)((IData)(__Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__179__Vfuncout)));
     __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__182__permission_check 
         = (1U & (IData)((vlSelf->__PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check 
                          >> 1U)));
@@ -10439,37 +6128,37 @@ VL_INLINE_OPT void Viob_soc_sim_ibex_core__pi4___nba_sequent__TOP__iob_soc_sim__
                                                << 1U) 
                                               | (IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__store_err_q))))));
     vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__instr_fetch_err_prio 
-        = Viob_soc_sim__ConstPool__TABLE_h315b00d7_0
+        = Viob_soc_sim__ConstPool__TABLE_hf64aebe0_0
         [__Vtableidx7];
     vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__illegal_insn_prio 
-        = Viob_soc_sim__ConstPool__TABLE_h406e2012_0
+        = Viob_soc_sim__ConstPool__TABLE_h323b7bc3_0
         [__Vtableidx7];
     vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ecall_insn_prio 
-        = Viob_soc_sim__ConstPool__TABLE_hb3ebb333_0
+        = Viob_soc_sim__ConstPool__TABLE_h6d182578_0
         [__Vtableidx7];
     vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ebrk_insn_prio 
-        = Viob_soc_sim__ConstPool__TABLE_h6af4b5e9_0
+        = Viob_soc_sim__ConstPool__TABLE_hbf9cbdd6_0
         [__Vtableidx7];
     vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__store_err_prio 
-        = Viob_soc_sim__ConstPool__TABLE_he9d7b8ed_0
+        = Viob_soc_sim__ConstPool__TABLE_h6451e8c0_0
         [__Vtableidx7];
     vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__load_err_prio 
-        = Viob_soc_sim__ConstPool__TABLE_he05fe522_0
+        = Viob_soc_sim__ConstPool__TABLE_h2aabc56c_0
         [__Vtableidx7];
     vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__debug_mode_d 
         = vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__debug_mode_q;
     vlSelf->__PVT__pc_mux_id = 0U;
     vlSelf->__PVT__csr_restore_mret_id = 0U;
     vlSelf->__PVT__csr_restore_dret_id = 0U;
+    vlSelf->__PVT__id_stage_i__DOT__multdiv_en_dec 
+        = ((IData)(vlSelf->__PVT__id_stage_i__DOT__div_en_dec) 
+           | (IData)(vlSelf->__PVT__id_stage_i__DOT__mult_en_dec));
     vlSelf->__PVT__cs_registers_i__DOT__csr_wr = ((1U 
                                                    == (IData)(vlSelf->__PVT__csr_op)) 
                                                   | ((2U 
                                                       == (IData)(vlSelf->__PVT__csr_op)) 
                                                      | (3U 
                                                         == (IData)(vlSelf->__PVT__csr_op))));
-    vlSelf->__PVT__id_stage_i__DOT__multdiv_en_dec 
-        = ((IData)(vlSelf->__PVT__id_stage_i__DOT__div_en_dec) 
-           | (IData)(vlSelf->__PVT__id_stage_i__DOT__mult_en_dec));
     vlSelf->__PVT__csr_mtval = 0U;
     if ((1U & (~ ((IData)(vlSelf->__PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs) 
                   >> 3U)))) {

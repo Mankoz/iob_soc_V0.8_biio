@@ -61,32 +61,43 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*0:0*/ __PVT__illegal_c_insn_id;
         CData/*1:0*/ __PVT__imd_val_we_ex;
         CData/*0:0*/ __PVT__dummy_instr_seed_en;
+        CData/*0:0*/ __PVT__icache_inval;
         CData/*0:0*/ __PVT__instr_first_cycle_id;
         CData/*0:0*/ __PVT__instr_valid_clear;
         CData/*0:0*/ __PVT__pc_set;
         CData/*2:0*/ __PVT__pc_mux_id;
         CData/*1:0*/ __PVT__exc_pc_mux_id;
         CData/*6:0*/ __PVT__exc_cause;
+        CData/*0:0*/ __PVT__lsu_load_err_raw;
+        CData/*0:0*/ __PVT__lsu_store_err_raw;
         CData/*0:0*/ __PVT__lsu_addr_incr_req;
         CData/*0:0*/ __PVT__ctrl_busy;
+        CData/*0:0*/ __PVT__rf_ren_a;
+        CData/*0:0*/ __PVT__rf_ren_b;
         CData/*0:0*/ __PVT__rf_we_lsu;
         CData/*0:0*/ __PVT__rf_rd_a_wb_match;
         CData/*0:0*/ __PVT__rf_rd_b_wb_match;
+        CData/*0:0*/ __PVT__mult_en_ex;
+        CData/*0:0*/ __PVT__mult_sel_ex;
         CData/*0:0*/ __PVT__div_sel_ex;
+    };
+    struct {
         CData/*0:0*/ __PVT__multdiv_ready_id;
         CData/*0:0*/ __PVT__csr_access;
         CData/*1:0*/ __PVT__csr_op;
+        CData/*0:0*/ __PVT__csr_op_en;
         CData/*0:0*/ __PVT__illegal_csr_insn_id;
         CData/*0:0*/ __PVT__lsu_req;
+        CData/*0:0*/ __PVT__lsu_req_done;
         CData/*0:0*/ __PVT__id_in_ready;
         CData/*0:0*/ __PVT__ex_valid;
-    };
-    struct {
+        CData/*0:0*/ __PVT__lsu_resp_valid;
         CData/*0:0*/ __PVT__instr_req_int;
         CData/*0:0*/ __PVT__en_wb;
         CData/*0:0*/ __PVT__rf_write_wb;
         CData/*0:0*/ __PVT__outstanding_load_wb;
         CData/*0:0*/ __PVT__outstanding_store_wb;
+        CData/*0:0*/ __PVT__data_req_out;
         CData/*0:0*/ __PVT__csr_save_if;
         CData/*0:0*/ __PVT__csr_save_id;
         CData/*0:0*/ __PVT__csr_save_wb;
@@ -94,8 +105,10 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*0:0*/ __PVT__csr_restore_dret_id;
         CData/*0:0*/ __PVT__csr_save_cause;
         CData/*0:0*/ __PVT__csr_mtvec_init;
+        CData/*0:0*/ __PVT__debug_mode_entering;
         CData/*0:0*/ __PVT__debug_csr_save;
         CData/*0:0*/ __PVT__trigger_match;
+        CData/*0:0*/ __PVT__instr_id_done;
         CData/*0:0*/ __PVT__perf_instr_ret_wb;
         CData/*0:0*/ __PVT__perf_jump;
         CData/*0:0*/ __PVT__perf_branch;
@@ -103,14 +116,23 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*0:0*/ __PVT__perf_load;
         CData/*0:0*/ __PVT__perf_store;
         CData/*0:0*/ __PVT__illegal_insn_id;
+        CData/*0:0*/ __PVT__fcov_csr_write;
+        CData/*1:0*/ __PVT__gen_regfile_ecc__DOT__rf_ecc_err_a;
+        CData/*1:0*/ __PVT__gen_regfile_ecc__DOT__rf_ecc_err_b;
         CData/*0:0*/ __PVT__if_stage_i__DOT__instr_valid_id_d;
         CData/*0:0*/ __PVT__if_stage_i__DOT__instr_valid_id_q;
+        CData/*0:0*/ __PVT__if_stage_i__DOT__instr_new_id_q;
         CData/*0:0*/ __PVT__if_stage_i__DOT__fetch_valid_raw;
+        CData/*0:0*/ __PVT__if_stage_i__DOT__fetch_err;
         CData/*0:0*/ __PVT__if_stage_i__DOT__illegal_c_insn;
         CData/*0:0*/ __PVT__if_stage_i__DOT__if_instr_err;
         CData/*0:0*/ __PVT__if_stage_i__DOT__if_id_pipe_reg_we;
+        CData/*4:0*/ __PVT__if_stage_i__DOT__irq_vec;
         CData/*0:0*/ __PVT__if_stage_i__DOT__gen_dummy_instr__DOT__insert_dummy_instr;
+        CData/*0:0*/ __PVT__if_stage_i__DOT__g_secure_pc__DOT__prev_instr_seq_q;
+        CData/*0:0*/ __PVT__if_stage_i__DOT__g_secure_pc__DOT__prev_instr_seq_d;
         CData/*0:0*/ if_stage_i__DOT____VdfgTmp_hc5fec331__0;
+        CData/*0:0*/ __PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__valid_new_req;
         CData/*0:0*/ __PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__valid_req_q;
         CData/*0:0*/ __PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__discard_req_d;
         CData/*0:0*/ __PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__discard_req_q;
@@ -122,33 +144,39 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*0:0*/ if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT____VdfgTmp_hfdd8329f__0;
         CData/*2:0*/ __PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT__err_d;
         CData/*2:0*/ __PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT__err_q;
-        CData/*2:0*/ __PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT__valid_d;
         CData/*2:0*/ __PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT__valid_q;
         CData/*2:0*/ __PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT__entry_en;
+    };
+    struct {
+        CData/*0:0*/ __PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT__pop_fifo;
         CData/*0:0*/ __PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT__err;
         CData/*0:0*/ __PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT__valid;
         CData/*0:0*/ __PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT__aligned_is_compressed;
         CData/*0:0*/ __PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT__unaligned_is_compressed;
         CData/*0:0*/ __PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT__addr_incr_two;
         CData/*0:0*/ if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT____VdfgTmp_hd659e18c__0;
-        CData/*0:0*/ if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT____VdfgTmp_h8784150c__0;
         CData/*0:0*/ if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT____VdfgTmp_h46fac9ec__0;
-        CData/*0:0*/ if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT____VdfgTmp_h18c9f4a7__0;
         CData/*0:0*/ if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT____VdfgTmp_haf22c316__0;
+        CData/*0:0*/ if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT____VdfgTmp_h91d85a72__0;
+        CData/*0:0*/ if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT____VdfgTmp_h8784150c__0;
+        CData/*0:0*/ if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT____VdfgTmp_h18c9f4a7__0;
         CData/*0:0*/ if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT____VdfgTmp_h0d767ff5__0;
         CData/*4:0*/ __PVT__if_stage_i__DOT__gen_dummy_instr__DOT__dummy_instr_i__DOT__dummy_cnt_d;
         CData/*4:0*/ __PVT__if_stage_i__DOT__gen_dummy_instr__DOT__dummy_instr_i__DOT__dummy_cnt_q;
+        CData/*0:0*/ __PVT__if_stage_i__DOT__gen_dummy_instr__DOT__dummy_instr_i__DOT__lfsr_en;
         CData/*6:0*/ __PVT__if_stage_i__DOT__gen_dummy_instr__DOT__dummy_instr_i__DOT__dummy_set;
         CData/*2:0*/ __PVT__if_stage_i__DOT__gen_dummy_instr__DOT__dummy_instr_i__DOT__dummy_opcode;
+        CData/*0:0*/ __PVT__if_stage_i__DOT__gen_dummy_instr__DOT__dummy_instr_i__DOT__lfsr_i__DOT__gen_max_len_sva__DOT__perturbed_d;
+        CData/*0:0*/ __PVT__if_stage_i__DOT__gen_dummy_instr__DOT__dummy_instr_i__DOT__lfsr_i__DOT__gen_max_len_sva__DOT__perturbed_q;
+        CData/*0:0*/ if_stage_i__DOT__gen_dummy_instr__DOT__dummy_instr_i__DOT__lfsr_i__DOT____VdfgTmp_h993b37cb__0;
         CData/*0:0*/ __PVT__id_stage_i__DOT__ebrk_insn;
         CData/*0:0*/ __PVT__id_stage_i__DOT__mret_insn_dec;
         CData/*0:0*/ __PVT__id_stage_i__DOT__dret_insn_dec;
         CData/*0:0*/ __PVT__id_stage_i__DOT__ecall_insn_dec;
         CData/*0:0*/ __PVT__id_stage_i__DOT__wfi_insn_dec;
         CData/*0:0*/ __PVT__id_stage_i__DOT__wb_exception;
-    };
-    struct {
         CData/*0:0*/ __PVT__id_stage_i__DOT__branch_in_dec;
+        CData/*0:0*/ __PVT__id_stage_i__DOT__branch_set;
         CData/*0:0*/ __PVT__id_stage_i__DOT__branch_set_raw;
         CData/*0:0*/ __PVT__id_stage_i__DOT__branch_set_raw_d;
         CData/*0:0*/ __PVT__id_stage_i__DOT__branch_jump_set_done_q;
@@ -161,13 +189,19 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*0:0*/ __PVT__id_stage_i__DOT__instr_executing;
         CData/*0:0*/ __PVT__id_stage_i__DOT__controller_run;
         CData/*0:0*/ __PVT__id_stage_i__DOT__stall_ld_hz;
+        CData/*0:0*/ __PVT__id_stage_i__DOT__stall_mem;
         CData/*0:0*/ __PVT__id_stage_i__DOT__stall_multdiv;
+        CData/*0:0*/ __PVT__id_stage_i__DOT__stall_branch;
+        CData/*0:0*/ __PVT__id_stage_i__DOT__stall_jump;
+        CData/*0:0*/ __PVT__id_stage_i__DOT__stall_id;
+        CData/*0:0*/ __PVT__id_stage_i__DOT__multicycle_done;
         CData/*0:0*/ __PVT__id_stage_i__DOT__rf_wdata_sel;
         CData/*0:0*/ __PVT__id_stage_i__DOT__rf_we_raw;
         CData/*0:0*/ __PVT__id_stage_i__DOT__rf_ren_a_dec;
         CData/*0:0*/ __PVT__id_stage_i__DOT__rf_ren_b_dec;
         CData/*6:0*/ __PVT__id_stage_i__DOT__alu_operator;
         CData/*1:0*/ __PVT__id_stage_i__DOT__alu_op_a_mux_sel;
+        CData/*1:0*/ __PVT__id_stage_i__DOT__alu_op_a_mux_sel_dec;
         CData/*0:0*/ __PVT__id_stage_i__DOT__alu_op_b_mux_sel_dec;
         CData/*0:0*/ __PVT__id_stage_i__DOT__alu_multicycle_dec;
         CData/*0:0*/ __PVT__id_stage_i__DOT__stall_alu;
@@ -175,8 +209,11 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*2:0*/ __PVT__id_stage_i__DOT__bt_b_mux_sel;
         CData/*0:0*/ __PVT__id_stage_i__DOT__imm_a_mux_sel;
         CData/*2:0*/ __PVT__id_stage_i__DOT__imm_b_mux_sel;
+        CData/*2:0*/ __PVT__id_stage_i__DOT__imm_b_mux_sel_dec;
         CData/*0:0*/ __PVT__id_stage_i__DOT__mult_en_dec;
         CData/*0:0*/ __PVT__id_stage_i__DOT__div_en_dec;
+    };
+    struct {
         CData/*0:0*/ __PVT__id_stage_i__DOT__multdiv_en_dec;
         CData/*1:0*/ __PVT__id_stage_i__DOT__multdiv_operator;
         CData/*1:0*/ __PVT__id_stage_i__DOT__multdiv_signed_mode;
@@ -193,9 +230,13 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*0:0*/ id_stage_i__DOT____VdfgTmp_haafd7db0__0;
         CData/*0:0*/ id_stage_i__DOT____VdfgTmp_h97dc7a37__0;
         CData/*0:0*/ __PVT__id_stage_i__DOT__decoder_i__DOT__illegal_insn;
+        CData/*0:0*/ __PVT__id_stage_i__DOT__decoder_i__DOT__csr_illegal;
         CData/*0:0*/ __PVT__id_stage_i__DOT__decoder_i__DOT__rf_we;
         CData/*0:0*/ __PVT__id_stage_i__DOT__decoder_i__DOT__use_rs3_d;
         CData/*0:0*/ __PVT__id_stage_i__DOT__decoder_i__DOT__use_rs3_q;
+        CData/*1:0*/ __PVT__id_stage_i__DOT__decoder_i__DOT__csr_op;
+        CData/*6:0*/ __PVT__id_stage_i__DOT__decoder_i__DOT__opcode;
+        CData/*6:0*/ __PVT__id_stage_i__DOT__decoder_i__DOT__opcode_alu;
         CData/*3:0*/ __PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_cs;
         CData/*3:0*/ __PVT__id_stage_i__DOT__controller_i__DOT__ctrl_fsm_ns;
         CData/*0:0*/ __PVT__id_stage_i__DOT__controller_i__DOT__nmi_mode_q;
@@ -212,16 +253,17 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*0:0*/ __PVT__id_stage_i__DOT__controller_i__DOT__illegal_insn_q;
         CData/*0:0*/ __PVT__id_stage_i__DOT__controller_i__DOT__illegal_insn_d;
         CData/*0:0*/ __PVT__id_stage_i__DOT__controller_i__DOT__instr_fetch_err_prio;
-    };
-    struct {
         CData/*0:0*/ __PVT__id_stage_i__DOT__controller_i__DOT__illegal_insn_prio;
         CData/*0:0*/ __PVT__id_stage_i__DOT__controller_i__DOT__ecall_insn_prio;
         CData/*0:0*/ __PVT__id_stage_i__DOT__controller_i__DOT__ebrk_insn_prio;
         CData/*0:0*/ __PVT__id_stage_i__DOT__controller_i__DOT__store_err_prio;
         CData/*0:0*/ __PVT__id_stage_i__DOT__controller_i__DOT__load_err_prio;
         CData/*0:0*/ __PVT__id_stage_i__DOT__controller_i__DOT__stall;
+        CData/*0:0*/ __PVT__id_stage_i__DOT__controller_i__DOT__halt_if;
+        CData/*0:0*/ __PVT__id_stage_i__DOT__controller_i__DOT__retain_id;
         CData/*0:0*/ __PVT__id_stage_i__DOT__controller_i__DOT__flush_id;
         CData/*0:0*/ __PVT__id_stage_i__DOT__controller_i__DOT__exc_req_lsu;
+        CData/*0:0*/ __PVT__id_stage_i__DOT__controller_i__DOT__special_req;
         CData/*0:0*/ __PVT__id_stage_i__DOT__controller_i__DOT__do_single_step_d;
         CData/*0:0*/ __PVT__id_stage_i__DOT__controller_i__DOT__do_single_step_q;
         CData/*0:0*/ __PVT__id_stage_i__DOT__controller_i__DOT__enter_debug_mode_prio_d;
@@ -236,6 +278,8 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*0:0*/ __PVT__id_stage_i__DOT__controller_i__DOT__dret_insn;
         CData/*0:0*/ __PVT__id_stage_i__DOT__controller_i__DOT__wfi_insn;
         CData/*0:0*/ __PVT__id_stage_i__DOT__controller_i__DOT__ebrk_insn;
+    };
+    struct {
         CData/*0:0*/ __PVT__id_stage_i__DOT__controller_i__DOT__instr_fetch_err;
         CData/*0:0*/ __PVT__ex_block_i__DOT__multdiv_sel;
         CData/*1:0*/ __PVT__ex_block_i__DOT__alu_imd_val_we;
@@ -248,23 +292,34 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*0:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__shift_left;
         CData/*0:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__shift_sbmode;
         CData/*5:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__shift_amt;
+        CData/*0:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__unused_shift_result_ext;
+        CData/*4:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__bfp_len;
         CData/*0:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__bwlogic_op_b_negate;
         CData/*4:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__zbp_shift_amt;
         CData/*0:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__crc_hmode;
         CData/*0:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__crc_bmode;
         CData/*3:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__gen_alu_rvb_otearlgrey_full__DOT__shuffle_mode;
+        IData/*23:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__gen_alu_rvb_otearlgrey_full__DOT__sel_n;
+        CData/*7:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__gen_alu_rvb_otearlgrey_full__DOT__sel_b;
+        CData/*3:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__gen_alu_rvb_otearlgrey_full__DOT__vld_b;
+        CData/*1:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__gen_alu_rvb_otearlgrey_full__DOT__sel_h;
+        CData/*1:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__gen_alu_rvb_otearlgrey_full__DOT__vld_h;
         IData/*23:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__gen_alu_rvb_otearlgrey_full__DOT__sel;
         CData/*7:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__gen_alu_rvb_otearlgrey_full__DOT__vld;
         CData/*0:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__gen_alu_rvb_otearlgrey_full__DOT__crc_op;
         CData/*0:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__gen_alu_rvb_otearlgrey_full__DOT__crc_cpoly;
-        CData/*2:0*/ ex_block_i__DOT__alu_i__DOT____Vlvbound_hecbdd18e__0;
-        CData/*2:0*/ ex_block_i__DOT__alu_i__DOT____Vlvbound_h89b51b70__0;
-        CData/*2:0*/ ex_block_i__DOT__alu_i__DOT____Vlvbound_ha36308a2__0;
-        CData/*2:0*/ ex_block_i__DOT__alu_i__DOT____Vlvbound_h2754914a__0;
-        CData/*2:0*/ ex_block_i__DOT__alu_i__DOT____Vlvbound_h30593303__0;
-        CData/*2:0*/ ex_block_i__DOT__alu_i__DOT____Vlvbound_h19c60d8b__0;
+        CData/*2:0*/ ex_block_i__DOT__alu_i__DOT____Vlvbound_h5d6f7a76__0;
+        CData/*2:0*/ ex_block_i__DOT__alu_i__DOT____Vlvbound_hd6c13662__0;
+        CData/*2:0*/ ex_block_i__DOT__alu_i__DOT____Vlvbound_h3eca370a__0;
+        CData/*2:0*/ ex_block_i__DOT__alu_i__DOT____Vlvbound_h0cbe1a76__0;
+        CData/*2:0*/ ex_block_i__DOT__alu_i__DOT____Vlvbound_hbe6a5bcf__0;
+        CData/*2:0*/ ex_block_i__DOT__alu_i__DOT____Vlvbound_he3b1b9d9__0;
+        CData/*0:0*/ __PVT__ex_block_i__DOT__gen_multdiv_fast__DOT__multdiv_i__DOT__sign_a;
         CData/*0:0*/ __PVT__ex_block_i__DOT__gen_multdiv_fast__DOT__multdiv_i__DOT__sign_b;
+        CData/*0:0*/ __PVT__ex_block_i__DOT__gen_multdiv_fast__DOT__multdiv_i__DOT__mult_valid;
+        CData/*0:0*/ __PVT__ex_block_i__DOT__gen_multdiv_fast__DOT__multdiv_i__DOT__div_sign_a;
         CData/*0:0*/ __PVT__ex_block_i__DOT__gen_multdiv_fast__DOT__multdiv_i__DOT__div_sign_b;
+        CData/*0:0*/ __PVT__ex_block_i__DOT__gen_multdiv_fast__DOT__multdiv_i__DOT__is_greater_equal;
         CData/*0:0*/ __PVT__ex_block_i__DOT__gen_multdiv_fast__DOT__multdiv_i__DOT__div_valid;
         CData/*4:0*/ __PVT__ex_block_i__DOT__gen_multdiv_fast__DOT__multdiv_i__DOT__div_counter_q;
         CData/*4:0*/ __PVT__ex_block_i__DOT__gen_multdiv_fast__DOT__multdiv_i__DOT__div_counter_d;
@@ -278,8 +333,7 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*2:0*/ __PVT__ex_block_i__DOT__gen_multdiv_fast__DOT__multdiv_i__DOT__md_state_d;
         CData/*0:0*/ __PVT__ex_block_i__DOT__gen_multdiv_fast__DOT__multdiv_i__DOT__gen_mult_single_cycle__DOT__mult_state_q;
         CData/*0:0*/ __PVT__ex_block_i__DOT__gen_multdiv_fast__DOT__multdiv_i__DOT__gen_mult_single_cycle__DOT__mult_state_d;
-    };
-    struct {
+        CData/*0:0*/ __PVT__ex_block_i__DOT__gen_multdiv_fast__DOT__multdiv_i__DOT__gen_mult_single_cycle__DOT__mult3_sign_a;
         CData/*0:0*/ __PVT__ex_block_i__DOT__gen_multdiv_fast__DOT__multdiv_i__DOT__gen_mult_single_cycle__DOT__mult3_sign_b;
         CData/*0:0*/ __PVT__load_store_unit_i__DOT__addr_update;
         CData/*0:0*/ __PVT__load_store_unit_i__DOT__ctrl_update;
@@ -290,14 +344,24 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*0:0*/ __PVT__load_store_unit_i__DOT__data_we_q;
         CData/*3:0*/ __PVT__load_store_unit_i__DOT__data_be;
         CData/*0:0*/ __PVT__load_store_unit_i__DOT__split_misaligned_access;
+    };
+    struct {
         CData/*0:0*/ __PVT__load_store_unit_i__DOT__handle_misaligned_q;
         CData/*0:0*/ __PVT__load_store_unit_i__DOT__handle_misaligned_d;
         CData/*0:0*/ __PVT__load_store_unit_i__DOT__pmp_err_q;
         CData/*0:0*/ __PVT__load_store_unit_i__DOT__pmp_err_d;
         CData/*0:0*/ __PVT__load_store_unit_i__DOT__lsu_err_q;
         CData/*0:0*/ __PVT__load_store_unit_i__DOT__lsu_err_d;
+        CData/*0:0*/ __PVT__load_store_unit_i__DOT__data_or_pmp_err;
         CData/*2:0*/ __PVT__load_store_unit_i__DOT__ls_fsm_cs;
         CData/*2:0*/ __PVT__load_store_unit_i__DOT__ls_fsm_ns;
+        CData/*0:0*/ __PVT__load_store_unit_i__DOT__fcov_mis_2_en_d;
+        CData/*0:0*/ __PVT__load_store_unit_i__DOT__fcov_mis_2_en_q;
+        CData/*0:0*/ __PVT__load_store_unit_i__DOT__fcov_mis_rvalid_1;
+        CData/*0:0*/ __PVT__load_store_unit_i__DOT__fcov_mis_rvalid_2;
+        CData/*0:0*/ __PVT__load_store_unit_i__DOT__fcov_mis_bus_err_1_d;
+        CData/*0:0*/ __PVT__load_store_unit_i__DOT__fcov_mis_bus_err_1_q;
+        CData/*1:0*/ __PVT__wb_stage_i__DOT__rf_wdata_wb_mux_we;
         CData/*0:0*/ __PVT__wb_stage_i__DOT__g_writeback_stage__DOT__rf_we_wb_q;
         CData/*4:0*/ __PVT__wb_stage_i__DOT__g_writeback_stage__DOT__rf_waddr_wb_q;
         CData/*0:0*/ __PVT__wb_stage_i__DOT__g_writeback_stage__DOT__wb_done;
@@ -324,12 +388,33 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*0:0*/ __PVT__cs_registers_i__DOT__dscratch0_en;
         CData/*0:0*/ __PVT__cs_registers_i__DOT__dscratch1_en;
         CData/*0:0*/ __PVT__cs_registers_i__DOT__mstack_en;
+        CData/*0:0*/ __PVT__cs_registers_i__DOT__mcountinhibit_we;
         CData/*4:0*/ __PVT__cs_registers_i__DOT__mhpmcounter_idx;
         CData/*7:0*/ __PVT__cs_registers_i__DOT__cpuctrlsts_part_d;
         CData/*0:0*/ __PVT__cs_registers_i__DOT__cpuctrlsts_part_we;
         CData/*0:0*/ __PVT__cs_registers_i__DOT__csr_we_int;
         CData/*0:0*/ __PVT__cs_registers_i__DOT__csr_wr;
-        CData/*2:0*/ cs_registers_i__DOT____Vcellinp__g_pmp_registers__DOT__u_pmp_mseccfg__wr_data_i;
+        CData/*0:0*/ __PVT__cs_registers_i__DOT__dbg_csr;
+        CData/*0:0*/ __PVT__cs_registers_i__DOT__illegal_csr;
+        CData/*2:0*/ __PVT__cs_registers_i__DOT__g_pmp_registers__DOT__pmp_mseccfg_d;
+        CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_h2c881da4__0;
+        CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_h3f375bee__0;
+        CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_h1e2023fa__0;
+        CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_hc5da99f6__0;
+        CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_h7b87c247__0;
+        CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_he1355192__0;
+        CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_h1c28f9e6__0;
+        CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_h38bbc09f__0;
+        CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_h54bfd2e2__0;
+        CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_hd9d69516__0;
+        CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_h074a5d6c__0;
+        CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_h14c16661__0;
+        CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_h33baae5d__0;
+    };
+    struct {
+        CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_hb694eddb__0;
+        CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_h6d75dff3__0;
+        CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_h923bbe04__0;
         CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_h7037298a__0;
         CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_h32371cea__0;
         CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_hd8cd6cef__0;
@@ -344,31 +429,15 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_h5c76801e__0;
         CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_h76221c7e__0;
         CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_h73e1ef23__0;
-    };
-    struct {
         CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_h92487aac__0;
         CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_hf386bd8d__0;
         CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_h1c4f1dd2__0;
-        CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_h2c881da4__0;
-        CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_h3f375bee__0;
-        CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_h1e2023fa__0;
-        CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_hc5da99f6__0;
-        CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_h7b87c247__0;
-        CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_he1355192__0;
-        CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_h1c28f9e6__0;
-        CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_h38bbc09f__0;
-        CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_h54bfd2e2__0;
-        CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_hd9d69516__0;
-        CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_h074a5d6c__0;
-        CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_h14c16661__0;
-        CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_h33baae5d__0;
-        CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_hb694eddb__0;
-        CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_h6d75dff3__0;
-        CData/*0:0*/ cs_registers_i__DOT____VdfgTmp_h923bbe04__0;
         CData/*5:0*/ __PVT__cs_registers_i__DOT__u_mstatus_csr__DOT__rdata_q;
         CData/*6:0*/ __PVT__cs_registers_i__DOT__u_mcause_csr__DOT__rdata_q;
         CData/*2:0*/ __PVT__cs_registers_i__DOT__u_mstack_csr__DOT__rdata_q;
         CData/*6:0*/ __PVT__cs_registers_i__DOT__u_mstack_cause_csr__DOT__rdata_q;
+        CData/*0:0*/ __PVT__cs_registers_i__DOT__mcycle_counter_i__DOT__we;
+        CData/*0:0*/ __PVT__cs_registers_i__DOT__minstret_counter_i__DOT__we;
         CData/*7:0*/ __PVT__cs_registers_i__DOT__u_cpuctrlsts_part_csr__DOT__rdata_q;
         CData/*5:0*/ __PVT__cs_registers_i__DOT__g_pmp_registers__DOT__g_pmp_csrs__BRA__0__KET____DOT__u_pmp_cfg_csr__DOT__rdata_q;
         CData/*5:0*/ __PVT__cs_registers_i__DOT__g_pmp_registers__DOT__g_pmp_csrs__BRA__1__KET____DOT__u_pmp_cfg_csr__DOT__rdata_q;
@@ -387,13 +456,28 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*5:0*/ __PVT__cs_registers_i__DOT__g_pmp_registers__DOT__g_pmp_csrs__BRA__14__KET____DOT__u_pmp_cfg_csr__DOT__rdata_q;
         CData/*5:0*/ __PVT__cs_registers_i__DOT__g_pmp_registers__DOT__g_pmp_csrs__BRA__15__KET____DOT__u_pmp_cfg_csr__DOT__rdata_q;
         CData/*2:0*/ __PVT__cs_registers_i__DOT__g_pmp_registers__DOT__u_pmp_mseccfg__DOT__rdata_q;
+        CData/*0:0*/ __PVT__cs_registers_i__DOT__gen_cntrs__BRA__0__KET____DOT__gen_imp__DOT__mcounters_variable_i__DOT__we;
+        CData/*0:0*/ __PVT__cs_registers_i__DOT__gen_cntrs__BRA__1__KET____DOT__gen_imp__DOT__mcounters_variable_i__DOT__we;
+        CData/*0:0*/ __PVT__cs_registers_i__DOT__gen_cntrs__BRA__2__KET____DOT__gen_imp__DOT__mcounters_variable_i__DOT__we;
+        CData/*0:0*/ __PVT__cs_registers_i__DOT__gen_cntrs__BRA__3__KET____DOT__gen_imp__DOT__mcounters_variable_i__DOT__we;
+        CData/*0:0*/ __PVT__cs_registers_i__DOT__gen_cntrs__BRA__4__KET____DOT__gen_imp__DOT__mcounters_variable_i__DOT__we;
+        CData/*0:0*/ __PVT__cs_registers_i__DOT__gen_cntrs__BRA__5__KET____DOT__gen_imp__DOT__mcounters_variable_i__DOT__we;
+        CData/*0:0*/ __PVT__cs_registers_i__DOT__gen_cntrs__BRA__6__KET____DOT__gen_imp__DOT__mcounters_variable_i__DOT__we;
+        CData/*0:0*/ __PVT__cs_registers_i__DOT__gen_cntrs__BRA__7__KET____DOT__gen_imp__DOT__mcounters_variable_i__DOT__we;
+        CData/*0:0*/ __PVT__cs_registers_i__DOT__gen_cntrs__BRA__8__KET____DOT__gen_imp__DOT__mcounters_variable_i__DOT__we;
+        CData/*0:0*/ __PVT__cs_registers_i__DOT__gen_cntrs__BRA__9__KET____DOT__gen_imp__DOT__mcounters_variable_i__DOT__we;
         CData/*0:0*/ __PVT__cs_registers_i__DOT__gen_trigger_regs__DOT__u_tselect_csr__DOT__rdata_q;
         CData/*0:0*/ __PVT__cs_registers_i__DOT__gen_trigger_regs__DOT__g_dbg_tmatch_reg__BRA__0__KET____DOT__u_tmatch_control_csr__DOT__rdata_q;
+        CData/*6:0*/ __PVT__gen_regfile_ecc__DOT__regfile_ecc_dec_a__DOT__syndrome_o;
+        CData/*6:0*/ __PVT__gen_regfile_ecc__DOT__regfile_ecc_dec_b__DOT__syndrome_o;
+        CData/*2:0*/ __VdfgTmp_hba890a99__0;
         CData/*4:0*/ __VdfgTmp_h5b1acb32__0;
         CData/*0:0*/ __Vfunc_cs_registers_i__DOT__is_mml_m_exec_cfg__0__Vfuncout;
         CData/*5:0*/ __Vfunc_cs_registers_i__DOT__is_mml_m_exec_cfg__0__pmp_cfg;
         CData/*0:0*/ __Vfunc_cs_registers_i__DOT__is_mml_m_exec_cfg__0__value;
         CData/*0:0*/ __Vfunc_cs_registers_i__DOT__is_mml_m_exec_cfg__1__Vfuncout;
+    };
+    struct {
         CData/*5:0*/ __Vfunc_cs_registers_i__DOT__is_mml_m_exec_cfg__1__pmp_cfg;
         CData/*0:0*/ __Vfunc_cs_registers_i__DOT__is_mml_m_exec_cfg__1__value;
         CData/*0:0*/ __Vfunc_cs_registers_i__DOT__is_mml_m_exec_cfg__2__Vfuncout;
@@ -410,8 +494,6 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*0:0*/ __Vfunc_cs_registers_i__DOT__is_mml_m_exec_cfg__5__value;
         CData/*0:0*/ __Vfunc_cs_registers_i__DOT__is_mml_m_exec_cfg__6__Vfuncout;
         CData/*5:0*/ __Vfunc_cs_registers_i__DOT__is_mml_m_exec_cfg__6__pmp_cfg;
-    };
-    struct {
         CData/*0:0*/ __Vfunc_cs_registers_i__DOT__is_mml_m_exec_cfg__6__value;
         CData/*0:0*/ __Vfunc_cs_registers_i__DOT__is_mml_m_exec_cfg__7__Vfuncout;
         CData/*5:0*/ __Vfunc_cs_registers_i__DOT__is_mml_m_exec_cfg__7__pmp_cfg;
@@ -460,6 +542,8 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__21__pmp_cfg_lock;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__21__priv_mode;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__21__permission_check;
+    };
+    struct {
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__23__Vfuncout;
         CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__23__region_csr_pmp_cfg;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__23__pmp_req_type;
@@ -476,8 +560,6 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__26__priv_mode;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__26__permission_check;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__26__result;
-    };
-    struct {
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__27__Vfuncout;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__27__pmp_cfg_lock;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__27__priv_mode;
@@ -492,6 +574,7 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__30__pmp_cfg_lock;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__30__priv_mode;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__30__permission_check;
+        CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__31__Vfuncout;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__32__Vfuncout;
         CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__32__region_csr_pmp_cfg;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__32__pmp_req_type;
@@ -522,10 +605,11 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__39__pmp_cfg_lock;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__39__priv_mode;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__39__permission_check;
-        CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__40__Vfuncout;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__41__Vfuncout;
         CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__41__region_csr_pmp_cfg;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__41__pmp_req_type;
+    };
+    struct {
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__41__priv_mode;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__41__permission_check;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__41__result;
@@ -542,8 +626,6 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__45__Vfuncout;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__45__pmp_cfg_lock;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__45__priv_mode;
-    };
-    struct {
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__45__permission_check;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__47__Vfuncout;
         CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__47__region_csr_pmp_cfg;
@@ -592,6 +674,8 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__59__permission_check;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__59__result;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__60__Vfuncout;
+    };
+    struct {
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__60__pmp_cfg_lock;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__60__priv_mode;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__60__permission_check;
@@ -608,8 +692,6 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__66__Vfuncout;
         CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__66__region_csr_pmp_cfg;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__66__pmp_req_type;
-    };
-    struct {
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__66__priv_mode;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__66__permission_check;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__66__result;
@@ -658,6 +740,8 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__79__priv_mode;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__79__permission_check;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__81__Vfuncout;
+    };
+    struct {
         CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__81__region_csr_pmp_cfg;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__81__pmp_req_type;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__81__priv_mode;
@@ -674,8 +758,6 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__84__permission_check;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__84__result;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__85__Vfuncout;
-    };
-    struct {
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__85__pmp_cfg_lock;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__85__priv_mode;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__85__permission_check;
@@ -724,6 +806,8 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__99__pmp_req_type;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__99__priv_mode;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__99__permission_check;
+    };
+    struct {
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__99__result;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__100__Vfuncout;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__100__pmp_cfg_lock;
@@ -740,8 +824,6 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__103__priv_mode;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__103__permission_check;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__105__Vfuncout;
-    };
-    struct {
         CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__105__region_csr_pmp_cfg;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__105__pmp_req_type;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__105__priv_mode;
@@ -790,6 +872,8 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__119__Vfuncout;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__119__pmp_cfg_lock;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__119__priv_mode;
+    };
+    struct {
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__119__permission_check;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__121__Vfuncout;
         CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__121__region_csr_pmp_cfg;
@@ -806,8 +890,6 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__124__pmp_req_type;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__124__priv_mode;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__124__permission_check;
-    };
-    struct {
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__124__result;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__125__Vfuncout;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__125__pmp_cfg_lock;
@@ -856,6 +938,8 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__139__Vfuncout;
         CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__139__region_csr_pmp_cfg;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__139__pmp_req_type;
+    };
+    struct {
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__139__priv_mode;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__139__permission_check;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__139__result;
@@ -872,8 +956,6 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__143__Vfuncout;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__143__pmp_cfg_lock;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__143__priv_mode;
-    };
-    struct {
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__143__permission_check;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__145__Vfuncout;
         CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__145__region_csr_pmp_cfg;
@@ -922,6 +1004,8 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__157__permission_check;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__157__result;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__158__Vfuncout;
+    };
+    struct {
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__158__pmp_cfg_lock;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__158__priv_mode;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__158__permission_check;
@@ -938,8 +1022,6 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*0:0*/ __Vfunc_cs_registers_i__DOT__is_mml_m_exec_cfg__163__Vfuncout;
         CData/*5:0*/ __Vfunc_cs_registers_i__DOT__is_mml_m_exec_cfg__163__pmp_cfg;
         CData/*0:0*/ __Vfunc_cs_registers_i__DOT__is_mml_m_exec_cfg__163__value;
-    };
-    struct {
         CData/*0:0*/ __Vfunc_cs_registers_i__DOT__is_mml_m_exec_cfg__164__Vfuncout;
         CData/*5:0*/ __Vfunc_cs_registers_i__DOT__is_mml_m_exec_cfg__164__pmp_cfg;
         CData/*0:0*/ __Vfunc_cs_registers_i__DOT__is_mml_m_exec_cfg__164__value;
@@ -985,10 +1067,11 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*0:0*/ __Vfunc_cs_registers_i__DOT__is_mml_m_exec_cfg__178__Vfuncout;
         CData/*5:0*/ __Vfunc_cs_registers_i__DOT__is_mml_m_exec_cfg__178__pmp_cfg;
         CData/*0:0*/ __Vfunc_cs_registers_i__DOT__is_mml_m_exec_cfg__178__value;
-        CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__perm_check_wrapper__179__Vfuncout;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__180__Vfuncout;
         CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__180__region_csr_pmp_cfg;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__180__pmp_req_type;
+    };
+    struct {
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__180__priv_mode;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__180__permission_check;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__180__result;
@@ -1004,8 +1087,6 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__183__result;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__184__Vfuncout;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__184__pmp_cfg_lock;
-    };
-    struct {
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__184__priv_mode;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__184__permission_check;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__186__Vfuncout;
@@ -1055,6 +1136,8 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__198__permission_check;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__198__result;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__199__Vfuncout;
+    };
+    struct {
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__199__pmp_cfg_lock;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__199__priv_mode;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__199__permission_check;
@@ -1070,8 +1153,6 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__202__permission_check;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__204__Vfuncout;
         CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__204__region_csr_pmp_cfg;
-    };
-    struct {
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__204__pmp_req_type;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__204__priv_mode;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__204__permission_check;
@@ -1121,6 +1202,8 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__217__priv_mode;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__217__permission_check;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__219__Vfuncout;
+    };
+    struct {
         CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__219__region_csr_pmp_cfg;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__219__pmp_req_type;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__219__priv_mode;
@@ -1136,8 +1219,6 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__222__priv_mode;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__222__permission_check;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__222__result;
-    };
-    struct {
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__223__Vfuncout;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__223__pmp_cfg_lock;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__223__priv_mode;
@@ -1187,6 +1268,8 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__238__pmp_req_type;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__238__priv_mode;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__238__permission_check;
+    };
+    struct {
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__238__result;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__239__Vfuncout;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__239__pmp_cfg_lock;
@@ -1202,8 +1285,6 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__242__pmp_cfg_lock;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__242__priv_mode;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__242__permission_check;
-    };
-    struct {
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__244__Vfuncout;
         CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__244__region_csr_pmp_cfg;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__244__pmp_req_type;
@@ -1253,6 +1334,8 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__257__Vfuncout;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__257__pmp_cfg_lock;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__257__priv_mode;
+    };
+    struct {
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__257__permission_check;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__259__Vfuncout;
         CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__259__region_csr_pmp_cfg;
@@ -1268,8 +1351,6 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__262__region_csr_pmp_cfg;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__262__pmp_req_type;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__262__priv_mode;
-    };
-    struct {
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__262__permission_check;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__262__result;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__263__Vfuncout;
@@ -1319,6 +1400,8 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__278__Vfuncout;
         CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__278__region_csr_pmp_cfg;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__278__pmp_req_type;
+    };
+    struct {
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__278__priv_mode;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__278__permission_check;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__278__result;
@@ -1334,8 +1417,6 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__281__result;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__282__Vfuncout;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__282__pmp_cfg_lock;
-    };
-    struct {
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__282__priv_mode;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__282__permission_check;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__284__Vfuncout;
@@ -1385,6 +1466,8 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__296__permission_check;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__296__result;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__297__Vfuncout;
+    };
+    struct {
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__297__pmp_cfg_lock;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__297__priv_mode;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__297__permission_check;
@@ -1400,8 +1483,6 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__300__permission_check;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__302__Vfuncout;
         CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__302__region_csr_pmp_cfg;
-    };
-    struct {
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__302__pmp_req_type;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__302__priv_mode;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__302__permission_check;
@@ -1451,6 +1532,8 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__315__priv_mode;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__315__permission_check;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__317__Vfuncout;
+    };
+    struct {
         CData/*5:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__317__region_csr_pmp_cfg;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__317__pmp_req_type;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__317__priv_mode;
@@ -1466,8 +1549,6 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__320__priv_mode;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__320__permission_check;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__mml_perm_check__320__result;
-    };
-    struct {
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__321__Vfuncout;
         CData/*0:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__321__pmp_cfg_lock;
         CData/*1:0*/ __Vfunc_g_pmp__DOT__pmp_i__DOT__orig_perm_check__321__priv_mode;
@@ -1485,10 +1566,17 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         VL_IN16(irq_fast_i,14,0);
         SData/*15:0*/ __PVT__instr_rdata_c_id;
         SData/*11:0*/ __PVT__csr_addr;
+        SData/*15:0*/ __PVT__g_pmp_fcov_signals__DOT__fcov_pmp_region_ichan_priority;
+        SData/*15:0*/ __PVT__g_pmp_fcov_signals__DOT__fcov_pmp_region_ichan2_priority;
+        SData/*15:0*/ __PVT__g_pmp_fcov_signals__DOT__fcov_pmp_region_dchan_priority;
+        SData/*15:0*/ __PVT__ex_block_i__DOT__gen_multdiv_fast__DOT__multdiv_i__DOT__gen_mult_single_cycle__DOT__mult3_op_a;
         SData/*15:0*/ __PVT__ex_block_i__DOT__gen_multdiv_fast__DOT__multdiv_i__DOT__gen_mult_single_cycle__DOT__mult3_op_b;
         SData/*12:0*/ __PVT__cs_registers_i__DOT__mcountinhibit_d;
         SData/*12:0*/ __PVT__cs_registers_i__DOT__mcountinhibit_q;
         SData/*15:0*/ __PVT__cs_registers_i__DOT__g_pmp_registers__DOT__pmp_cfg_wr_suppress;
+        QData/*47:0*/ __PVT__g_pmp__DOT__pmp_i__DOT__region_match_gt;
+        QData/*47:0*/ __PVT__g_pmp__DOT__pmp_i__DOT__region_match_lt;
+        QData/*47:0*/ __PVT__g_pmp__DOT__pmp_i__DOT__region_match_eq;
         QData/*47:0*/ __PVT__g_pmp__DOT__pmp_i__DOT__region_match_all;
         QData/*47:0*/ __PVT__g_pmp__DOT__pmp_i__DOT__region_basic_perm_check;
         QData/*47:0*/ __PVT__g_pmp__DOT__pmp_i__DOT__region_perm_check;
@@ -1509,8 +1597,12 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         IData/*31:0*/ __PVT__multdiv_operand_b_ex;
         IData/*17:0*/ __PVT__irqs;
         IData/*31:0*/ __PVT__csr_mtval;
+        IData/*31:0*/ __PVT__if_stage_i__DOT__fetch_addr_n;
+    };
+    struct {
         IData/*31:0*/ __PVT__if_stage_i__DOT__prefetch_addr;
         IData/*31:0*/ __PVT__if_stage_i__DOT__fetch_rdata;
+        IData/*31:0*/ __PVT__if_stage_i__DOT__instr_decompressed;
         IData/*31:0*/ __PVT__if_stage_i__DOT__exc_pc;
         IData/*31:0*/ __PVT__if_stage_i__DOT__instr_out;
         IData/*31:0*/ __PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__stored_addr_d;
@@ -1522,59 +1614,98 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         IData/*31:0*/ __PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT__rdata;
         IData/*30:0*/ __PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT__instr_addr_d;
         IData/*30:0*/ __PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__prefetch_buffer_i__DOT__fifo_i__DOT__instr_addr_q;
+        IData/*16:0*/ __PVT__if_stage_i__DOT__gen_dummy_instr__DOT__dummy_instr_i__DOT__lfsr_data;
         IData/*31:0*/ __PVT__if_stage_i__DOT__gen_dummy_instr__DOT__dummy_instr_i__DOT__dummy_instr_seed_q;
         IData/*31:0*/ __PVT__if_stage_i__DOT__gen_dummy_instr__DOT__dummy_instr_i__DOT__dummy_instr_seed_d;
         IData/*31:0*/ __PVT__if_stage_i__DOT__gen_dummy_instr__DOT__dummy_instr_i__DOT__lfsr_i__DOT__lfsr_d;
         IData/*31:0*/ __PVT__if_stage_i__DOT__gen_dummy_instr__DOT__dummy_instr_i__DOT__lfsr_i__DOT__lfsr_q;
+        IData/*31:0*/ __PVT__if_stage_i__DOT__gen_dummy_instr__DOT__dummy_instr_i__DOT__lfsr_i__DOT__gen_perm_check__DOT__lfsr_perm_test;
+        IData/*31:0*/ __PVT__if_stage_i__DOT__gen_dummy_instr__DOT__dummy_instr_i__DOT__lfsr_i__DOT__gen_perm_check__DOT__p_perm_check__DOT__unnamedblk3__DOT__k;
+        IData/*31:0*/ __PVT__if_stage_i__DOT__gen_dummy_instr__DOT__dummy_instr_i__DOT__lfsr_i__DOT__gen_max_len_sva__DOT__cnt_d;
+        IData/*31:0*/ __PVT__if_stage_i__DOT__gen_dummy_instr__DOT__dummy_instr_i__DOT__lfsr_i__DOT__gen_max_len_sva__DOT__cnt_q;
         IData/*31:0*/ __PVT__id_stage_i__DOT__imm_i_type;
         IData/*31:0*/ __PVT__id_stage_i__DOT__alu_operand_a;
+        IData/*31:0*/ __PVT__ex_block_i__DOT__alu_result;
         IData/*31:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__operand_a_rev;
+        IData/*31:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__shift_operand;
+        IData/*31:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__shift_result;
         IData/*31:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__shift_result_rev;
-        IData/*31:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__bfp_mask;
         IData/*31:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__bfp_mask_rev;
-    };
-    struct {
         IData/*31:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__bwlogic_operand_b;
         IData/*31:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__bwlogic_and_result;
         IData/*31:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__bwlogic_result;
         IData/*31:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__minmax_result;
         IData/*31:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__pack_result;
+        IData/*31:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__singlebit_result;
         IData/*31:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__rev_result;
         IData/*31:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__shuffle_result;
         IData/*31:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__xperm_result;
+        IData/*31:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__clmul_result;
+        IData/*31:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__multicycle_result;
         IData/*31:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__bitcnt_bits;
+        IData/*31:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__bitcnt_mask_op;
+        IData/*31:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__bitcnt_bit_mask;
+        IData/*31:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__clmul_result_rev;
+        IData/*31:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__gen_alu_rvb_otearlgrey_full__DOT__unnamedblk9__DOT__b;
+        IData/*31:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__gen_alu_rvb_otearlgrey_full__DOT__unnamedblk10__DOT__h;
+        IData/*31:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__gen_alu_rvb_otearlgrey_full__DOT__clmul_op_a;
         IData/*31:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__gen_alu_rvb_otearlgrey_full__DOT__clmul_op_b;
-        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_h42232991__0;
-        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_h6d16f4aa__0;
-        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_h67fddb79__0;
-        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_hb53aef4b__0;
-        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_h922c0c33__0;
-        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_hd10957e6__0;
-        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_h74301013__0;
-        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_h756c180b__0;
-        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_h47933474__0;
-        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_h11589be7__0;
-        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_h4d1f6a62__0;
-        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_h701f4c38__0;
-        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_h990e90ba__0;
-        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_h398a119a__0;
-        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_ha8782785__0;
-        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_h248aeafc__0;
+        IData/*31:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__gen_alu_rvb_otearlgrey_full__DOT__operand_b_rev;
+        IData/*31:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__gen_alu_rvb_otearlgrey_full__DOT__clmul_result_raw;
+        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_h1b5ddda0__0;
+        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_h29d385b4__0;
+        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_h3d25934d__0;
+        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_h6607d665__0;
+        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_hb20fd190__0;
+        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_h4b1c7708__0;
+        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_hbedd4607__0;
+        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_hd3200005__0;
+        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_h09c3cd14__0;
+        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_h16993fad__0;
+        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_h8168aa33__0;
+        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_h7aca58f9__0;
+    };
+    struct {
+        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_hb8b966fe__0;
+        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_hf5299cb9__0;
+        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_h306f494d__0;
+        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_h6ec56246__0;
+        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_h83b5b136__0;
+        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_h78c8b26a__0;
+        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_h94839fda__0;
+        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_hc088faaa__0;
+        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_h7235eb95__0;
+        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_h154de41b__0;
+        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_hef63e3fc__0;
+        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_hd35dc892__0;
+        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_h90d0d8c2__0;
+        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_h71fc41c5__0;
+        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_h564c68d1__0;
+        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_ha93710f8__0;
+        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_hee0d0c1a__0;
+        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_h170c849c__0;
+        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_h55e3786e__0;
+        IData/*31:0*/ ex_block_i__DOT__alu_i__DOT____VdfgTmp_h67fbad94__0;
         IData/*31:0*/ __PVT__ex_block_i__DOT__gen_multdiv_fast__DOT__multdiv_i__DOT__op_numerator_q;
         IData/*31:0*/ __PVT__ex_block_i__DOT__gen_multdiv_fast__DOT__multdiv_i__DOT__op_quotient_q;
         IData/*31:0*/ __PVT__ex_block_i__DOT__gen_multdiv_fast__DOT__multdiv_i__DOT__op_denominator_d;
         IData/*31:0*/ __PVT__ex_block_i__DOT__gen_multdiv_fast__DOT__multdiv_i__DOT__op_numerator_d;
         IData/*31:0*/ __PVT__ex_block_i__DOT__gen_multdiv_fast__DOT__multdiv_i__DOT__op_quotient_d;
+        IData/*31:0*/ __PVT__ex_block_i__DOT__gen_multdiv_fast__DOT__multdiv_i__DOT__next_remainder;
         IData/*31:0*/ __PVT__load_store_unit_i__DOT__addr_last_q;
         IData/*23:0*/ __PVT__load_store_unit_i__DOT__rdata_q;
         IData/*31:0*/ __PVT__load_store_unit_i__DOT__data_wdata;
         IData/*31:0*/ __PVT__load_store_unit_i__DOT__data_rdata_ext;
         IData/*31:0*/ __PVT__wb_stage_i__DOT__g_writeback_stage__DOT__rf_wdata_wb_q;
         IData/*31:0*/ __PVT__wb_stage_i__DOT__g_writeback_stage__DOT__wb_pc_q;
+        IData/*31:0*/ __PVT__cs_registers_i__DOT__exception_pc;
         IData/*31:0*/ __PVT__cs_registers_i__DOT__mepc_d;
         IData/*31:0*/ __PVT__cs_registers_i__DOT__mtval_d;
         IData/*31:0*/ __PVT__cs_registers_i__DOT__dcsr_d;
         IData/*31:0*/ __PVT__cs_registers_i__DOT__depc_d;
+        IData/*31:0*/ __PVT__cs_registers_i__DOT__mhpmcounter_we;
+        IData/*31:0*/ __PVT__cs_registers_i__DOT__mhpmcounterh_we;
+        IData/*31:0*/ __PVT__cs_registers_i__DOT__mhpmcounter_incr;
         IData/*31:0*/ __PVT__cs_registers_i__DOT__csr_wdata_int;
         IData/*31:0*/ __PVT__cs_registers_i__DOT__csr_rdata_int;
         IData/*31:0*/ __PVT__cs_registers_i__DOT__u_mepc_csr__DOT__rdata_q;
@@ -1598,9 +1729,9 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         IData/*31:0*/ __PVT__cs_registers_i__DOT__g_pmp_registers__DOT__g_pmp_csrs__BRA__8__KET____DOT__u_pmp_addr_csr__DOT__rdata_q;
         IData/*31:0*/ __PVT__cs_registers_i__DOT__g_pmp_registers__DOT__g_pmp_csrs__BRA__9__KET____DOT__u_pmp_addr_csr__DOT__rdata_q;
         IData/*31:0*/ __PVT__cs_registers_i__DOT__g_pmp_registers__DOT__g_pmp_csrs__BRA__10__KET____DOT__u_pmp_addr_csr__DOT__rdata_q;
+        IData/*31:0*/ __PVT__cs_registers_i__DOT__g_pmp_registers__DOT__g_pmp_csrs__BRA__11__KET____DOT__u_pmp_addr_csr__DOT__rdata_q;
     };
     struct {
-        IData/*31:0*/ __PVT__cs_registers_i__DOT__g_pmp_registers__DOT__g_pmp_csrs__BRA__11__KET____DOT__u_pmp_addr_csr__DOT__rdata_q;
         IData/*31:0*/ __PVT__cs_registers_i__DOT__g_pmp_registers__DOT__g_pmp_csrs__BRA__12__KET____DOT__u_pmp_addr_csr__DOT__rdata_q;
         IData/*31:0*/ __PVT__cs_registers_i__DOT__g_pmp_registers__DOT__g_pmp_csrs__BRA__13__KET____DOT__u_pmp_addr_csr__DOT__rdata_q;
         IData/*31:0*/ __PVT__cs_registers_i__DOT__g_pmp_registers__DOT__g_pmp_csrs__BRA__14__KET____DOT__u_pmp_addr_csr__DOT__rdata_q;
@@ -1626,6 +1757,8 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         IData/*31:0*/ __PVT__cs_registers_i__DOT__gen_cntrs__BRA__9__KET____DOT__gen_imp__DOT__mcounters_variable_i__DOT__counter_d;
         IData/*31:0*/ __PVT__cs_registers_i__DOT__gen_cntrs__BRA__9__KET____DOT__gen_imp__DOT__mcounters_variable_i__DOT__counter_q;
         IData/*31:0*/ __PVT__cs_registers_i__DOT__gen_trigger_regs__DOT__g_dbg_tmatch_reg__BRA__0__KET____DOT__u_tmatch_value_csr__DOT__rdata_q;
+        IData/*31:0*/ __PVT__gen_regfile_ecc__DOT__regfile_ecc_dec_a__DOT__data_o;
+        IData/*31:0*/ __PVT__gen_regfile_ecc__DOT__regfile_ecc_dec_b__DOT__data_o;
         IData/*31:0*/ g_pmp__DOT__pmp_i__DOT____VdfgTmp_hb283f6c2__0;
         IData/*31:0*/ g_pmp__DOT__pmp_i__DOT____VdfgTmp_h1ddea43f__0;
         IData/*31:0*/ g_pmp__DOT__pmp_i__DOT____VdfgTmp_h9c61acf2__0;
@@ -1648,15 +1781,38 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         VL_IN64(rf_rdata_b_ecc_i,38,0);
         VL_OUT64(ic_data_wdata_o,63,0);
         VL_OUTW(crash_dump_o,159,0,5);
+        QData/*32:0*/ __PVT__ex_block_i__DOT__multdiv_alu_operand_b;
         QData/*32:0*/ __PVT__ex_block_i__DOT__multdiv_alu_operand_a;
         QData/*33:0*/ __PVT__ex_block_i__DOT__alu_adder_result_ext;
+        QData/*32:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__shift_result_ext_signed;
+        QData/*32:0*/ __PVT__ex_block_i__DOT__alu_i__DOT__shift_result_ext;
         QData/*34:0*/ __PVT__ex_block_i__DOT__gen_multdiv_fast__DOT__multdiv_i__DOT__mac_res_signed;
+        QData/*33:0*/ __PVT__ex_block_i__DOT__gen_multdiv_fast__DOT__multdiv_i__DOT__mac_res_d;
         QData/*33:0*/ __PVT__ex_block_i__DOT__gen_multdiv_fast__DOT__multdiv_i__DOT__op_remainder_d;
-        QData/*33:0*/ __PVT__ex_block_i__DOT__gen_multdiv_fast__DOT__multdiv_i__DOT__gen_mult_single_cycle__DOT__mult1_res_uns;
+        QData/*32:0*/ __PVT__ex_block_i__DOT__gen_multdiv_fast__DOT__multdiv_i__DOT__next_quotient;
+        QData/*33:0*/ __PVT__ex_block_i__DOT__gen_multdiv_fast__DOT__multdiv_i__DOT__gen_mult_single_cycle__DOT__mult1_res;
+        QData/*33:0*/ __PVT__ex_block_i__DOT__gen_multdiv_fast__DOT__multdiv_i__DOT__gen_mult_single_cycle__DOT__mult3_res;
+        QData/*33:0*/ __PVT__ex_block_i__DOT__gen_multdiv_fast__DOT__multdiv_i__DOT__gen_mult_single_cycle__DOT__summand1;
+        QData/*33:0*/ __PVT__ex_block_i__DOT__gen_multdiv_fast__DOT__multdiv_i__DOT__gen_mult_single_cycle__DOT__summand2;
+        QData/*33:0*/ __PVT__ex_block_i__DOT__gen_multdiv_fast__DOT__multdiv_i__DOT__gen_mult_single_cycle__DOT__summand3;
+        QData/*63:0*/ __PVT__cs_registers_i__DOT__mcycle_counter_i__DOT__counter_load;
+    };
+    struct {
         QData/*63:0*/ __PVT__cs_registers_i__DOT__mcycle_counter_i__DOT__counter_d;
         QData/*63:0*/ __PVT__cs_registers_i__DOT__mcycle_counter_i__DOT__counter_q;
+        QData/*63:0*/ __PVT__cs_registers_i__DOT__minstret_counter_i__DOT__counter_load;
         QData/*63:0*/ __PVT__cs_registers_i__DOT__minstret_counter_i__DOT__counter_d;
         QData/*63:0*/ __PVT__cs_registers_i__DOT__minstret_counter_i__DOT__counter_q;
+        QData/*63:0*/ __PVT__cs_registers_i__DOT__gen_cntrs__BRA__0__KET____DOT__gen_imp__DOT__mcounters_variable_i__DOT__counter_load;
+        QData/*63:0*/ __PVT__cs_registers_i__DOT__gen_cntrs__BRA__1__KET____DOT__gen_imp__DOT__mcounters_variable_i__DOT__counter_load;
+        QData/*63:0*/ __PVT__cs_registers_i__DOT__gen_cntrs__BRA__2__KET____DOT__gen_imp__DOT__mcounters_variable_i__DOT__counter_load;
+        QData/*63:0*/ __PVT__cs_registers_i__DOT__gen_cntrs__BRA__3__KET____DOT__gen_imp__DOT__mcounters_variable_i__DOT__counter_load;
+        QData/*63:0*/ __PVT__cs_registers_i__DOT__gen_cntrs__BRA__4__KET____DOT__gen_imp__DOT__mcounters_variable_i__DOT__counter_load;
+        QData/*63:0*/ __PVT__cs_registers_i__DOT__gen_cntrs__BRA__5__KET____DOT__gen_imp__DOT__mcounters_variable_i__DOT__counter_load;
+        QData/*63:0*/ __PVT__cs_registers_i__DOT__gen_cntrs__BRA__6__KET____DOT__gen_imp__DOT__mcounters_variable_i__DOT__counter_load;
+        QData/*63:0*/ __PVT__cs_registers_i__DOT__gen_cntrs__BRA__7__KET____DOT__gen_imp__DOT__mcounters_variable_i__DOT__counter_load;
+        QData/*63:0*/ __PVT__cs_registers_i__DOT__gen_cntrs__BRA__8__KET____DOT__gen_imp__DOT__mcounters_variable_i__DOT__counter_load;
+        QData/*63:0*/ __PVT__cs_registers_i__DOT__gen_cntrs__BRA__9__KET____DOT__gen_imp__DOT__mcounters_variable_i__DOT__counter_load;
         QData/*33:0*/ g_pmp__DOT__pmp_i__DOT____VdfgTmp_h4537cfc8__0;
         QData/*33:0*/ g_pmp__DOT__pmp_i__DOT____VdfgTmp_h310dd124__0;
         QData/*33:0*/ g_pmp__DOT__pmp_i__DOT____VdfgTmp_hf4999181__0;
@@ -1664,8 +1820,6 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         QData/*33:0*/ g_pmp__DOT__pmp_i__DOT____VdfgTmp_h8e58994f__0;
         QData/*33:0*/ g_pmp__DOT__pmp_i__DOT____VdfgTmp_hf9f402b9__0;
         QData/*33:0*/ g_pmp__DOT__pmp_i__DOT____VdfgTmp_hf935869f__0;
-    };
-    struct {
         QData/*33:0*/ g_pmp__DOT__pmp_i__DOT____VdfgTmp_h2daa4ff7__0;
         QData/*33:0*/ g_pmp__DOT__pmp_i__DOT____VdfgTmp_h5e5d0fca__0;
         QData/*33:0*/ g_pmp__DOT__pmp_i__DOT____VdfgTmp_h68022a1e__0;
@@ -1681,23 +1835,71 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_ibex_core__pi4 final : public Ve
         VlUnpacked<QData/*33:0*/, 16> __PVT__csr_pmp_addr;
         VlUnpacked<CData/*5:0*/, 16> __PVT__csr_pmp_cfg;
         VlUnpacked<CData/*0:0*/, 3> __PVT__pmp_req_err;
+        VlUnpacked<QData/*33:0*/, 3> __PVT__g_pmp__DOT__pmp_req_addr;
         VlUnpacked<CData/*1:0*/, 3> __PVT__g_pmp__DOT__pmp_req_type;
         VlUnpacked<CData/*1:0*/, 3> __PVT__g_pmp__DOT__pmp_priv_lvl;
+        VlUnpacked<IData/*21:0*/, 2> __PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__unused_tag_ram_input;
+        VlUnpacked<QData/*63:0*/, 2> __PVT__if_stage_i__DOT__gen_prefetch_buffer__DOT__unused_data_ram_input;
         VlUnpacked<QData/*33:0*/, 2> __PVT__id_stage_i__DOT__imd_val_q;
         VlUnpacked<IData/*31:0*/, 2> __PVT__ex_block_i__DOT__alu_imd_val_q;
         VlUnpacked<IData/*31:0*/, 2> __PVT__ex_block_i__DOT__alu_imd_val_d;
+        VlUnpacked<QData/*33:0*/, 2> __PVT__ex_block_i__DOT__multdiv_imd_val_d;
         VlUnpacked<CData/*5:0*/, 32> __PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__bitcnt_partial;
         VlUnpacked<IData/*31:0*/, 4> __PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__gen_alu_rvb_otearlgrey_full__DOT__SHUFFLE_MASK_NOT;
+        VlUnpacked<IData/*31:0*/, 32> __PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__gen_alu_rvb_otearlgrey_full__DOT__clmul_and_stage;
+        VlUnpacked<IData/*31:0*/, 16> __PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__gen_alu_rvb_otearlgrey_full__DOT__clmul_xor_stage1;
+        VlUnpacked<IData/*31:0*/, 8> __PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__gen_alu_rvb_otearlgrey_full__DOT__clmul_xor_stage2;
+        VlUnpacked<IData/*31:0*/, 4> __PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__gen_alu_rvb_otearlgrey_full__DOT__clmul_xor_stage3;
+        VlUnpacked<IData/*31:0*/, 2> __PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__gen_alu_rvb_otearlgrey_full__DOT__clmul_xor_stage4;
+        VlUnpacked<IData/*31:0*/, 2> __PVT__wb_stage_i__DOT__rf_wdata_wb_mux;
         VlUnpacked<IData/*31:0*/, 16> __PVT__cs_registers_i__DOT__pmp_addr_rdata;
         VlUnpacked<CData/*7:0*/, 16> __PVT__cs_registers_i__DOT__pmp_cfg_rdata;
         VlUnpacked<QData/*63:0*/, 32> __PVT__cs_registers_i__DOT__mhpmcounter;
         VlUnpacked<IData/*31:0*/, 32> __PVT__cs_registers_i__DOT__mhpmevent;
+        VlUnpacked<CData/*5:0*/, 16> __PVT__cs_registers_i__DOT__g_pmp_registers__DOT__pmp_cfg;
         VlUnpacked<CData/*5:0*/, 16> __PVT__cs_registers_i__DOT__g_pmp_registers__DOT__pmp_cfg_wdata;
+        VlUnpacked<IData/*31:0*/, 16> __PVT__cs_registers_i__DOT__g_pmp_registers__DOT__pmp_addr;
+        VlUnpacked<IData/*31:0*/, 1> __PVT__cs_registers_i__DOT__gen_trigger_regs__DOT__tmatch_value_q;
+        VlUnpacked<QData/*33:0*/, 16> __PVT__g_pmp__DOT__pmp_i__DOT__region_start_addr;
         VlUnpacked<IData/*31:0*/, 16> __PVT__g_pmp__DOT__pmp_i__DOT__region_addr_mask;
     };
 
     // INTERNAL VARIABLES
     Viob_soc_sim__Syms* const vlSymsp;
+
+    // PARAMETERS
+    static constexpr VlUnpacked<QData/*33:0*/, 16> __PVT__PMPRstAddr = {{
+        0x0000000000000000ULL, 0x0000000000000000ULL,
+        0x0000000000000000ULL, 0x0000000000000000ULL,
+        0x0000000000000000ULL, 0x0000000000000000ULL,
+        0x0000000000000000ULL, 0x0000000000000000ULL,
+        0x0000000000000000ULL, 0x0000000000000000ULL,
+        0x0000000000000000ULL, 0x0000000000000000ULL,
+        0x0000000000000000ULL, 0x0000000000000000ULL,
+        0x0000000000000000ULL, 0x0000000000000000ULL
+    }};
+    static constexpr VlUnpacked<IData/*31:0*/, 4> __PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__gen_alu_rvb_otearlgrey_full__DOT__SHUFFLE_MASK_L = {{
+        0x00ff0000U, 0x0f000f00U, 0x30303030U, 0x44444444U
+    }};
+    static constexpr VlUnpacked<IData/*31:0*/, 4> __PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__gen_alu_rvb_otearlgrey_full__DOT__SHUFFLE_MASK_R = {{
+        0x0000ff00U, 0x00f000f0U, 0x0c0c0c0cU, 0x22222222U
+    }};
+    static constexpr VlUnpacked<IData/*31:0*/, 4> __PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__gen_alu_rvb_otearlgrey_full__DOT__FLIP_MASK_L = {{
+        0x22001100U, 0x00440000U, 0x44110000U, 0x11000000U
+    }};
+    static constexpr VlUnpacked<IData/*31:0*/, 4> __PVT__ex_block_i__DOT__alu_i__DOT__g_alu_rvb__DOT__gen_alu_rvb_otearlgrey_full__DOT__FLIP_MASK_R = {{
+        0x00880044U, 0x00002200U, 0x00008822U, 0x00000088U
+    }};
+    static constexpr VlUnpacked<QData/*33:0*/, 16> __PVT__cs_registers_i__DOT__PMPRstAddr = {{
+        0x0000000000000000ULL, 0x0000000000000000ULL,
+        0x0000000000000000ULL, 0x0000000000000000ULL,
+        0x0000000000000000ULL, 0x0000000000000000ULL,
+        0x0000000000000000ULL, 0x0000000000000000ULL,
+        0x0000000000000000ULL, 0x0000000000000000ULL,
+        0x0000000000000000ULL, 0x0000000000000000ULL,
+        0x0000000000000000ULL, 0x0000000000000000ULL,
+        0x0000000000000000ULL, 0x0000000000000000ULL
+    }};
 
     // CONSTRUCTORS
     Viob_soc_sim_ibex_core__pi4(Viob_soc_sim__Syms* symsp, const char* v__name);

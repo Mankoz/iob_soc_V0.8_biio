@@ -8,6 +8,7 @@
 #include "Viob_soc_sim_iob_soc_axi_full_xbar_merge__pi3.h"
 #include "Viob_soc_sim_ibex_core__pi4.h"
 #include "Viob_soc_sim_prim_onehot_mux__W27_I20.h"
+#include "Viob_soc_sim_ibex_pkg.h"
 
 void Viob_soc_sim_ibex_core__pi4____Vdpiexp_if_stage_i__DOT__gen_prefetch_buffer__DOT__simutil_get_scramble_key_TOP__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__cpu__DOT__u_top__DOT__gen_lockstep__DOT__u_ibex_lockstep__DOT__u_shadow_core(Viob_soc_sim__Syms* __restrict vlSymsp, VlWide<4>/*127:0*/ &val, IData/*31:0*/ &simutil_get_scramble_key__Vfuncrtn);
 void Viob_soc_sim_ibex_core__pi4____Vdpiexp_if_stage_i__DOT__gen_prefetch_buffer__DOT__simutil_get_scramble_nonce_TOP__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__cpu__DOT__u_top__DOT__gen_lockstep__DOT__u_ibex_lockstep__DOT__u_shadow_core(Viob_soc_sim__Syms* __restrict vlSymsp, VlWide<10>/*319:0*/ &nonce, IData/*31:0*/ &simutil_get_scramble_nonce__Vfuncrtn);
@@ -25,6 +26,7 @@ Viob_soc_sim__Syms::Viob_soc_sim__Syms(VerilatedContext* contextp, const char* n
     , __Vm_modelp{modelp}
     // Setup module instances
     , TOP{this, namep}
+    , TOP__ibex_pkg{this, Verilated::catName(namep, "ibex_pkg")}
     , TOP__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__cpu__DOT__u_top__DOT__gen_lockstep__DOT__u_ibex_lockstep__DOT__u_shadow_core{this, Verilated::catName(namep, "iob_soc_sim.iob_soc_memwrapper.iob_core_inst.cpu.u_top.gen_lockstep.u_ibex_lockstep.u_shadow_core")}
     , TOP__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__cpu__DOT__u_top__DOT__gen_regfile_ff__DOT__register_file_i__DOT__gen_rdata_mux_check__DOT__u_rdata_a_mux{this, Verilated::catName(namep, "iob_soc_sim.iob_soc_memwrapper.iob_core_inst.cpu.u_top.gen_regfile_ff.register_file_i.gen_rdata_mux_check.u_rdata_a_mux")}
     , TOP__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__cpu__DOT__u_top__DOT__gen_regfile_ff__DOT__register_file_i__DOT__gen_rdata_mux_check__DOT__u_rdata_b_mux{this, Verilated::catName(namep, "iob_soc_sim.iob_soc_memwrapper.iob_core_inst.cpu.u_top.gen_regfile_ff.register_file_i.gen_rdata_mux_check.u_rdata_b_mux")}
@@ -39,6 +41,7 @@ Viob_soc_sim__Syms::Viob_soc_sim__Syms(VerilatedContext* contextp, const char* n
     _vm_contextp__->timeunit(-9);
     _vm_contextp__->timeprecision(-12);
     // Setup each module's pointers to their submodules
+    TOP.__PVT__ibex_pkg = &TOP__ibex_pkg;
     TOP.__PVT__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__cpu__DOT__u_top__DOT__gen_lockstep__DOT__u_ibex_lockstep__DOT__u_shadow_core = &TOP__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__cpu__DOT__u_top__DOT__gen_lockstep__DOT__u_ibex_lockstep__DOT__u_shadow_core;
     TOP.__PVT__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__cpu__DOT__u_top__DOT__gen_regfile_ff__DOT__register_file_i__DOT__gen_rdata_mux_check__DOT__u_rdata_a_mux = &TOP__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__cpu__DOT__u_top__DOT__gen_regfile_ff__DOT__register_file_i__DOT__gen_rdata_mux_check__DOT__u_rdata_a_mux;
     TOP.__PVT__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__cpu__DOT__u_top__DOT__gen_regfile_ff__DOT__register_file_i__DOT__gen_rdata_mux_check__DOT__u_rdata_b_mux = &TOP__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__cpu__DOT__u_top__DOT__gen_regfile_ff__DOT__register_file_i__DOT__gen_rdata_mux_check__DOT__u_rdata_b_mux;
@@ -50,6 +53,7 @@ Viob_soc_sim__Syms::Viob_soc_sim__Syms(VerilatedContext* contextp, const char* n
     TOP.__PVT__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__iob_axi_full_xbar__DOT__iob_axi_split_1 = &TOP__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__iob_axi_full_xbar__DOT__iob_axi_split_1;
     // Setup each module's pointer back to symbol table (for public functions)
     TOP.__Vconfigure(true);
+    TOP__ibex_pkg.__Vconfigure(true);
     TOP__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__cpu__DOT__u_top__DOT__gen_lockstep__DOT__u_ibex_lockstep__DOT__u_shadow_core.__Vconfigure(true);
     TOP__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__cpu__DOT__u_top__DOT__gen_regfile_ff__DOT__register_file_i__DOT__gen_rdata_mux_check__DOT__u_rdata_a_mux.__Vconfigure(true);
     TOP__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__cpu__DOT__u_top__DOT__gen_regfile_ff__DOT__register_file_i__DOT__gen_rdata_mux_check__DOT__u_rdata_b_mux.__Vconfigure(false);

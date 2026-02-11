@@ -1,0 +1,10 @@
+//######
+//iob_ram_t2p_be_conf.vh is not needed as all the defines are included in the .sv files 
+// TODO
+// need to remove timescale directive from individual files to a global place
+//These header files all need to be centralized
+
+//For mem model the 2 files needed are
+// 1) iob_axi_ram.sv
+// 2) iob_ram_t2p_be.sv
+// 3) iob_ram_t2p.sv

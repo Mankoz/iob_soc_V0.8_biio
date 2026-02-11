@@ -132,11 +132,22 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_iob_soc_axi_full_xbar_merge__pi3
         CData/*0:0*/ __PVT__data_burst_complete_write_reg_o;
         CData/*0:0*/ __PVT__write_sel;
         CData/*0:0*/ __PVT__write_sel_reg;
+        CData/*1:0*/ __PVT__mux_axi_arvalid;
+        CData/*0:0*/ __PVT__read_sel_prio_enc_o;
+        CData/*0:0*/ __PVT__write_sel_prio_enc_o;
+        CData/*0:0*/ __PVT__mux_axi_awvalid_o;
         CData/*0:0*/ __PVT__demux_axi_awready_i;
+        CData/*0:0*/ __PVT__mux_axi_wvalid_o;
         CData/*0:0*/ __PVT__demux_axi_wready_i;
+        CData/*7:0*/ __PVT__mux_axi_awid;
+        CData/*0:0*/ __PVT__mux_axi_arvalid_o;
         CData/*0:0*/ __PVT__demux_axi_arready_i;
+        CData/*1:0*/ __PVT__mux_axi_rready;
+        CData/*7:0*/ __PVT__mux_axi_arid;
         CData/*0:0*/ __PVT__busy_read_reg_re__DOT__reg0__DOT__data_next;
         CData/*0:0*/ __PVT__active_transaction_read_reg_re__DOT__reg0__DOT__data_next;
+    };
+    struct {
         CData/*0:0*/ __PVT__busy_write_reg_re__DOT__reg0__DOT__data_next;
         CData/*0:0*/ __PVT__active_transaction_write_reg_re__DOT__reg0__DOT__data_next;
         CData/*0:0*/ __PVT__data_burst_complete_write_reg_re__DOT__reg0__DOT__data_next;
@@ -146,8 +157,6 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim_iob_soc_axi_full_xbar_merge__pi3
         VL_OUT(m_axi_wdata_o,31,0);
         VL_IN(s0_axi_araddr_i,27,0);
         VL_OUT(s0_axi_rdata_o,31,0);
-    };
-    struct {
         VL_IN(s0_axi_awaddr_i,27,0);
         VL_IN(s0_axi_wdata_i,31,0);
         VL_IN(s1_axi_araddr_i,27,0);

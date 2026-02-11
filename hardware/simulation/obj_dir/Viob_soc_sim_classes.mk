@@ -14,9 +14,9 @@ VM_COVERAGE = 0
 # Parallel builds?  0/1 (from --output-split)
 VM_PARALLEL_BUILDS = 1
 # Tracing output mode?  0/1 (from --trace/--trace-fst)
-VM_TRACE = 0
+VM_TRACE = 1
 # Tracing output mode in VCD format?  0/1 (from --trace)
-VM_TRACE_VCD = 0
+VM_TRACE_VCD = 1
 # Tracing output mode in FST format?  0/1 (from --trace-fst)
 VM_TRACE_FST = 0
 
@@ -61,19 +61,26 @@ VM_CLASSES_SLOW += \
 	Viob_soc_sim_prim_onehot_mux__W27_I20__DepSet_h1cbb5ef9__0__Slow \
 	Viob_soc_sim_prim_onehot_mux__W27_I20__DepSet_hc8d0c7bb__0__Slow \
 	Viob_soc_sim_prim_onehot_mux__W27_I20__DepSet_hc8d0c7bb__1__Slow \
+	Viob_soc_sim_ibex_pkg__Slow \
+	Viob_soc_sim_ibex_pkg__DepSet_h8befa9dd__0__Slow \
 
 # Generated support classes, fast-path, compile with highest optimization
 VM_SUPPORT_FAST += \
 	Viob_soc_sim__Dpi \
+	Viob_soc_sim__Trace__0 \
+	Viob_soc_sim__Trace__1 \
 
 # Generated support classes, non-fast-path, compile with low/medium optimization
 VM_SUPPORT_SLOW += \
 	Viob_soc_sim__Syms \
+	Viob_soc_sim__Trace__0__Slow \
+	Viob_soc_sim__TraceDecls__0__Slow \
 
 # Global classes, need linked once per executable, fast-path, compile with highest optimization
 VM_GLOBAL_FAST += \
 	verilated \
 	verilated_dpi \
+	verilated_vcd_c \
 	verilated_threads \
 
 # Global classes, need linked once per executable, non-fast-path, compile with low/medium optimization

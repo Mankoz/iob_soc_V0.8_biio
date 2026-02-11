@@ -1,0 +1,27 @@
+# =====================
+# simulation / verilator
+# =====================
+sim_build/
+obj_dir/
+hardware/simulation/obj_dir/
+hardware/simulation/test.log
+Vtop__ALL.cpp
+
+# =====================
+# python virtual env
+# =====================
+.venv/
+venv/
+
+# =====================
+# python / cocotb
+# =====================
+__pycache__/
+*.pyc
+
+
+# cocotb / simulation outputs
+*.fst
+*.vcd
+*.xml
+*_trace.cpp

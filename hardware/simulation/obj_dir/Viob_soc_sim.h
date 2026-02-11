@@ -13,7 +13,9 @@
 
 class Viob_soc_sim__Syms;
 class Viob_soc_sim___024root;
+class VerilatedVcdC;
 class Viob_soc_sim_ibex_core__pi4;
+class Viob_soc_sim_ibex_pkg;
 class Viob_soc_sim_iob_soc_axi_full_xbar_merge__pi3;
 class Viob_soc_sim_iob_soc_axi_full_xbar_split__pi2;
 class Viob_soc_sim_prim_onehot_mux__W27_I20;
@@ -44,6 +46,7 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim VL_NOT_FINAL : public VerilatedM
     // CELLS
     // Public to allow access to /* verilator public */ items.
     // Otherwise the application code can consider these internals.
+    Viob_soc_sim_ibex_pkg* const __PVT__ibex_pkg;
     Viob_soc_sim_ibex_core__pi4* const __PVT__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__cpu__DOT__u_top__DOT__u_ibex_core;
     Viob_soc_sim_prim_onehot_mux__W27_I20* const __PVT__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__cpu__DOT__u_top__DOT__gen_regfile_ff__DOT__register_file_i__DOT__gen_rdata_mux_check__DOT__u_rdata_a_mux;
     Viob_soc_sim_prim_onehot_mux__W27_I20* const __PVT__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__cpu__DOT__u_top__DOT__gen_regfile_ff__DOT__register_file_i__DOT__gen_rdata_mux_check__DOT__u_rdata_b_mux;
@@ -104,6 +107,7 @@ class alignas(VL_CACHE_LINE_BYTES) Viob_soc_sim VL_NOT_FINAL : public VerilatedM
     /// Re-init after cloning the model at the process level (e.g. fork in Linux)
     /// Re-allocate necessary resources. Called after cloning.
     void atClone() const;
+    std::unique_ptr<VerilatedTraceConfig> traceConfig() const override final;
 };
 
 #endif  // guard

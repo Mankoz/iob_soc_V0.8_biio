@@ -2,6 +2,7 @@
 // DESCRIPTION: Verilator output: Model implementation (design independent parts)
 
 #include "Viob_soc_sim__pch.h"
+#include "verilated_vcd_c.h"
 
 //============================================================
 // Constructors
@@ -19,6 +20,7 @@ Viob_soc_sim::Viob_soc_sim(VerilatedContext* _vcontextp__, const char* _vcname__
     , iob_ready_o{vlSymsp->TOP.iob_ready_o}
     , iob_wdata_i{vlSymsp->TOP.iob_wdata_i}
     , iob_rdata_o{vlSymsp->TOP.iob_rdata_o}
+    , __PVT__ibex_pkg{vlSymsp->TOP.__PVT__ibex_pkg}
     , __PVT__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__cpu__DOT__u_top__DOT__u_ibex_core{vlSymsp->TOP.__PVT__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__cpu__DOT__u_top__DOT__u_ibex_core}
     , __PVT__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__cpu__DOT__u_top__DOT__gen_regfile_ff__DOT__register_file_i__DOT__gen_rdata_mux_check__DOT__u_rdata_a_mux{vlSymsp->TOP.__PVT__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__cpu__DOT__u_top__DOT__gen_regfile_ff__DOT__register_file_i__DOT__gen_rdata_mux_check__DOT__u_rdata_a_mux}
     , __PVT__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__cpu__DOT__u_top__DOT__gen_regfile_ff__DOT__register_file_i__DOT__gen_rdata_mux_check__DOT__u_rdata_b_mux{vlSymsp->TOP.__PVT__iob_soc_sim__DOT__iob_soc_memwrapper__DOT__iob_core_inst__DOT__cpu__DOT__u_top__DOT__gen_regfile_ff__DOT__register_file_i__DOT__gen_rdata_mux_check__DOT__u_rdata_b_mux}
@@ -63,6 +65,7 @@ void Viob_soc_sim::eval_step() {
     // Debug assertions
     Viob_soc_sim___024root___eval_debug_assertions(&(vlSymsp->TOP));
 #endif  // VL_DEBUG
+    vlSymsp->__Vm_activity = true;
     vlSymsp->__Vm_deleter.deleteAll();
     if (VL_UNLIKELY(!vlSymsp->__Vm_didInit)) {
         vlSymsp->__Vm_didInit = true;
@@ -112,10 +115,40 @@ void Viob_soc_sim::prepareClone() const { contextp()->prepareClone(); }
 void Viob_soc_sim::atClone() const {
     contextp()->threadPoolpOnClone();
 }
+std::unique_ptr<VerilatedTraceConfig> Viob_soc_sim::traceConfig() const {
+    return std::unique_ptr<VerilatedTraceConfig>{new VerilatedTraceConfig{false, false, false}};
+};
 
 //============================================================
 // Trace configuration
 
+void Viob_soc_sim___024root__trace_decl_types(VerilatedVcd* tracep);
+
+void Viob_soc_sim___024root__trace_init_top(Viob_soc_sim___024root* vlSelf, VerilatedVcd* tracep);
+
+VL_ATTR_COLD static void trace_init(void* voidSelf, VerilatedVcd* tracep, uint32_t code) {
+    // Callback from tracep->open()
+    Viob_soc_sim___024root* const __restrict vlSelf VL_ATTR_UNUSED = static_cast<Viob_soc_sim___024root*>(voidSelf);
+    Viob_soc_sim__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
+    if (!vlSymsp->_vm_contextp__->calcUnusedSigs()) {
+        VL_FATAL_MT(__FILE__, __LINE__, __FILE__,
+            "Turning on wave traces requires Verilated::traceEverOn(true) call before time 0.");
+    }
+    vlSymsp->__Vm_baseCode = code;
+    tracep->pushPrefix(std::string{vlSymsp->name()}, VerilatedTracePrefixType::SCOPE_MODULE);
+    Viob_soc_sim___024root__trace_decl_types(tracep);
+    Viob_soc_sim___024root__trace_init_top(vlSelf, tracep);
+    tracep->popPrefix();
+}
+
+VL_ATTR_COLD void Viob_soc_sim___024root__trace_register(Viob_soc_sim___024root* vlSelf, VerilatedVcd* tracep);
+
 VL_ATTR_COLD void Viob_soc_sim::trace(VerilatedVcdC* tfp, int levels, int options) {
-    vl_fatal(__FILE__, __LINE__, __FILE__,"'Viob_soc_sim::trace()' called on model that was Verilated without --trace option");
+    if (tfp->isOpen()) {
+        vl_fatal(__FILE__, __LINE__, __FILE__,"'Viob_soc_sim::trace()' shall not be called after 'VerilatedVcdC::open()'.");
+    }
+    if (false && levels && options) {}  // Prevent unused
+    tfp->spTrace()->addModel(this);
+    tfp->spTrace()->addInitCb(&trace_init, &(vlSymsp->TOP));
+    Viob_soc_sim___024root__trace_register(&(vlSymsp->TOP), tfp->spTrace());
 }
