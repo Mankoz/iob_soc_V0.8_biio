@@ -46,3 +46,13 @@ Updated iob_ibex2axi.sv to remove unused signals and clean up simulation warning
 Adjusted Cocotb Makefile for direct Verilator flow (no FuseSoC dependency)
 
 Verified chip_top_ibex test runs successfully with waveform dump
+
+Environment:
+Verified with the following toolchain:
+OS: Ubuntu 22.04 LTS (x86_64)
+Verilator 5.020 (Debian 5.020-1, 2024-01-01)
+Python 3.12.3
+cocotb 1.9.2
+GTKWave 3.3.116
+GNU Make 4.3
+g++ (system default on Ubuntu 22.04)
