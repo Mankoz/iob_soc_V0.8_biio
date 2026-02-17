@@ -111,14 +111,14 @@ module iob_ibex2axi #(
 
   //IBEX
   wire [AXI_ADDR_W -1:0]    ibex_data_addr_int, ibex_instr_addr_int;
-  wire [IBEX_INTG_DATA_W -1:0]    ibex_wdata_intg_wire;
+  // wire [IBEX_INTG_DATA_W -1:0]    ibex_wdata_intg_wire; // changed by RZ for less warning
   wire [IBEX_INTG_DATA_W -1:0]    ibex_rdata_intg_wire;
 
-  assign arst_n = arst_i;
+  //assign arst_n = arst_i;
 
   assign ibex_data_addr_int = {ibex_data_addr_i,2'b0};
   assign ibex_instr_addr_int = {ibex_instr_addr_i,2'b0};
-  assign ibex_data_wdata_intg_wire = ibex_data_wdata_intg_i; //not implemented
+  // assign ibex_data_wdata_intg_wire = ibex_data_wdata_intg_i; //not implemented // changed by RZ for less warning
   
   
   // Assign final output 
@@ -180,8 +180,9 @@ module iob_ibex2axi #(
   assign ibex_data_err_o =  dbus_rvalid_i & (| dbus_rresp_i) | dbus_bvalid_i & (| dbus_bresp_i);
   assign ibex_instr_err_o =  ibus_rvalid_i & (| ibus_rresp_i);
 
-  assign ibex_rdata_intg_o = ibex_rdata_intg_wire; //not implemented
-
+  // assign ibex_rdata_intg_o = ibex_rdata_intg_wire; //not implemented
+  assign ibex_data_rdata_intg_o  = '0; // changed by RZ for less warning
+  assign ibex_instr_rdata_intg_o = '0; // changed by RZ for less warning
 
   // Default assignments for unused AXI signals
   assign dbus_awprot_o  = '0;

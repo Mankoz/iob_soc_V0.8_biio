@@ -1,0 +1,24 @@
+[*]
+[*] GTKWave Analyzer v3.3.104 (w)1999-2020 BSI
+[*] Mon Feb  2 20:29:40 2026
+[*]
+[dumpfile] "/home/rmetchev/workspace/biio-v1/hw/cocotb/tests/chip_top_ibex/dump.fst"
+[dumpfile_mtime] "Mon Feb  2 20:27:20 2026"
+[dumpfile_size] 582778
+[savefile] "/home/rmetchev/workspace/biio-v1/hw/cocotb/tests/chip_top_ibex/1.gtkw"
+[timestart] 62600000
+[size] 1000 600
+[pos] -1 -1
+*-24.549965 102000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_top.
+[sst_width] 233
+[signals_width] 78
+[sst_expanded] 1
+[sst_vpaned_height] 144
+@28
+tb_top.dut.arst_i
+tb_top.dut.clk_i
+@29
+tb_top.dut.cke_i
+[pattern_trace] 1
+[pattern_trace] 0
